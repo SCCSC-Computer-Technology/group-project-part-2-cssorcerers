@@ -5,6 +5,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using SportIQ.Models;
+using SportsData.Models;
 
 namespace SportIQ.Data
 {
@@ -13,5 +14,7 @@ namespace SportIQ.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<User> Users { get; set; }
+
     }
+    
 }

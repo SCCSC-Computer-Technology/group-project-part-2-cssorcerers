@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SportIQ.Data;
+using SportsData;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,12 @@ builder.Services.AddControllersWithViews();
 // Configures the Entity Framework Core
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+string root = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.Length - 50) + "SportsData";
+
+builder.Services.AddDbContext<SportsDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SportsDB").Replace("%ROOT%", root)));
 
 // Authentication and Cookie settings
 builder.Services.AddAuthentication("AuthCookie")
