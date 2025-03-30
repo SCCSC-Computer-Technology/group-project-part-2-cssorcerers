@@ -1,0 +1,272 @@
+﻿@using SportsData.Models
+@model NFLTeamsStatsViewModel
+@{
+	//Layout = "_layout";
+	ViewData["title"] = "NFL Team Stats";
+}
+
+<head>
+	<style>
+		#keyCell
+		{
+		border: 1px solid white;
+		padding: 8px;
+		height: 80px;
+		min-height: 80px;
+		max-height: 80px;
+		}
+
+		#dataCell {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		border-right: 1px solid grey;
+		padding: 8px;
+		height: 80px;
+		min-height: 80px;
+		max-height: 80px;
+		}
+
+		#headCell {
+		border: 1px solid grey;
+		border-bottom: 1px solid white;
+		}
+		a {
+		color: lightblue;
+		text-decoration: none;
+		font-style: oblique;
+		}
+	</style>
+</head>
+
+<!--Sorting and navigation-->
+<div style="display: flex; gap: 10px;">
+
+	<!--Page numbers-->
+	<div style="width: 120px;">
+		<p style="color:white; margin-bottom: 2px; margin-right: 10px; float: left; text-align: center;">Page</p>
+		<br />
+		<div style="display: flex; gap: 10px; float: left;">
+			<input type="text" min="1" max="@Model.MaxPage" id="pageInput" style="text-align: right; margin-top: 3px; width: 50px; height: 20px" />
+			<p style="color:white;"> / @Model.MaxPage</p>
+		</div>
+	</div>
+
+	<!--Season selection-->
+	<div class="dropdown" style="margin-bottom: 10px; width: 100px;">
+		<p style="color: white; text-align: left; margin-bottom: 2px;">Season</p>
+		<select id="seasonSelect" onchange="LoadSeason()" style="float: left">
+			<option>All Seasons</option>
+			@for (int i = 2024; i >= 1970; i--)
+			{
+				<option>@i</option>
+			}
+		</select>
+	</div>
+
+</div>
+
+
+
+<div style="display: flex; gap: 10px;">
+	<a class="btn btn-primary" style="background-color:darkblue" asp-controller="nfl" asp-action="teams"
+	   asp-route-page="1" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">&lt;&lt;</a>
+	<a class="btn btn-primary" style="background-color:darkblue" asp-controller="nfl" asp-action="teams"
+	   asp-route-page="@(Model.CurrentPage > 1 ? Model.CurrentPage-1 : 1)" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">&lt;</a>
+	<a class="btn btn-primary" style="background-color:darkblue" asp-controller="nfl" asp-action="teams"
+	   asp-route-page="@(Model.CurrentPage < Model.MaxPage ? Model.CurrentPage+1 : Model.MaxPage)" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder"
+	   role="button">&gt;</a>
+	<a class="btn btn-primary" style="background-color:darkblue" asp-controller="nfl" asp-action="teams"
+	   asp-route-page="@Model.MaxPage" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">&gt;&gt;</a>
+</div>
+
+
+<table class="table table-hover table-dark table-striped" style="margin-top: 10px; overflow-y: scroll; color:white; border: 2px ridge darkblue; width: 100%; table-layout: fixed; vertical-align: middle;">
+	<thead style="text-align:center; vertical-align: middle; padding: 5px;">
+		<tr style="height: 50px;">
+			<td style="width: 150px">
+				Team
+			</td>
+			<td id="headCell">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "ssn_asc" ? "ssn_desc" : "ssn_asc")">
+					Season
+				</a>
+			</td>
+
+			<td id="headCell">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "td_asc" ? "td_desc" : "td_asc")">
+					Touchdowns
+				</a>
+			</td>
+			<td id="headCell">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "xpt_asc" ? "xpt_desc" : "xpt_asc")">
+					Extra Points
+				</a>
+			</td>
+			<td id="headCell">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "2pt_asc" ? "2pt_desc" : "2pt_asc")">
+					Two Points
+				</a>
+			</td>
+			<td id="headCell">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "fg_asc" ? "fg_desc" : "fg_asc")">
+					Field Goals
+				</a>
+			</td>
+			<td id="headCell">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "win_asc" ? "win_desc" : "win_asc")">
+					Wins
+				</a>
+			</td>
+			<td id="headCell">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "loss_asc" ? "loss_desc" : "loss_asc")">
+					Losses
+				</a>
+			</td>
+			<td id="headCell">
+				<a asp-controller ="nfl" asp-action="teams"
+								 asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "tie_asc" ? "tie_desc" : "tie_asc")">
+					Ties
+				</a>
+			</td>
+		</tr>
+	</thead>
+	@if (Model != null)
+	{
+		<tbody style="text-align: center; padding: 5px; vertical-align: middle;">
+			@foreach (NFLTeamSeasonInfo stat in Model.TeamsStats)
+			{
+
+				<tr style="vertical-align: middle;" onclick="Redirect('https://en.wikipedia.org/wiki/@stat.TeamName.Replace(' ', '_')')">
+					<td id="keyCell" style="border-right: 0;">
+						@stat.TeamName
+					</td>
+
+					<td id="keyCell" style="border-left: 0;">
+						@stat.Season
+					</td>
+
+					<td id="dataCell">
+						@stat.Touchdowns
+					</td>
+
+					<td id="dataCell">
+						@stat.ExtraPoints
+					</td>
+
+					<td id="dataCell">
+						@stat.TwoPoints
+					</td>
+
+					<td id="dataCell">
+						@stat.FieldGoals
+					</td>
+
+					<td id="dataCell">
+						@stat.Wins
+					</td>
+
+					<td id="dataCell">
+						@stat.Losses
+					</td>
+
+					<td id="dataCell" style="border-right: 1px solid white;">
+						@stat.Ties
+					</td>
+				</tr>
+
+			}
+		</tbody>
+	}
+</table>
+
+
+<script>
+
+	window.onload = SetSeasonSelection();
+
+	function SetSeasonSelection()
+	{
+		document.getElementById('seasonSelect').value = @Model.Season != -1 ? @Model.Season : "All Seasons";
+	}
+	function LoadSeason()
+	{
+		let season = document.getElementById("seasonSelect").value
+		window.location.href = `/nfl/teams?season=${season}`
+	}
+
+	function ShowList()
+	{
+		document.getElementById('dropdownInput').value = '';
+		FilterList();
+		document.getElementById('dropdownList').style.display='block';
+
+	}
+	function HideList()
+	{
+		setTimeout(() => {
+				document.getElementById('dropdownList').style.display = 'none';
+			}, 150);
+		document.getElementById('dropdownInput').value = (@Model.Season != -1) ? @Model.Season : 'All Seasons';
+	}
+	function FilterList()
+	{
+		const items = document.getElementsByClassName("dropdown-item");
+		//if(event.key === 'Enter')
+		//{
+			const filter = document.getElementById('dropdownInput').value;
+
+
+			for (let i = 0; i < items.length; i++)
+			{
+				const item = items[i];
+				const text = item.textContent || item.innerText;
+				if (text.toUpperCase().indexOf(filter) > -1)
+				{
+					item.style.display = "";
+				} else {
+					item.style.display = "none";
+				}
+			}
+		/*}
+		else
+		{
+			for (let i = 0; i < items.length; i++)
+			{
+				const item = items[i];
+				item.style.display = "";
+
+			}
+		}*/
+	}
+
+	document.getElementById('pageInput').value = @Model.CurrentPage;
+	document.getElementById('pageInput').addEventListener('keydown', function(event)
+	{
+		if(event.key === 'Enter')
+		{
+			let page = Number(document.getElementById('pageInput').value);
+			if(!isNaN(page))
+			{
+				window.location.href=`/nfl/teams?page=${page}&season=${@Model.Season}`;
+			}
+			else
+			{
+				alert("Page number must be numeric");
+				document.getElementById('pageInput').value = @Model.CurrentPage;
+			}
+		}
+	});
+
+	function Redirect(link)
+	{
+		window.open(link, "_blank");
+
+	}
+</script>

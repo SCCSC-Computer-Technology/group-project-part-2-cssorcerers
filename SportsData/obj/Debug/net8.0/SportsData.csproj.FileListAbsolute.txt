@@ -1,0 +1,12 @@
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\bin\Debug\net8.0\SportsData.deps.json
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\bin\Debug\net8.0\SportsData.dll
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\bin\Debug\net8.0\SportsData.pdb
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\SportsData.csproj.AssemblyReference.cache
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\SportsData.GeneratedMSBuildEditorConfig.editorconfig
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\SportsData.AssemblyInfoInputs.cache
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\SportsData.AssemblyInfo.cs
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\SportsData.csproj.CoreCompileInputs.cache
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\SportsData.dll
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\refint\SportsData.dll
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\SportsData.pdb
+D:\SCC\CPT-206\Group Projects\Part-II\SportsData\obj\Debug\net8.0\ref\SportsData.dll

@@ -1,0 +1,40 @@
+﻿@* GROUP PROJECT #2 *@
+@* VIEW USERS *@
+
+@model List<SportIQ.Models.User>
+
+@{
+    ViewData["Title"] = "View Users";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/common.css">
+</head>
+
+<h1>Registered Users</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.User_Id</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Auth", new { id = user.User_Id })">Edit</a> |
+                    <a href="@Url.Action("Delete", "Auth", new { id = user.User_Id })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
