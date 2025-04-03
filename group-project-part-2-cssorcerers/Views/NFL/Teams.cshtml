@@ -6,36 +6,7 @@
 }
 
 <head>
-	<style>
-		#keyCell
-		{
-		border: 1px solid white;
-		padding: 8px;
-		height: 80px;
-		min-height: 80px;
-		max-height: 80px;
-		}
-
-		#dataCell {
-		border-top: 1px solid white;
-		border-bottom: 1px solid white;
-		border-right: 1px solid grey;
-		padding: 8px;
-		height: 80px;
-		min-height: 80px;
-		max-height: 80px;
-		}
-
-		#headCell {
-		border: 1px solid grey;
-		border-bottom: 1px solid white;
-		}
-		a {
-		color: lightblue;
-		text-decoration: none;
-		font-style: oblique;
-		}
-	</style>
+	<link rel="stylesheet" href="~/css/common.css">
 </head>
 
 <!--Sorting and navigation-->
@@ -43,11 +14,11 @@
 
 	<!--Page numbers-->
 	<div style="width: 120px;">
-		<p style="color:white; margin-bottom: 2px; margin-right: 10px; float: left; text-align: center;">Page</p>
+		<p style="margin-bottom: 2px; margin-right: 10px; float: left; text-align: center;">Page</p>
 		<br />
 		<div style="display: flex; gap: 10px; float: left;">
-			<input type="text" min="1" max="@Model.MaxPage" id="pageInput" style="text-align: right; margin-top: 3px; width: 50px; height: 20px" />
-			<p style="color:white;"> / @Model.MaxPage</p>
+			<input type="text" min="1" max="@Model.MaxPage" id="pageInput" value="@Model.CurrentPage" style="text-align: right; margin-top: 3px; width: 60px; height: 20px" />
+			<p> / @Model.MaxPage</p>
 		</div>
 	</div>
 
@@ -80,7 +51,7 @@
 </div>
 
 
-<table class="table table-hover table-dark table-striped" style="margin-top: 10px; overflow-y: scroll; color:white; border: 2px ridge darkblue; width: 100%; table-layout: fixed; vertical-align: middle;">
+<table class="table table-hover table-light table-striped" style="margin-top: 10px; overflow-x: clip; overflow-y: scroll; border: 2px ridge darkblue; width: 140%; table-layout: fixed; vertical-align: middle;">
 	<thead style="text-align:center; vertical-align: middle; padding: 5px;">
 		<tr style="height: 50px;">
 			<td style="width: 150px">
@@ -93,10 +64,22 @@
 				</a>
 			</td>
 
-			<td id="headCell">
+			<td id="headCell" style="width: 120px;">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "rush_td_asc" ? "rush_td_desc" : "rush_td_asc")">
+					Rushing Touchdowns
+				</a>
+			</td>
+			<td id="headCell" style="width: 120px;">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "rec_td_asc" ? "rec_td_desc" : "rec_td_asc")">
+					Receiving Touchdowns
+				</a>
+			</td>
+			<td id="headCell" style="width: 120px;">
 				<a asp-controller="nfl" asp-action="teams"
 				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "td_asc" ? "td_desc" : "td_asc")">
-					Touchdowns
+					Total Touchdowns
 				</a>
 			</td>
 			<td id="headCell">
@@ -117,21 +100,45 @@
 					Field Goals
 				</a>
 			</td>
-			<td id="headCell">
+			<td id="headCell" >
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "fga_asc" ? "fga_desc" : "fga_asc")">
+					Field Goal Attempts
+				</a>
+			</td>
+			<td id="headCell" >
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "ryd_asc" ? "ryd_desc" : "ryd_asc")">
+					Rushing Yards
+				</a>
+			</td>
+			<td id="headCell" >
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "pyd_asc" ? "pyd_desc" : "pyd_asc")">
+					Passing Yards
+				</a>
+			</td>
+			<td id="headCell" style="width: 140px">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "int_asc" ? "int_desc" : "int_asc")">
+					Interceptions
+				</a>
+			</td>
+			<td id="headCell" style="width: 80px">
 				<a asp-controller="nfl" asp-action="teams"
 				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "win_asc" ? "win_desc" : "win_asc")">
 					Wins
 				</a>
 			</td>
-			<td id="headCell">
+			<td id="headCell" style="width: 80px">
 				<a asp-controller="nfl" asp-action="teams"
 				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "loss_asc" ? "loss_desc" : "loss_asc")">
 					Losses
 				</a>
 			</td>
-			<td id="headCell">
-				<a asp-controller ="nfl" asp-action="teams"
-								 asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "tie_asc" ? "tie_desc" : "tie_asc")">
+			<td id="headCell" style="width: 80px">
+				<a asp-controller="nfl" asp-action="teams"
+				   asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "tie_asc" ? "tie_desc" : "tie_asc")">
 					Ties
 				</a>
 			</td>
@@ -143,13 +150,21 @@
 			@foreach (NFLTeamSeasonInfo stat in Model.TeamsStats)
 			{
 
-				<tr style="vertical-align: middle;" onclick="Redirect('https://en.wikipedia.org/wiki/@stat.TeamName.Replace(' ', '_')')">
+				<tr style="vertical-align: middle;" onclick="Redirect('/nfl/team?id=@stat.TeamID&season=@stat.Season')">
 					<td id="keyCell" style="border-right: 0;">
 						@stat.TeamName
 					</td>
 
 					<td id="keyCell" style="border-left: 0;">
 						@stat.Season
+					</td>
+
+					<td id="dataCell">
+						@stat.RushingTouchdowns
+					</td>
+
+					<td id="dataCell">
+						@stat.ReceivingTouchdowns
 					</td>
 
 					<td id="dataCell">
@@ -166,6 +181,22 @@
 
 					<td id="dataCell">
 						@stat.FieldGoals
+					</td>
+
+					<td id="dataCell">
+						@stat.FieldGoalAttempts
+					</td>
+
+					<td id="dataCell">
+						@stat.RushingYards
+					</td>
+
+					<td id="dataCell">
+						@stat.PassingYards
+					</td>
+
+					<td id="dataCell">
+						@stat.Intereceptions
 					</td>
 
 					<td id="dataCell">
@@ -193,7 +224,7 @@
 
 	function SetSeasonSelection()
 	{
-		document.getElementById('seasonSelect').value = @Model.Season != -1 ? @Model.Season : "All Seasons";
+		document.getElementById('seasonSelect').value = "@(Model.Season != -1 ? @Model.Season : "All Seasons")";
 	}
 	function LoadSeason()
 	{
@@ -246,7 +277,6 @@
 		}*/
 	}
 
-	document.getElementById('pageInput').value = @Model.CurrentPage;
 	document.getElementById('pageInput').addEventListener('keydown', function(event)
 	{
 		if(event.key === 'Enter')
@@ -254,7 +284,7 @@
 			let page = Number(document.getElementById('pageInput').value);
 			if(!isNaN(page))
 			{
-				window.location.href=`/nfl/teams?page=${page}&season=${@Model.Season}`;
+				window.location.href=`/nfl/teams?page=${page}&sort=@(string.IsNullOrEmpty(Model.SortOrder) ? "default" : Model.SortOrder)&season=${@Model.Season}`;
 			}
 			else
 			{

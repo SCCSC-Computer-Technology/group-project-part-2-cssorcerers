@@ -1,6 +1,9 @@
 ﻿@{
 }
 
+<head>
+	<link rel="stylesheet" href="~/css/common.css">
+</head>
 <a asp-controller="home" asp-action="index">
 	<button>
 		Home
@@ -8,6 +11,16 @@
 </a>
 <a asp-controller="nfl" asp-action="teams">
 	<button>
-		Teams
+		Teams Table
+	</button>
+</a>
+<a asp-controller="nfl" asp-action="team">
+	<button>
+		Individual Teams
+	</button>
+</a>
+<a asp-controller="nfl" asp-action="players">
+	<button>
+		Player Table
 	</button>
 </a>

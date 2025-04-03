@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SportIQ.Models;
 using SportsData;
 using SportsData.Models;
+using SportsData.Models.TableModels;
 using SportsData.Services;
 
 namespace SportIQ.Controllers
@@ -61,21 +63,119 @@ namespace SportIQ.Controllers
 
             int totalItems = teamSeasonStats.Count();
             page = Math.Min(page, (int)Math.Ceiling((double)totalItems / itemsPerPage));
-            int itemsToSkip = (page - 1) * itemsPerPage;
+
+
+            try
+            {
+                if (sortOrderStr == null) sortOrderStr = "";
+                NFLTeamsStatsViewModel viewModel = new NFLTeamsStatsViewModel
+                {
+
+                    TeamsStats = await NFLServices.GetNFLTeamSeasonInfoList(season, sortOrderStr,
+                                            page, itemsPerPage, teamSeasonStats, _context),
+                    CurrentPage = page,
+                    MaxPage = (int)Math.Ceiling((double)totalItems / itemsPerPage),
+                    Season = season,
+                    SortOrder = sortOrderStr
+                };
+                return View(viewModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{DateTime.Now}:\n\t{ex.Message}");
+                return Redirect("/home/error");
+            }
+
+        }
+
+        public async Task<IActionResult> Players()
+        {
+            string? pageStr = Request.Query["page"];
+            string? sortOrderStr = Request.Query["sort"];
+            string? teamIDStr = Request.Query["team"];
+            string? isActiveStr = Request.Query["active"];
+
+            int itemsPerPage = 5;
+            int.TryParse(pageStr, out int page);
+
+            if(!int.TryParse(teamIDStr, out int teamID))
+            {
+                teamID = -1;
+            }
+
+            bool? isActive = null;
+            try
+            {
+                isActive = bool.Parse(isActiveStr);
+            }
+            catch { }
+
+
+            if (page < 1) page = 1;
 
             
 
-            NFLTeamsStatsViewModel viewModel = new NFLTeamsStatsViewModel
+            List<NFLPlayerInfo> nflPlayers;
+            try
             {
-                TeamsStats = await NFLServices.GetNFLTeamSeasonInfo(season, sortOrderStr,
-                                        page, itemsPerPage, teamSeasonStats, _context),
+                if (sortOrderStr == null) sortOrderStr = "";
+                nflPlayers = await NFLServices.GetNFLPlayerInfoList(isActive, teamID, sortOrderStr, page, itemsPerPage, _context);
+            }
+            catch
+            {
+                return Redirect("/home/error");
+            }
+            int totalItems = _context.NFLPlayer.Where(x=> (teamID == -1 || x.TeamID == teamID) &&
+            (!isActive.HasValue || (isActive.HasValue && x.IsActive == isActive) )).Count();
+            page = Math.Min(page, (int)Math.Ceiling((double)totalItems / itemsPerPage));
+
+
+            NFLPlayersViewModel model = new ()
+            {
+                nflPlayers = nflPlayers,
                 CurrentPage = page,
                 MaxPage = (int)Math.Ceiling((double)totalItems / itemsPerPage),
-                Season = season,
-                SortOrder = sortOrderStr
+                TeamID = teamID,
+                SortOrder = sortOrderStr,
+                IsActive = isActive
             };
-            //var teams = await _context.NFLTeam.Skip(itemsToSkip).Take(itemsPerPage).ToListAsync();
-            return View(viewModel);
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> Team()
+        {
+            string? teamIDStr = Request.Query["id"];
+            string? seasonStr = Request.Query["season"];
+
+            if(!int.TryParse(teamIDStr, out int teamID))
+            {
+                if (teamIDStr == null)
+                {
+                    teamID = 1;
+                }
+                else
+                {
+                    return Redirect("/home/error");
+                }
+            }
+            if(!int.TryParse(seasonStr, out int season))
+            {
+                season = -1;
+            }
+
+            try
+            {
+                NFLTeamSeasonInfo info = await NFLServices.GetNFLTeamSeasonInfo(teamID, season, _context);
+                return View(info);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{DateTime.Now}:\n\t{ex.Message}");
+                return Redirect("/home/error");
+            }
+
+            
         }
     }
 }
