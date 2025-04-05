@@ -262,5 +262,36 @@ namespace SportsData.Services
 
             return playerInfo;
         }
+
+        public static async Task<NFLPlayerInfo> GetNFLPlayerInfo(int playerID, SportsDbContext context)
+        {
+            var stats = context.NFLPlayer.Where(x => x.ID == playerID).SingleOrDefault();
+            if (stats != null)
+            {
+                var fumble = context.NFLPlayerCareerFumbleStat.Where(x => x.ID == playerID).SingleOrDefault();
+                var kick = context.NFLPlayerCareerKickStat.Where(x => x.ID == playerID).SingleOrDefault();
+                var pass = context.NFLPlayerCareerPassStat.Where(x => x.ID == playerID).SingleOrDefault();
+                var receive = context.NFLPlayerCareerReceiveStat.Where(x => x.ID == playerID).SingleOrDefault();
+                var rush = context.NFLPlayerCareerRushStat.Where(x => x.ID == playerID).SingleOrDefault();
+                var sack = context.NFLPlayerCareerSackStat.Where(x => x.ID == playerID).SingleOrDefault();
+                var team = context.NFLTeam.Where(x => x.ID == stats.TeamID).SingleOrDefault();
+                return new NFLPlayerInfo()
+                {
+                    ID = playerID,
+                    Name = stats.Name,
+                    TeamID = stats.TeamID,
+                    TeamName = (team != null) ? team.Name : "",
+                    IsActive = stats.IsActive,
+                    FumbleStats = fumble,
+                    KickStats = kick,
+                    PassStats = pass,
+                    ReceiveStats = receive,
+                    RushStats = rush,
+                    SackStats = sack
+                };
+            }
+            
+            throw new Exception($"Could not find data for player ID {playerID} in the database");
+        }
     }
 }

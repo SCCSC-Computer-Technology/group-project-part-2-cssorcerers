@@ -7,6 +7,7 @@
 
 <head>
 	<link rel="stylesheet" href="~/css/common.css">
+	
 </head>
 
 <!--Sorting and navigation-->
@@ -22,6 +23,15 @@
 		</div>
 	</div>
 
+	<!--Active selection-->
+	<div class="dropdown" style="margin-bottom: 10px; width: 100px;">
+		<p style="color: black; text-align: left; margin-bottom: 2px;">Status</p>
+		<select id="activeSelect" onchange="LoadActive()" style="float: left">
+			<option>Any</option>
+			<option>Active</option>
+			<option>Retired</option>
+		</select>
+	</div>
 </div>
 
 
@@ -44,7 +54,7 @@
 </div>
 
 
-<table class="table table-hover table-light table-striped" style="margin-top: 10px; overflow-x: clip; overflow-y: scroll;  border: 2px ridge darkblue; width: 140%; table-layout: fixed; vertical-align: middle;">
+<table class="table table-hover table-light table-striped" style="margin-top: 10px; overflow-x: clip; overflow-y: scroll;  border: 2px ridge darkblue; width: 100%; table-layout: fixed; vertical-align: middle;">
 	<thead style="text-align:center; vertical-align: middle; padding: 5px;">
 		<tr style="height: 50px;">
 			<td id="headCell">
@@ -55,11 +65,11 @@
 				</a>
 			</td>
 
-			<td id="headCell" style="width: 120px;">
+			<td id="headCell" style="width: 300px;">
 				Team
 			</td>
 			<td id="headCell" style="width: 120px;">
-				Active
+				Status
 			</td>
 		</tr>
 	</thead>
@@ -90,6 +100,22 @@
 </table>
 
 <script>
+
+	window.onload = SetActiveSelection();
+
+	function SetActiveSelection()
+	{
+		let isActive = "@(Model.IsActive == null ? "null" : Model.IsActive)";
+		if(isActive != "null")
+		{
+			document.getElementById('activeSelect').value = isActive === "True" ? "Active" : "Retired";
+		}
+		else
+		{
+			document.getElementById('activeSelect').value = "Any";
+		}
+	}
+
 	let pageInput = document.getElementById('pageInput');
 	pageInput.addEventListener('keydown', function(event)
 	{
@@ -114,5 +140,11 @@
 	function Redirect(link)
 	{
 		window.open(link, "_blank");
+	}
+
+	function LoadActive()
+	{
+		let isActive = document.getElementById("activeSelect").value;
+		window.location.href = `/nfl/players?active=${isActive == "Active" ? "True" : isActive == "Retired" ? "False" : isActive}`;
 	}
 </script>

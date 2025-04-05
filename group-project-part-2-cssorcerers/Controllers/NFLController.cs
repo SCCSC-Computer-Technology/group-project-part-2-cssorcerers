@@ -177,5 +177,35 @@ namespace SportIQ.Controllers
 
             
         }
+
+        public async Task<IActionResult> Player()
+        {
+            string? playerIDStr = Request.Query["id"];
+
+            if (!int.TryParse(playerIDStr, out int playerID))
+            {
+                if (playerIDStr == null)
+                {
+                    playerID = _context.NFLPlayer.Select(x=>x.ID).FirstOrDefault();
+                }
+                else
+                {
+                    return Redirect("/home/error");
+                }
+            }
+
+            try
+            {
+                NFLPlayerInfo info = await NFLServices.GetNFLPlayerInfo(playerID, _context);
+                return View(info);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{DateTime.Now}:\n\t{ex.Message}");
+                return Redirect("/home/error");
+            }
+
+
+        }
     }
 }
