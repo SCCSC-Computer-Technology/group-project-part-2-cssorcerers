@@ -130,7 +130,7 @@ namespace SportIQ.Controllers
             page = Math.Min(page, (int)Math.Ceiling((double)totalItems / itemsPerPage));
 
 
-            NFLPlayersViewModel model = new ()
+            NFLPlayersStatsViewModel model = new ()
             {
                 nflPlayers = nflPlayers,
                 CurrentPage = page,

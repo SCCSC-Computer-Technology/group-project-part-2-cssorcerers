@@ -16,7 +16,7 @@ string root = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.Len
 
 builder.Services.AddDbContext<SportsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SportsDB").Replace("%ROOT%", root)));
-
+Console.WriteLine(builder.Configuration.GetConnectionString("SportsDB").Replace("%ROOT%", root));
 // Authentication and Cookie settings
 builder.Services.AddAuthentication("AuthCookie")
     .AddCookie("AuthCookie", options =>

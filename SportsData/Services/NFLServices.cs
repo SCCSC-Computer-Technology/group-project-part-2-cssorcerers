@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SportsData.Models;
 using SportsData.Models.TableModels;
 
 namespace SportsData.Services
@@ -15,16 +14,16 @@ namespace SportsData.Services
         public static async Task<List<NFLTeamSeasonInfo>> GetNFLTeamSeasonInfoList(int season, string? sortOrderStr, int page,
             int itemsPerPage, List<NFLTeamSeasonStat> teamSeasonStats, SportsDbContext context)
         {
-           
+
 
             List<NFLTeam> teams = await context.NFLTeam.Where(x => teamSeasonStats.Select(y => y.ID).Contains(x.ID)).OrderBy(x => x.ID).ToListAsync();
 
             List<NFLTeamSeasonInfo> teamInfo = new List<NFLTeamSeasonInfo>();
             foreach (NFLTeam team in teams)
             {
-                
+
                 var seasonStat = teamSeasonStats.Where(stat => stat.ID == team.ID && (season == -1 || stat.Season == season)).ToList();
-                
+
                 foreach (NFLTeamSeasonStat stat in seasonStat)
                 {
                     teamInfo.Add(new NFLTeamSeasonInfo
@@ -152,7 +151,7 @@ namespace SportsData.Services
                     return new NFLTeamSeasonInfo()
                     {
                         TeamID = teamID,
-                        TeamName = context.NFLTeam.Where(x => x.ID == teamID).FirstOrDefault().Name,
+                        TeamName = context.NFLTeam.Where(x => x.ID == teamID).FirstOrDefault()?.Name,
                         Season = -1,
                         RushingTouchdowns = stats.Select(x => x.RushingTouchdowns).Sum(),
                         ReceivingTouchdowns = stats.Select(x => x.ReceivingTouchdowns).Sum(),
@@ -178,7 +177,7 @@ namespace SportsData.Services
                     return new NFLTeamSeasonInfo()
                     {
                         TeamID = teamID,
-                        TeamName = context.NFLTeam.Where(x => x.ID == teamID).FirstOrDefault().Name,
+                        TeamName = context.NFLTeam.Where(x => x.ID == teamID).FirstOrDefault()?.Name,
                         Season = season,
                         RushingTouchdowns = stats.RushingTouchdowns,
                         ReceivingTouchdowns = stats.ReceivingTouchdowns,
@@ -200,14 +199,15 @@ namespace SportsData.Services
         }
     
 
-        public static async Task<List<NFLPlayerInfo>> GetNFLPlayerInfoList(bool? isActive, int teamID,string? sortOrderStr, int page,
+        public static async Task<List<NFLPlayerInfo>> GetNFLPlayerInfoList(bool? isActive, int teamID, string? sortOrderStr, int page,
             int itemsPerPage,  SportsDbContext context)
         {
-
+            
             IQueryable<NFLPlayer> players;
+
             if (isActive == null)
             {
-                switch (sortOrderStr)
+                switch (sortOrderStr?.ToLower())
                 {
                     case "name_asc":
                         players = context.NFLPlayer.Where(x => (teamID == -1 ? true : x.TeamID == teamID))
@@ -226,7 +226,7 @@ namespace SportsData.Services
             }
             else
             {
-                switch (sortOrderStr.ToLower())
+                switch (sortOrderStr?.ToLower())
                 {
                     case "name_asc":
                         players = context.NFLPlayer.Where(x => x.IsActive == isActive && (teamID == -1 ? true : x.TeamID == teamID))
@@ -246,16 +246,13 @@ namespace SportsData.Services
 
 
             List<NFLPlayerInfo> playerInfo = new List<NFLPlayerInfo>();
-            string[] teams = context.NFLTeam.Select(x=>x.Name).ToArray();
+            string[] teams = await context.NFLTeam.Select(x=>x.Name).ToArrayAsync();
             foreach(NFLPlayer player in players)
             {
 
                 playerInfo.Add(new NFLPlayerInfo()
                 {
-                    ID = player.ID,
-                    Name = player.Name,
-                    TeamID = player.TeamID,
-                    IsActive = player.IsActive,
+                    NFLPlayer = player,
                     TeamName = (player.TeamID.HasValue) ? teams[player.TeamID.Value - 1] : null
                 });
             }
@@ -268,20 +265,18 @@ namespace SportsData.Services
             var stats = context.NFLPlayer.Where(x => x.ID == playerID).SingleOrDefault();
             if (stats != null)
             {
-                var fumble = context.NFLPlayerCareerFumbleStat.Where(x => x.ID == playerID).SingleOrDefault();
-                var kick = context.NFLPlayerCareerKickStat.Where(x => x.ID == playerID).SingleOrDefault();
-                var pass = context.NFLPlayerCareerPassStat.Where(x => x.ID == playerID).SingleOrDefault();
-                var receive = context.NFLPlayerCareerReceiveStat.Where(x => x.ID == playerID).SingleOrDefault();
-                var rush = context.NFLPlayerCareerRushStat.Where(x => x.ID == playerID).SingleOrDefault();
-                var sack = context.NFLPlayerCareerSackStat.Where(x => x.ID == playerID).SingleOrDefault();
-                var team = context.NFLTeam.Where(x => x.ID == stats.TeamID).SingleOrDefault();
+                
+                var fumble = await context.NFLPlayerCareerFumbleStat.Where(x => x.ID == playerID).SingleOrDefaultAsync();
+                var kick = await context.NFLPlayerCareerKickStat.Where(x => x.ID == playerID).SingleOrDefaultAsync();
+                var pass = await context.NFLPlayerCareerPassStat.Where(x => x.ID == playerID).SingleOrDefaultAsync();
+                var receive = await context.NFLPlayerCareerReceiveStat.Where(x => x.ID == playerID).SingleOrDefaultAsync();
+                var rush = await context.NFLPlayerCareerRushStat.Where(x => x.ID == playerID).SingleOrDefaultAsync();
+                var sack = await context.NFLPlayerCareerSackStat.Where(x => x.ID == playerID).SingleOrDefaultAsync();
+                var team = await context.NFLTeam.Where(x => x.ID == stats.TeamID).SingleOrDefaultAsync();
                 return new NFLPlayerInfo()
                 {
-                    ID = playerID,
-                    Name = stats.Name,
-                    TeamID = stats.TeamID,
+                    NFLPlayer = stats,
                     TeamName = (team != null) ? team.Name : "",
-                    IsActive = stats.IsActive,
                     FumbleStats = fumble,
                     KickStats = kick,
                     PassStats = pass,

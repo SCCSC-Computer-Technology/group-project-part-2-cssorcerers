@@ -2,7 +2,7 @@
 
 namespace SportIQ.Models
 {
-    public class NFLPlayersViewModel
+    public class NFLPlayersStatsViewModel
     {
         public List<NFLPlayerInfo> nflPlayers { get; set; }
         public string? SortOrder { get; set; }

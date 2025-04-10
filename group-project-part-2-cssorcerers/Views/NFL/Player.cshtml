@@ -2,7 +2,7 @@
 @model NFLPlayerInfo
 @{
 	<link rel="stylesheet" href="~/css/common.css">
-	ViewData["title"] = $"{Model.Name ?? "Unknown Player"}'s Stats";
+	ViewData["title"] = $"{Model.NFLPlayer.Name ?? "Unknown Player"}'s Stats";
 }
 <head>
 	<style>
@@ -16,9 +16,9 @@
 @if(Model != null)
 {
 	<div>
-		<h2>@Model.Name's Career Stats</h2>
+		<h2>@Model.NFLPlayer.Name's Career Stats</h2>
 
-		@if(Model.IsActive.HasValue && Model.IsActive.Value)
+		@if(Model.NFLPlayer.IsActive.HasValue && Model.NFLPlayer.IsActive.Value)
 		{
 			<h3>Team: @Model.TeamName</h3>
 		}

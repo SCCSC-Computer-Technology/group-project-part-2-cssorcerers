@@ -11,11 +11,8 @@ namespace SportsData.Models
 {
     public class NFLPlayerInfo
     {
-        public int ID { get; set; }
-        public int? TeamID { get; set; }
+        public NFLPlayer NFLPlayer { get; set; }
         public string? TeamName { get; set; }
-        public string? Name { get; set; }
-        public bool? IsActive { get; set; }
 
         public NFLPlayerCareerFumbleStat? FumbleStats { get; set; }
         public NFLPlayerCareerPassStat? PassStats { get; set; }
