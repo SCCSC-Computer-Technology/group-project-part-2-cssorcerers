@@ -1,0 +1,158 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/common.css">
+
+    <style>
+        /* background */
+        body {
+            background-color: black;/*backup background color incase gradient doesn't work (basically background try catch)*/
+            background: linear-gradient(to bottom right, black, grey);/*gradient background*/
+            background-size: cover;/*background covers the whole screen*/
+            background-attachment: fixed; /*keeps background fixed while scrolling*/
+            font-family: Arial, sans-serif;/*font*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;/*protects layout from being changed by margins/paddings^*/
+        }
+
+        .text-center {/*centers text, adds padding, and sets it to a white color*/
+            text-align: center;
+            padding: 40px;
+            color: white;
+        }
+
+        /*heading style*/
+        h1.display-4 {
+            font-size: 52px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+        /*subheading style*/
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        /*style for "privacy" link */
+        a {
+            color: #007bff;
+            text-decoration: none;/*removes the line from under the link*/
+        }
+
+        a:hover {/*style of link when mouse hovers over it*/
+            text-decoration: underline; /*adds underline*/
+            color: #0056b3;
+        }
+
+        /* Image Styling */
+        .img-fluid {
+            width: 100%; /*makes the pic fill the whole container*/
+            height: 200px; /*fixed height */
+            object-fit: cover; /*makes the pictures crop to fit right instead of stretching*/
+            border-radius: 10px;/*rounds the image corners*/
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/*shadow behind image*/
+            transition: transform 0.3s ease, box-shadow 0.3s ease;/*image moves when hovered over*/
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);/*how much the image zooms in when hovering over it*/
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);/*change in shadow when picture is hovered over*/
+        }
+
+        /*container for the images */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /*spaces images evenly*/
+            gap: 40px 20px;
+            padding: 40px 20px;
+        }
+        /*for each seperate image container*/
+        .image-container a {
+            width: 30%;
+            max-width: 300px;/*makes sure that the pics dont stretch*/
+            border-radius: 10px;/*rounded corner*/
+            overflow: hidden; /*hides the parts of the picture that doesnt fit in the container*/
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /*hover over each seperate image*/
+        .image-container a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 300px; /* had to make them all 300x400*/
+            height: 400px;
+            object-fit: cover; /*keeps pics from stretching*/
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Media Queries (keeps image containers in a good layout even if the screen size changes)*/
+        /*default for large screens like laptops*/
+        .image-container a {
+            width: 30%;
+        }
+
+        /* For mobile (max-width: 768px or smaller devices) */
+        @@media (max-width: 768px) {
+            .image-container a {
+                width: 100%; /* Full-width images on mobile */
+            }
+        }
+
+        /*copyright styling (make the background dark to contrast from the lighter text) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white; /* Make footer text white */
+            background-color: black; /* Black background for footer */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!--Centers the text-->
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <h2>Please select a sport</h2>
+    </div>
+    <!--Image containers for all the sports (they have a link to go to when they are clicked)-->
+    <div class="image-container">
+        <a asp-controller="nfl" asp-action="index">
+            <img src="~/images/RacingPoster.jpg" alt="Photo of F1" class="img-fluid">
+        </a>
+        <a asp-controller="nfl" asp-action="index">
+            <img src="~/images/soccer.jpg" alt="Photo of Soccer" class="img-fluid">
+        </a>
+        <a asp-controller="nfl" asp-action="index">
+            <img src="~/images/NBA.jpg" alt="Photo of NBA" class="img-fluid">
+        </a>
+        <a asp-controller="nfl" asp-action="index">
+            <img src="~/images/NFL.jpg" alt="Photo of NFL" class="img-fluid">
+        </a>
+        <a asp-controller="nfl" asp-action="index">
+            <img src="~/images/CSGO.jpg" alt="Photo of CSGO" class="img-fluid">
+        </a>
+    </div>
+
+</body>
+</html>
+
+
