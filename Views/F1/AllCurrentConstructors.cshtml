@@ -1,0 +1,65 @@
+﻿@using SportsData.Models
+@model F1CurrentConstructorsViewModel
+
+@{
+	ViewData["title"] = "Current Constructors";
+	<link rel="stylesheet" href="~/css/common.css" />
+}
+
+<!-- Navigation / Paging Controls -->
+<div style="display: flex; gap: 10px; margin-bottom: 10px;">
+	<div>
+		<label>Page</label>
+		<div style="display: flex; gap: 5px;">
+			<input type="number" id="pageInput" min="1" max="@Model.MaxPage" value="@Model.CurrentPage" style="width: 60px;" />
+			<p>/ @Model.MaxPage</p>
+		</div>
+	</div>
+</div>
+
+<div style="display: flex; gap: 10px;">
+	<a class="btn btn-primary" asp-controller="F1" asp-action="AllCurrentConstructors" asp-route-page="1" role="button">&lt;&lt;</a>
+	<a class="btn btn-primary" asp-controller="F1" asp-action="AllCurrentConstructors" asp-route-page="@(Model.CurrentPage > 1 ? Model.CurrentPage - 1 : 1)" role="button">&lt;</a>
+	<a class="btn btn-primary" asp-controller="F1" asp-action="AllCurrentConstructors" asp-route-page="@(Model.CurrentPage < Model.MaxPage ? Model.CurrentPage + 1 : Model.MaxPage)" role="button">&gt;</a>
+	<a class="btn btn-primary" asp-controller="F1" asp-action="AllCurrentConstructors" asp-route-page="@Model.MaxPage" role="button">&gt;&gt;</a>
+</div>
+
+<table class="table table-hover table-bordered" style="margin-top: 15px;">
+	<thead>
+		<tr>
+			<th>Team</th>
+			<th>Principal</th>
+			<th>Drivers</th>
+			<th>Championships</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var team in Model.F1CurrentConstructor)
+		{
+			<tr onclick="location.href='@Url.Action("CurrentConstructors", "F1", new { constructorID = team.ConstructorID })'" style="cursor: pointer;">
+				<td>@team.TeamName</td>
+				<td>@(team.Principal ?? "Unknown")</td>
+				<td>
+					@($"{team.D1Num?.ToString() ?? "?"} - {team.Driver1 ?? "Unknown"}")<br />
+					@($"{team.D2Num?.ToString() ?? "?"} - {team.Driver2 ?? "Unknown"}")
+				</td>
+				<td>@(team.Championships.HasValue ? team.Championships : "N/A")</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<script>
+	let pageInput = document.getElementById('pageInput');
+	pageInput.addEventListener('keydown', function (event) {
+		if (event.key === 'Enter') {
+			const page = Number(pageInput.value);
+			if (!isNaN(page)) {
+				window.location.href = `/f1/AllCurrentConstructors?page=${page}`;
+			} else {
+				alert("Page must be a number.");
+				pageInput.value = @Model.CurrentPage;
+			}
+		}
+	});
+</script>
