@@ -1,0 +1,64 @@
+﻿@using SportsData.Models
+@model F1ConstructorInfo
+
+@{
+    ViewData["Title"] = $"{Model.Name ?? "Unknown Constructor"} Info";
+    <link rel="stylesheet" href="~/css/common.css" />
+}
+
+<head>
+    <style>
+        hr {
+            color: black;
+            height: 2px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+@if (Model != null)
+
+{
+    <div>
+        <h2>@Model.Name Constructor Info</h2>
+
+        <hr style="height: 2px" />
+
+        @if (Model.ConstructorRef == null && Model.Nationality == null && Model.Url == null)
+
+        {
+            <h3>No Info to Display</h3>
+        }
+
+        else
+
+        {
+            @if (!string.IsNullOrEmpty(Model.ConstructorRef))
+
+            {
+                <h4>Reference: @Model.ConstructorRef</h4>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.Nationality))
+
+            {
+                <h4>Nationality: @Model.Nationality</h4>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.Url))
+
+            {
+                <h4>More Info: <a href="@Model.Url" target="_blank">@Model.Url</a></h4>
+            }
+
+            <br />
+            <hr style="height: 2px" />
+        }
+    </div>
+}
+
+else
+
+{
+    <h3>No constructor data found.</h3>
+}

@@ -1,0 +1,36 @@
+﻿@using SportsData.Models
+@model NFLTeamSeasonInfo
+@{
+	ViewData["title"] = "NFL Team";
+}
+<head>
+	<link rel="stylesheet" href="~/css/common.css">
+	
+</head>
+
+<div style="text-align: left;">
+	<h2>@Model.TeamName</h2>
+	<hr style="color: black; height: 2px;" />
+	@if(Model.Season == -1)
+	{
+		<h3>Overall Stats</h3>
+	}
+	else
+	{
+		<h3>@Model.Season Stats</h3>
+	}
+	<hr style="color: black; height: 2px;" />
+	<h5>Rushing Touchdowns: <span style="text-align: right;">@Model.RushingTouchdowns</span></h5>
+	<h5>Receiving Touchdowns: <span style="text-align: right;">@Model.ReceivingTouchdowns</span></h5>
+	<h5>Total Touchdowns: <span style="text-align: right;">@Model.Touchdowns</span></h5>
+	<h5>Extra Points: <span style="text-align: right;">@Model.ExtraPoints</span></h5>
+	<h5>Two Points: <span style="text-align: right;">@Model.TwoPoints</span></h5>
+	<h5>Field Goals: <span style="text-align: right;">@Model.FieldGoals</span></h5>
+	<h5>Field Goal Attempts: <span style="text-align: right;">@Model.FieldGoalAttempts</span></h5>
+	<h5>Wins: <span style="text-align: right;">@Model.Wins</span></h5>
+	<h5>Losses: <span style="text-align: right;">@Model.Losses</span></h5>
+	<h5>Ties: <span style="text-align: right;">@Model.Ties</span></h5>
+	<h5>Rushing Yards: <span style="text-align: right;">@Model.RushingYards</span></h5>
+	<h5>Passing Yards: <span style="text-align: right;">@Model.PassingYards</span></h5>
+	<h5>Interceptions: <span style="text-align: right;">@Model.Intereceptions</span></h5>
+</div>

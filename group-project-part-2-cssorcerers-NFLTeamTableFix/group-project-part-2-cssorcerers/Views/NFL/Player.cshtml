@@ -1,0 +1,106 @@
+﻿@using SportsData.Models
+@model NFLPlayerInfo
+@{
+	<link rel="stylesheet" href="~/css/common.css">
+	ViewData["title"] = $"{Model.Name ?? "Unknown Player"}'s Stats";
+}
+<head>
+	<style>
+		hr {
+		color: black;
+		height: 2px;
+		width: 100%;
+		}
+	</style>
+</head>
+@if(Model != null)
+{
+	<div>
+		<h2>@Model.Name's Career Stats</h2>
+
+		@if(Model.IsActive.HasValue && Model.IsActive.Value)
+		{
+			<h3>Team: @Model.TeamName</h3>
+		}
+		else
+		{
+			<h3>Retired</h3>
+		}
+		<hr style="height: 2px"/>
+
+		@if (Model.FumbleStats == null && Model.KickStats == null && Model.PassStats == null &&
+										Model.ReceiveStats == null && Model.RushStats == null && Model.SackStats == null)
+		{
+			<h3>No Stats to Display</h3>
+		}
+		else
+		{
+			@if(Model.PassStats != null)
+			{
+				<br />
+				<h3>Passing Stats</h3>
+				<h5>Passing Yards: @Model.PassStats.PassingYards</h5>
+				<h5>Longest Pass: @Model.PassStats.LongestPass</h5>
+				<h5>Pass Attempts: @Model.PassStats.PassAttempts</h5>
+				<h5>Touchdown Passes: @Model.PassStats.TouchdownPasses</h5>
+				<h5>Interceptions: @Model.PassStats.Interceptions</h5>
+				<br />
+				<hr style="height: 2px" />
+			}
+
+			@if(Model.SackStats != null)
+			{
+				<br />
+				<h3>Sack Stats</h3>
+				<h5>Sacks: @Model.SackStats.Sacks</h5>
+				<h5>Yards Lost to Sacks: @Model.SackStats.YardsLostToSacks</h5>
+				<br />
+				<hr style="height: 2px" />
+			}
+
+			@if(Model.RushStats != null)
+			{
+				<br />
+				<h3>Rushing Stats</h3>
+				<h5>Rushing Yards: @Model.RushStats.RushYards</h5>
+				<h5>Rush Attempts: @Model.RushStats.RushAttempts</h5>
+				<h5>Rushing Firstdowns: @Model.RushStats.RushFirstdowns</h5>
+				<h5>Rushing Touchdowns: @Model.RushStats.RushTouchdowns</h5>
+				<br />
+				<hr style="height: 2px" />
+			}
+
+			@if(Model.ReceiveStats != null)
+			{
+				<br />
+				<h3>Receiving Stats</h3>
+				<h5>Receiving Yards: @Model.ReceiveStats.ReceivingYards</h5>
+				<h5>Receiving Touchdowns: @Model.ReceiveStats.ReceivingTouchdowns</h5>
+				<h5>Receptions: @Model.ReceiveStats.Receptions</h5>
+				<br />
+				<hr style="height: 2px" />
+			}
+
+			@if(Model.FumbleStats != null)
+			{
+				<br />
+				<h3>Fumble Stats</h3>
+				<h5>Fumbles: @Model.FumbleStats.Fumbles</h5>
+				<br />
+				<hr style="height: 2px" />
+			}
+
+			@if(Model.KickStats != null)
+			{
+				<br />
+				<h3>Kicking Stats</h3>
+				<h5>Field Goal Attempts: @Model.KickStats.FieldGoalAttempts</h5>
+				<h5>Field Goals Made: @Model.KickStats.FieldGoalsMade</h5>
+				<h5>Extra Point Attempts: @Model.KickStats.ExtraPointAttempts</h5>
+				<h5>Extra Points Made: @Model.KickStats.ExtraPointsMade</h5>
+				<br />
+				<hr style="height: 2px" />
+			}
+		}
+	</div>
+}

@@ -1,0 +1,30 @@
+﻿@using SportsData.Models
+@model F1CurrentConstructorInfo
+
+@{
+	ViewData["title"] = $"{Model.TeamName ?? "Unknown Team"} - Current Info";
+	<link rel="stylesheet" href="~/css/common.css" />
+}
+
+<div>
+	<h2>@Model.TeamName</h2>
+	<hr />
+
+	<h4>Team Principal:</h4>
+	<p>@(Model.Principal ?? "Unknown")</p>
+
+	<h4>Drivers:</h4>
+	<p>@(Model.D1Num.HasValue ? $"#{Model.D1Num} - {Model.Driver1}" : Model.Driver1 ?? "Unknown")</p>
+	<p>@(Model.D2Num.HasValue ? $"#{Model.D2Num} - {Model.Driver2}" : Model.Driver2 ?? "Unknown")</p>
+
+	<h4>Base:</h4>
+	<p>@(Model.Base ?? "Unknown")</p>
+
+	<h4>Power Unit:</h4>
+	<p>@(Model.PowerUnit ?? "Unknown")</p>
+
+	<h4>Championships:</h4>
+	<p>@(Model.Championships.HasValue ? Model.Championships : "N/A")</p>
+
+	<hr />
+</div>

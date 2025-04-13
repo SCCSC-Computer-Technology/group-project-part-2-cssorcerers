@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d24a042e-8be2-4570-92eb-1dae24643cc8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\CSGO.jpg" />
+    <Content Remove="wwwroot\assets\F1Verst.jpg" />
+    <Content Remove="wwwroot\assets\NBA.jpg" />
+    <Content Remove="wwwroot\assets\NFL.jpg" />
+    <Content Remove="wwwroot\assets\RacingPoster.jpg" />
+    <Content Remove="wwwroot\assets\soccer.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\CSGO.jpg" />
+    <None Include="wwwroot\assets\F1Verst.jpg" />
+    <None Include="wwwroot\assets\NBA.jpg" />
+    <None Include="wwwroot\assets\NFL.jpg" />
+    <None Include="wwwroot\assets\RacingPoster.jpg" />
+    <None Include="wwwroot\assets\soccer.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SportsData\SportsData.csproj" />
+  </ItemGroup>
+
+</Project>

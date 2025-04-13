@@ -1,0 +1,31 @@
+﻿@{
+}
+
+<head>
+	<link rel="stylesheet" href="~/css/common.css">
+</head>
+<a asp-controller="home" asp-action="index">
+	<button>
+		Home
+	</button>
+</a>
+<a asp-controller="f1" asp-action="allconstructors">
+	<button>
+		Constructors
+	</button>
+</a>
+<a asp-controller="f1" asp-action="allcurrentconstructors" asp-route-team="">
+	<button>
+		Current Constructors
+	</button>
+</a>
+<a asp-controller="f1" asp-action="allraces" asp-route-driver=" ">
+	<button>
+		Races
+	</button>
+</a>
+<a asp-controller="f1" asp-action="alldrivers"asp-route-alldrivers=" ">
+	<button>
+		Drivers
+	</button>
+</a>

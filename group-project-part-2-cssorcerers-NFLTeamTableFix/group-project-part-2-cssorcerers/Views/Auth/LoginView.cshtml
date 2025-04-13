@@ -1,0 +1,29 @@
+﻿
+  @* GROUP PROJECT #2 *@
+  @* LOGIN VIEW *@
+ 
+
+@model SportIQ.Models.User
+
+<head>
+    <link rel="stylesheet" href="~/css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true">
+</head>
+
+<div class="main-container">
+    <div class="image-section">
+    </div>
+
+    <div class="form-container">
+        <div class="title-box">Login</div>
+        <form asp-controller="Auth" asp-action="Login" method="POST">
+            <input type="username" asp-for="UserName" placeholder="Username">
+            <input type="password" asp-for="Password" placeholder="Password">
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <button type="submit">LOGIN</button>
+            <div class="text-center mt-3">
+                <small>Don't have an account? <a asp-action="Register">Register</a></small>
+            </div>
+        </form>
+    </div>
+</div>
