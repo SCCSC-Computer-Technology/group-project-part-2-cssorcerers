@@ -154,62 +154,64 @@
 			@foreach (NBATeamSeasonInfo stat in Model.TeamsStats)
 			{
 
-				<tr style="vertical-align: middle;" onclick="Redirect('/nfl/team?id=@stat.TeamInfo.Name&season=@stat.TeamStats.Season')">
+				<tr style="vertical-align: middle;" onclick="Redirect('/nba/team?id=@(stat.TeamInfo?.ID.ToString() ?? "")&season=@stat.TeamStats.Season')">
 					<td id="keyCell" style="border-right: 0;">
-						@stat.TeamInfo.Name
+						@(stat.TeamInfo?.Name ?? "ERROR")
 					</td>
+					@if(stat.TeamStats != null)
+					{
+						<td id="keyCell" style="border-left: 0;">
+							@stat.TeamStats.Season
+						</td>
 
-					<td id="keyCell" style="border-left: 0;">
-						@stat.TeamStats.Season
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.FieldGoals
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.FieldGoals
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.ThreePoints
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.ThreePoints
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.TwoPoints
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.TwoPoints
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.FreeThrows
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.FreeThrows
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.OffensiveRebounds
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.OffensiveRebounds
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.DefesniveRebounds
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.DefesniveRebounds
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.Assists
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.Assists
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.Steals
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.Steals
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.Blocks
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.Blocks
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.Turnovers
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.Turnovers
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.PersonalFouls
+						</td>
 
-					<td id="dataCell">
-						@stat.TeamStats.PersonalFouls
-					</td>
-
-					<td id="dataCell">
-						@stat.TeamStats.TotalPoints
-					</td>
+						<td id="dataCell">
+							@stat.TeamStats.TotalPoints
+						</td>
+					}
 				</tr>
 
 			}

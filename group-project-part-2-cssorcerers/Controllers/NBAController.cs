@@ -142,6 +142,69 @@ namespace SportIQ.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> Team()
+        {
+            string? teamIDStr = Request.Query["id"];
+            string? seasonStr = Request.Query["season"];
 
+            if (!int.TryParse(teamIDStr, out int teamID))
+            {
+                if (teamIDStr == null)
+                {
+                    teamID = 1;
+                }
+                else
+                {
+                    return Redirect("/home/error");
+                }
+            }
+            if (!int.TryParse(seasonStr, out int season))
+            {
+                season = -1;
+            }
+
+            try
+            {
+                NBATeamSeasonInfo info = await NBAServices.GetNBATeamSeasonInfo(teamID, season, _context);
+                return View(info);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{DateTime.Now}:\n\t{ex.Message}");
+                return Redirect("/home/error");
+            }
+
+
+        }
+
+        public async Task<IActionResult> Player()
+        {
+            string? playerIDStr = Request.Query["id"];
+
+            if (!int.TryParse(playerIDStr, out int playerID))
+            {
+                if (playerIDStr == null)
+                {
+                    playerID = _context.NBAPlayer.Select(x => x.ID).FirstOrDefault();
+                }
+                else
+                {
+                    return Redirect("/home/error");
+                }
+            }
+
+            try
+            {
+                NBAPlayerInfo info = await NBAServices.GetNBAPlayerInfo(playerID, _context);
+                return View(info);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{DateTime.Now}:\n\t{ex.Message}");
+                return Redirect("/home/error");
+            }
+
+
+        }
     }
 }

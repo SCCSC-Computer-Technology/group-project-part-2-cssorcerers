@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 using SportsData.Models;
 using SportsData.Models.TableModels;
 using SportsData.Models.TableModels.NBA;
@@ -147,6 +148,81 @@ namespace SportsData.Services
             return teamInfo;
         }
 
+        public static async Task<NBATeamSeasonInfo> GetNBATeamSeasonInfo(int teamID, int season, SportsDbContext context)
+        {
+            if (season == -1)
+            {
+                var info = await context.NBATeam.Where(x => x.ID == teamID).SingleOrDefaultAsync();
+                var stats = context.NBATeamSeasonStat.Where(x => x.TeamID == teamID);
+
+                if (info != null && stats.Any())
+                {
+                    return new NBATeamSeasonInfo()
+                    {
+                        TeamInfo = info,
+                        TeamStats = new NBATeamSeasonStat()
+                        {
+                            TeamID = teamID,
+                            Season = -1,
+                            FieldGoals = stats.Select(x=> x.FieldGoals).Sum(),
+                            FieldGoalAttempts = stats.Select(x => x.FieldGoalAttempts).Sum(),
+                            ThreePoints = stats.Select(x => x.ThreePoints).Sum(),
+                            ThreePointAttempts = stats.Select(x => x.ThreePointAttempts).Sum(),
+                            TwoPoints = stats.Select(x => x.TwoPoints).Sum(),
+                            TwoPointAttempts = stats.Select(x => x.TwoPointAttempts).Sum(),
+                            FreeThrows = stats.Select(x => x.FreeThrows).Sum(),
+                            FreeThrowAttempts = stats.Select(x => x.FreeThrowAttempts).Sum(),
+                            OffensiveRebounds = stats.Select(x => x.OffensiveRebounds).Sum(),
+                            DefesniveRebounds = stats.Select(x => x.DefesniveRebounds).Sum(),
+                            Assists = stats.Select(x => x.Assists).Sum(),
+                            Steals = stats.Select(x => x.Steals).Sum(),
+                            Blocks = stats.Select(x => x.Blocks).Sum(),
+                            Turnovers = stats.Select(x => x.Turnovers).Sum(),
+                            PersonalFouls = stats.Select(x => x.PersonalFouls).Sum(),
+                            TotalPoints = stats.Select(x => x.TotalPoints).Sum()
+                        }
+                    };
+                }
+            }
+            else
+            {
+                if (context.NBATeamSeasonStat.Any(x => x.Season == season && x.TeamID == teamID))
+                {
+                    var info = await context.NBATeam.Where(x => x.ID == teamID).SingleOrDefaultAsync();
+                    var stats = context.NBATeamSeasonStat.Where(x => x.TeamID == teamID && x.Season == season).SingleOrDefault();
+                    if (info != null && stats != null)
+                    {
+                        return new NBATeamSeasonInfo()
+                        {
+                            TeamInfo = info,
+                            TeamStats = new NBATeamSeasonStat()
+                            {
+                                TeamID = teamID,
+                                Season = -1,
+                                FieldGoals = stats.FieldGoals,
+                                FieldGoalAttempts = stats.FieldGoalAttempts,
+                                ThreePoints = stats.ThreePoints,
+                                ThreePointAttempts = stats.ThreePointAttempts,
+                                TwoPoints = stats.TwoPoints,
+                                TwoPointAttempts = stats.TwoPointAttempts,
+                                FreeThrows = stats.FreeThrows,
+                                FreeThrowAttempts = stats.FreeThrowAttempts,
+                                OffensiveRebounds = stats.OffensiveRebounds,
+                                DefesniveRebounds = stats.DefesniveRebounds,
+                                Assists = stats.Assists,
+                                Steals = stats.Steals,
+                                Blocks = stats.Blocks,
+                                Turnovers = stats.Turnovers,
+                                PersonalFouls = stats.PersonalFouls,
+                                TotalPoints = stats.TotalPoints
+                            }
+                        };
+                    }
+                }
+            }
+            throw new Exception($"Could not find data for team ID {teamID}, season {season} in the database");
+        }
+
         public static async Task<List<NBAPlayerInfo>> GetNBAPlayerInfoList(bool? isActive, int teamID, string? sortOrderStr, int page,
                int itemsPerPage, SportsDbContext context)
         {
@@ -291,6 +367,26 @@ namespace SportsData.Services
 
 
             return playerInfo;
+        }
+
+        public static async Task<NBAPlayerInfo> GetNBAPlayerInfo(int playerID, SportsDbContext context)
+        {
+            var player = await context.NBAPlayer.Where(x => x.ID == playerID).SingleOrDefaultAsync();
+            var stats = await context.NBAPlayerCareerStat.Where(x => x.PlayerID == playerID).SingleOrDefaultAsync();
+            
+            if (player != null && stats != null)
+            {
+                string teamName = await context.NBATeam.Where(x => x.ID == player.TeamID)
+                    .Select(x => x.Name).SingleOrDefaultAsync();
+                return new NBAPlayerInfo()
+                {
+                    NBAPlayer = player,
+                    CareerStats = stats,
+                    TeamName = teamName,
+                };
+            }
+
+            throw new Exception($"Could not find data for player ID {playerID} in the database");
         }
 
     }
