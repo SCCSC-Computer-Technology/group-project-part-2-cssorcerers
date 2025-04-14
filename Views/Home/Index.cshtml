@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/Main.css" asp-append-version="true">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 class="sports-title">Explore Sports</h1>
+    <div class="card-container">
+        <a asp-controller="f1" asp-action="index" class="card">
+            <img src="~/images/RacingPoster.jpg" alt="F1">
+            <div class="card-content">
+                <div class="card-header">
+                    <h3>Formula 1</h3>
+                    <div class="btn-small">🔗</div>
+                </div>
+                <p>Unleash the thrill of high-speed races and legendary moments.</p>
+            </div>
+        </a>
+
+        <a asp-controller="PremierMatch" asp-action="Match" class="card">
+            <img src="~/images/soccer.jpg" alt="Soccer">
+            <div class="card-content">
+                <div class="card-header">
+                    <h3>Soccer</h3>
+                    <div class="btn-small">🔗</div>
+                </div>
+                <p>Dive into global leagues and electrifying tournaments.</p>
+            </div>
+        </a>
+
+        <a asp-controller="nba" asp-action="teams" class="card">
+            <img src="~/images/NBA.jpg" alt="NBA">
+            <div class="card-content">
+                <div class="card-header">
+                    <h3>NBA</h3>
+                    <div class="btn-small">🔗</div>
+                </div>
+                <p>Track elite basketball talent and iconic teams.</p>
+            </div>
+        </a>
+
+        <a asp-controller="nfl" asp-action="Teams" class="card">
+            <img src="~/images/NFL.jpg" alt="NFL">
+            <div class="card-content">
+                <div class="card-header">
+                    <h3>NFL</h3>
+                    <div class="btn-small">🔗</div>
+                </div>
+                <p>Capture the intensity of American football excellence.</p>
+            </div>
+        </a>
+
+        <a asp-controller="CSGO" asp-action="CSGOView" class="card">
+            <img src="~/images/CSGO.jpg" alt="CSGO">
+            <div class="card-content">
+                <div class="card-header">
+                    <h3>CS:GO</h3>
+                    <div class="btn-small">🔗</div>
+                </div>
+                <p>Master precision in competitive esports battles.</p>
+            </div>
+        </a>
+
+        <a asp-controller="Home" asp-action="Guidance" class="card">
+            <img src="~/images/guidance.jpg" alt="Guidance">
+            <div class="card-content">
+                <div class="card-header">
+                    <h3>Guidance</h3>
+                    <div class="btn-small">🔗</div>
+                </div>
+                <p>Guidance to each sport.</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

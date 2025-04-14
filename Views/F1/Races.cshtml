@@ -1,0 +1,35 @@
+﻿@model IQSport.Models.SportsModels.F1.Models.F1RaceInfo
+
+@{
+    ViewData["Title"] = Model.Name ?? "Race Details";
+}
+
+<link rel="stylesheet" href="~/css/common.css" />
+
+<h2>@Model.Name</h2>
+
+@if (Model != null)
+{
+    <div style="border: 2px solid darkblue; padding: 20px; margin-top: 10px;">
+        <p><strong>Year:</strong> @Model.Year</p>
+        <p><strong>Round:</strong> @Model.Round</p>
+        <p><strong>Date:</strong> @Model.Date</p>
+        <p><strong>Time:</strong> @Model.Time</p>
+        <p><strong>Circuit:</strong> @Model.CircuitName</p>
+        <p>
+            <strong>URL:</strong>
+            @if (!string.IsNullOrEmpty(Model.Url))
+            {
+                <a href="@Model.Url" target="_blank">More Info</a>
+            }
+            else
+            {
+                <span>N/A</span>
+            }
+        </p>
+    </div>
+}
+else
+{
+    <p>No race details found.</p>
+}

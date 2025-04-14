@@ -1,0 +1,47 @@
+﻿@model IQSport.Models.SportsModels.F1.ViewModels.F1RacesViewModel
+
+
+@{
+    ViewData["Title"] = "All F1 Races";
+}
+
+<link rel="stylesheet" href="~/css/common.css" />
+
+<h2 style="margin-top: 10px;">F1 Races</h2>
+
+
+<table class="table table-striped table-hover" style="border: 2px solid darkblue;">
+    <thead class="table-dark">
+        <tr>
+            <th>Year</th>
+            <th>Round</th>
+            <th>Race</th>
+            <th>Date</th>
+            <th>Circuit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var race in Model.F1Races)
+        {
+            <tr>
+                <td>@race.Year</td>
+                <td>@race.Round</td>
+                <td>
+                    <a href="@Url.Action("Races", "F1", new { raceID = race.RaceID })">
+                        @race.Name
+                    </a>
+                </td>
+                <td>@race.Date</td>
+                <td>@race.CircuitName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+    <a class="btn btn-primary" asp-action="AllRaces" asp-route-page="1">First</a>
+    <a class="btn btn-primary" asp-action="AllRaces" asp-route-page="@(Model.CurrentPage - 1)">Prev</a>
+    <span>Page @Model.CurrentPage of @Model.MaxPage</span>
+    <a class="btn btn-primary" asp-action="AllRaces" asp-route-page="@(Model.CurrentPage + 1)">Next</a>
+    <a class="btn btn-primary" asp-action="AllRaces" asp-route-page="@Model.MaxPage">Last</a>
+</div>

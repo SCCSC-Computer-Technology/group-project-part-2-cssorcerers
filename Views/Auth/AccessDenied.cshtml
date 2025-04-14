@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Access Denied";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+</head>
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header text-white bg-danger text-center">
+                    <h2 class="card-title mb-0">🔒 Access Denied</h2>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-exclamation-triangle fa-3x text-warning"></i>
+                    </div>
+                    <p class="card-text text-center mb-3">You do not have permission to access this resource.</p>
+                    <p class="card-text text-center mb-4">Please contact your administrator if you believe this is an error.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="/" class="btn btn-lg btn-primary">Go to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+﻿@model IQSport.Models.SportsModels.F1.ViewModels.F1ConstructorsViewModel
+
+
+@{
+    ViewData["Title"] = "F1 Constructors";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/common.css">
+</head>
+
+<!-- Sorting and Navigation -->
+<div style="display: flex; gap: 10px;">
+
+    <!-- Page numbers -->
+    <div style="width: 160px;">
+        <p style="margin-bottom: 2px; margin-right: 10px; float: left; text-align: center;">Page</p>
+        <br />
+        <div style="display: flex; gap: 10px; float: left;">
+            <input type="text" min="1" max="@Model.MaxPage" id="pageInput" value="@Model.CurrentPage" style="text-align: right; margin-top: 3px; width: 80px; height: 20px" />
+            <p> / @Model.MaxPage</p>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination Buttons -->
+<div style="display: flex; gap: 10px; margin-top: 10px;">
+    <a class="btn btn-primary" style="background-color:darkblue" asp-controller="F1" asp-action="AllConstructors"
+       asp-route-page="1" asp-route-sort="@Model.SortOrder" role="button">&lt;&lt;</a>
+
+    <a class="btn btn-primary" style="background-color:darkblue" asp-controller="F1" asp-action="AllConstructors"
+       asp-route-page="@(Model.CurrentPage > 1 ? Model.CurrentPage - 1 : 1)" asp-route-sort="@Model.SortOrder" role="button">&lt;</a>
+
+    <a class="btn btn-primary" style="background-color:darkblue" asp-controller="F1" asp-action="AllConstructors"
+       asp-route-page="@(Model.CurrentPage < Model.MaxPage ? Model.CurrentPage + 1 : Model.MaxPage)" asp-route-sort="@Model.SortOrder" role="button">&gt;</a>
+
+    <a class="btn btn-primary" style="background-color:darkblue" asp-controller="F1" asp-action="AllConstructors"
+       asp-route-page="@Model.MaxPage" asp-route-sort="@Model.SortOrder" role="button">&gt;&gt;</a>
+</div>
+
+<!-- Constructors Table -->
+<table class="table table-hover table-light table-striped" style="margin-top: 10px; overflow-x: auto; border: 2px ridge darkblue; width: 100%; table-layout: fixed; vertical-align: middle;">
+    <thead style="text-align: center;">
+        <tr style="height: 50px;">
+            <td id="headCell">
+                <a asp-controller="F1" asp-action="AllConstructors"
+                   asp-route-page="@Model.CurrentPage"
+                   asp-route-sort="@(Model.SortOrder == "name_asc" ? "name_desc" : "name_asc")">
+                    Constructor
+                </a>
+            </td>
+            <td id="headCell">
+                Nationality
+            </td>
+        </tr>
+    </thead>
+
+    @if (Model.F1Constructor != null && Model.F1Constructor.Any())
+
+    {
+        <tbody style="text-align: center;">
+            @foreach (var constructor in Model.F1Constructor)
+
+            {
+                <tr>
+                    <td id="dataCell">
+                        <a href="@Url.Action("Constructor", "F1", new { constructorID = constructor.ConstructorID })">
+                            @(constructor.Name ?? "Unknown")
+                        </a>
+                    </td>
+                    <td id="dataCell">
+                        @(constructor.Nationality ?? "Unknown")
+                    </td>
+                </tr>
+            }
+        </tbody>
+    }
+
+    else
+
+    {
+        <tbody>
+            <tr>
+                <td colspan="2" style="text-align: center;">No constructors available.</td>
+            </tr>
+        </tbody>
+    }
+</table>
+
+<script>
+         let pageInput = document.getElementById('pageInput');
+     pageInput.addEventListener('keydown', function (event) {
+         if (event.key === 'Enter') {
+             let page = Number(pageInput.value);
+             if (!isNaN(page)) {
+                     window.location.href = `/f1/AllConstructors?page=${page}&sort=@Model.SortOrder`;
+             } else {
+                 alert("Page number must be numeric");
+                 pageInput.value = @Model.CurrentPage;
+             }
+         }
+    });
+</script>
