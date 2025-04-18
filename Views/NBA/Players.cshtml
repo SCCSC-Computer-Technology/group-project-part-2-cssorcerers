@@ -143,7 +143,7 @@
         <tbody>
             @foreach (NBAPlayerInfo stat in Model.nbaPlayers)
             {
-                <tr onclick="Redirect('/nba/player?id=@stat.NBAPlayer?.ID?')">
+                <tr onclick="Redirect('/nba/player?id=@stat.NBAPlayer?.ID')">
                     <td id="keyCell">
                         @(stat.NBAPlayer?.Name ?? "Unknown")
                     </td>

@@ -140,7 +140,7 @@
             <tbody>
                 @foreach (NBATeamSeasonInfo stat in Model.TeamsStats)
                 {
-                    <tr onclick="Redirect('/nba/team?id=@stat.TeamInfo.Name&season=@stat.TeamStats.Season')">
+                    <tr onclick="Redirect('/nba/team?id=@stat.TeamInfo.ID&season=@stat.TeamStats.Season')">
                         <td id="keyCell">@stat.TeamInfo.Name</td>
                         <td id="keyCell">@stat.TeamStats.Season</td>
                         <td id="dataCell">@stat.TeamStats.FieldGoals</td>
