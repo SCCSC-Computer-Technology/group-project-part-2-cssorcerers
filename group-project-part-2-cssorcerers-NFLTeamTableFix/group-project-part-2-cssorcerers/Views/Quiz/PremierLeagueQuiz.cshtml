@@ -1,0 +1,133 @@
+﻿@model SportIQ.Models.PremierLeagueQuizAnswersViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premier League Quiz</title>
+    <link rel="stylesheet" href="~/css/common.css" />
+    <style>
+        body {
+            background-color: black;
+            background: linear-gradient(to bottom right, #111, #333);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Premier League Quiz</h1>
+    <h3>Think you know your English football?</h3>
+
+    @if (ViewBag.Score != null)
+    {
+        <h3>You scored @ViewBag.Score out of @ViewBag.Total</h3>
+        <p><a href="@Url.Action("PremierLeagueQuiz")">Try Again</a></p>
+    }
+
+    <form asp-action="PremierLeagueQuiz" method="post">
+        <div class="question">
+            <h4>1. Who won the Premier League in the 2022-23 season?</h4>
+            <label><input type="checkbox" name="Answers[0]" value="Manchester City" /> Manchester City</label>
+            <label><input type="checkbox" name="Answers[0]" value="Liverpool" /> Liverpool</label>
+            <label><input type="checkbox" name="Answers[0]" value="Chelsea" /> Chelsea</label>
+        </div>
+
+        <div class="question">
+            <h4>2. Who was the top scorer in the 2022-23 Premier League season?</h4>
+            <label><input type="checkbox" name="Answers[1]" value="Erling Haaland" /> Erling Haaland</label>
+            <label><input type="checkbox" name="Answers[1]" value="Harry Kane" /> Harry Kane</label>
+            <label><input type="checkbox" name="Answers[1]" value="Marcus Rashford" /> Marcus Rashford</label>
+        </div>
+
+        <div class="question">
+            <h4>3. Which team is based in North London</h4>
+            <label><input type="checkbox" name="Answers[2]" value="Arsenal" /> Arsenal</label>
+            <label><input type="checkbox" name="Answers[2]" value="Chelsea" /> Chelsea</label>
+            <label><input type="checkbox" name="Answers[2]" value="Manchester United" /> Manchester United</label>
+        </div>
+
+        <div class="question">
+            <h4>4. Which player wears #11 for Liverpool?</h4>
+            <label><input type="checkbox" name="Answers[3]" value="Mohamed Salah" /> Mohamed Salah</label>
+            <label><input type="checkbox" name="Answers[3]" value="Luis Díaz" /> Luis Díaz</label>
+            <label><input type="checkbox" name="Answers[3]" value="Darwin Núñez" /> Darwin Núñez</label>
+        </div>
+
+        <div class="question">
+            <h4>5. What stadium is home to Manchester United?</h4>
+            <label><input type="checkbox" name="Answers[4]" value="Old Trafford" /> Old Trafford</label>
+            <label><input type="checkbox" name="Answers[4]" value="Etihad Stadium" /> Etihad Stadium</label>
+            <label><input type="checkbox" name="Answers[4]" value="Anfield" /> Anfield</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="@Url.Action("Index", "Quiz")" class="back-btn">Back to Quiz Selection</a>
+        </div>
+
+    </form>
+
+    @*allows max 1 checkbox per question *@
+
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+        const checkboxes = question.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+        const checked = Array.from(checkboxes).filter(cb => cb.checked);
+        if (checked.length > 1) {
+        checkbox.checked = false;
+        alert('Only check one answer per question!');
+        }
+        });
+        });
+        });
+    </script>
+</body>
+</html>

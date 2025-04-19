@@ -1,0 +1,132 @@
+﻿@model SportIQ.Models.NFLQuizAnswersViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFL Quiz</title>
+    <link rel="stylesheet" href="~/css/common.css" />
+    <style>
+        body {
+            background-color: black;
+            background: linear-gradient(to bottom right, #111, #333);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>NFL Quiz</h1>
+    <h3>Answer the following questions</h3>
+
+    @if (ViewBag.Score != null)
+    {
+        <h3>You scored @ViewBag.Score out of @ViewBag.Total</h3>
+        <p><a href="@Url.Action("NFLQuiz")">Try Again</a></p>
+    }
+
+    <form asp-action="NFLQuiz" method="post">
+        <div class="question">
+            <h4>1. Who won the Super Bowl in 2024?</h4>
+            <label><input type="checkbox" name="Answers[0]" value="Kansas City Chiefs" /> Kansas City Chiefs</label>
+            <label><input type="checkbox" name="Answers[0]" value="San Francisco 49ers" /> San Francisco 49ers</label>
+            <label><input type="checkbox" name="Answers[0]" value="Buffalo Bills" /> Buffalo Bills</label>
+        </div>
+
+        <div class="question">
+            <h4>2. Which team does Patrick Mahomes play for?</h4>
+            <label><input type="checkbox" name="Answers[1]" value="Kansas City Chiefs" /> Kansas City Chiefs</label>
+            <label><input type="checkbox" name="Answers[1]" value="New England Patriots" /> New England Patriots</label>
+            <label><input type="checkbox" name="Answers[1]" value="Dallas Cowboys" /> Dallas Cowboys</label>
+        </div>
+
+        <div class="question">
+            <h4>3. Who holds the record for most Super Bowl wins as a QB?</h4>
+            <label><input type="checkbox" name="Answers[2]" value="Tom Brady" /> Tom Brady</label>
+            <label><input type="checkbox" name="Answers[2]" value="Joe Montana" /> Joe Montana</label>
+            <label><input type="checkbox" name="Answers[2]" value="Peyton Manning" /> Peyton Manning</label>
+        </div>
+
+        <div class="question">
+            <h4>4. Which of these teams are in the NFC North? (Select 2)</h4>
+            <label><input type="checkbox" name="Answers[3]" value="Green Bay Packers" /> Green Bay Packers</label>
+            <label><input type="checkbox" name="Answers[3]" value="Chicago Bears" /> Chicago Bears</label>
+            <label><input type="checkbox" name="Answers[3]" value="New York Giants" /> New York Giants</label>
+        </div>
+
+        <div class="question">
+            <h4>5. Which team is known for their green jerseys and "Fly, Eagles Fly" chant?</h4>
+            <label><input type="checkbox" name="Answers[4]" value="Philadelphia Eagles" /> Philadelphia Eagles</label>
+            <label><input type="checkbox" name="Answers[4]" value="Seattle Seahawks" /> Seattle Seahawks</label>
+            <label><input type="checkbox" name="Answers[4]" value="Miami Dolphins" /> Miami Dolphins</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="@Url.Action("Index", "Quiz")" class="back-btn">Back to Quiz Selection</a>
+        </div>
+    </form>
+
+    @*allows max 1 checkbox per question *@
+
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+        const checkboxes = question.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+        const checked = Array.from(checkboxes).filter(cb => cb.checked);
+        if (checked.length > 1) {
+        checkbox.checked = false;
+        alert('Only check one answer per question!');
+        }
+        });
+        });
+        });
+    </script>
+</body>
+</html>

@@ -22,3 +22,16 @@ C:\Users\kathe\OneDrive\Documents\school\Spring 2025\CSSorcerersAddF1\group-proj
 C:\Users\kathe\OneDrive\Documents\school\Spring 2025\CSSorcerersAddF1\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\refint\SportsData.dll
 C:\Users\kathe\OneDrive\Documents\school\Spring 2025\CSSorcerersAddF1\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.pdb
 C:\Users\kathe\OneDrive\Documents\school\Spring 2025\CSSorcerersAddF1\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\ref\SportsData.dll
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\bin\Debug\net8.0\SportsData.deps.json
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\bin\Debug\net8.0\SportsData.dll
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\bin\Debug\net8.0\SportsData.pdb
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.csproj.AssemblyReference.cache
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.AssemblyInfoInputs.cache
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.AssemblyInfo.cs
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.csproj.CoreCompileInputs.cache
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.sourcelink.json
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.dll
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\refint\SportsData.dll
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\SportsData.pdb
+C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\obj\Debug\net8.0\ref\SportsData.dll

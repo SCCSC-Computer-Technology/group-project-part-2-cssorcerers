@@ -1,0 +1,91 @@
+﻿@model F1QuizViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/common.css">
+
+    <style>
+        /* Set text color to white */
+        body {
+            background-color: black;
+            background: linear-gradient(to bottom right, #111, #333); /* gradient dark background */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; /* Set all text to white */
+        }
+
+        /* Center the text */
+        .text-center {
+            text-align: center;
+            padding: 40px;
+        }
+
+        /* Heading styles */
+        h1.display-4 {
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        /* Style for buttons */
+        .quiz-buttons a {
+            display: block;
+            margin-bottom: 20px; /* Adds space between the buttons */
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .quiz-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Adjust image containers */
+        .quiz-buttons {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            align-items: center; /* Center the buttons */
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Select a Quiz</h1>
+        <h2>Choose a sport to test your knowledge</h2>
+    </div>
+
+    <div class="quiz-buttons">
+        <a asp-action="F1Quiz">F1</a>
+        <a asp-action="NFLQuiz">NFL</a>
+        <a asp-action="NBAQuiz">NBA</a>
+        <a asp-action="CSGOQuiz">CS:GO</a>
+        <a asp-action="PremierLeagueQuiz">Premier League</a>
+    </div>
+
+</body>
+</html>

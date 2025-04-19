@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vQfbPlu3a8s=",
+  "dgSpecHash": "PwFSwxSdCus=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kathe\\OneDrive\\Documents\\school\\Spring 2025\\CSSorcerersAddF1\\group-project-part-2-cssorcerers-NFLTeamTableFix\\SportsData\\SportsData.csproj",
+  "projectFilePath": "C:\\Users\\kathe\\OneDrive\\Documents\\GitHub\\group-project-part-2-cssorcerers\\group-project-part-2-cssorcerers-NFLTeamTableFix\\SportsData\\SportsData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kathe\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.3\\microsoft.entityframeworkcore.9.0.3.nupkg.sha512",
     "C:\\Users\\kathe\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.3\\microsoft.entityframeworkcore.abstractions.9.0.3.nupkg.sha512",

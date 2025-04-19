@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SportsData
-build_property.ProjectDir = C:\Users\kathe\OneDrive\Documents\school\Spring 2025\CSSorcerersAddF1\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\
+build_property.ProjectDir = C:\Users\kathe\OneDrive\Documents\GitHub\group-project-part-2-cssorcerers\group-project-part-2-cssorcerers-NFLTeamTableFix\SportsData\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

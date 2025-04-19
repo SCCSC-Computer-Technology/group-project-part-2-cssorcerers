@@ -1,0 +1,132 @@
+﻿@model SportIQ.Models.NBAQuizAnswersViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Quiz</title>
+    <link rel="stylesheet" href="~/css/common.css" />
+    <style>
+        body {
+            background-color: black;
+            background: linear-gradient(to bottom right, #111, #333);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>NBA Quiz</h1>
+    <h3>Answer the following questions</h3>
+
+    @if (ViewBag.Score != null)
+    {
+        <h3>You scored @ViewBag.Score out of @ViewBag.Total</h3>
+        <p><a href="@Url.Action("NBAQuiz")">Try Again</a></p>
+    }
+
+    <form asp-action="NBAQuiz" method="post">
+        <div class="question">
+            <h4>1. Who won the 2023 NBA Championship?</h4>
+            <label><input type="checkbox" name="Answers[0]" value="Denver Nuggets" /> Denver Nuggets</label>
+            <label><input type="checkbox" name="Answers[0]" value="Miami Heat" /> Miami Heat</label>
+            <label><input type="checkbox" name="Answers[0]" value="Golden State Warriors" /> Golden State Warriors</label>
+        </div>
+
+        <div class="question">
+            <h4>2. Who is the all-time leader in 3-pointers made?</h4>
+            <label><input type="checkbox" name="Answers[1]" value="Stephen Curry" /> Stephen Curry</label>
+            <label><input type="checkbox" name="Answers[1]" value="Ray Allen" /> Ray Allen</label>
+            <label><input type="checkbox" name="Answers[1]" value="Reggie Miller" /> Reggie Miller</label>
+        </div>
+
+        <div class="question">
+            <h4>3. Which team did Michael Jordan win 6 championships with?</h4>
+            <label><input type="checkbox" name="Answers[2]" value="Chicago Bulls" /> Chicago Bulls</label>
+            <label><input type="checkbox" name="Answers[2]" value="Washington Wizards" /> Washington Wizards</label>
+            <label><input type="checkbox" name="Answers[2]" value="Boston Celtics" /> Boston Celtics</label>
+        </div>
+
+        <div class="question">
+            <h4>4. Who is the 7'4" rookie that debuted in the 2023-24 season?</h4>
+            <label><input type="checkbox" name="Answers[3]" value="Victor Wembanyama" /> Victor Wembanyama</label>
+            <label><input type="checkbox" name="Answers[3]" value="Chet Holmgren" /> Chet Holmgren</label>
+            <label><input type="checkbox" name="Answers[3]" value="Bol Bol" /> Bol Bol</label>
+        </div>
+
+        <div class="question">
+            <h4>5. Which two teams were top seeds in the 2024 playoffs? (Select 2)</h4>
+            <label><input type="checkbox" name="Answers[4]" value="Milwaukee Bucks" /> Milwaukee Bucks</label>
+            <label><input type="checkbox" name="Answers[4]" value="Boston Celtics" /> Boston Celtics</label>
+            <label><input type="checkbox" name="Answers[4]" value="Los Angeles Lakers" /> Los Angeles Lakers</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="@Url.Action("Index", "Quiz")" class="back-btn">Back to Quiz Selection</a>
+        </div>
+    </form>
+
+    @*allows max 1 checkbox per question *@
+
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+        const checkboxes = question.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+        const checked = Array.from(checkboxes).filter(cb => cb.checked);
+        if (checked.length > 1) {
+        checkbox.checked = false;
+        alert('Only check one answer per question!');
+        }
+        });
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+﻿@model SportIQ.Models.CSGOQuizAnswersViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS:GO Quiz</title>
+    <link rel="stylesheet" href="~/css/common.css" />
+    <style>
+        body {
+            background-color: black;
+            background: linear-gradient(to bottom right, #111, #333);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>CS:GO Quiz</h1>
+    <h3>How well do you know Counter-Strike?</h3>
+
+    @if (ViewBag.Score != null)
+    {
+        <h3>You scored @ViewBag.Score out of @ViewBag.Total</h3>
+        <p><a href="@Url.Action("CSGOQuiz")">Try Again</a></p>
+    }
+
+    <form asp-action="CSGOQuiz" method="post">
+        <div class="question">
+            <h4>1. Which team won the PGL Major Stockholm 2021?</h4>
+            <label><input type="checkbox" name="Answers[0]" value="Natus Vincere" /> Natus Vincere</label>
+            <label><input type="checkbox" name="Answers[0]" value="G2 Esports" /> G2 Esports</label>
+            <label><input type="checkbox" name="Answers[0]" value="Astralis" /> Astralis</label>
+        </div>
+
+        <div class="question">
+            <h4>2. Who is considered one of the greatest AWPers of all time?</h4>
+            <label><input type="checkbox" name="Answers[1]" value="s1mple" /> s1mple</label>
+            <label><input type="checkbox" name="Answers[1]" value="karrigan" /> karrigan</label>
+            <label><input type="checkbox" name="Answers[1]" value="Stewie2K" /> Stewie2K</label>
+        </div>
+
+        <div class="question">
+            <h4>3. Which team has karrigan played for?</h4>
+            <label><input type="checkbox" name="Answers[2]" value="FaZe Clan" /> FaZe Clan</label>
+            <label><input type="checkbox" name="Answers[2]" value="Ninjas in Pyjamas" /> Ninjas in Pyjamas</label>
+            <label><input type="checkbox" name="Answers[2]" value="BIG" /> BIG</label>
+        </div>
+
+        <div class="question">
+            <h4>4. Which of these is a classic CS map?</h4>
+            <label><input type="checkbox" name="Answers[3]" value="Dust2" /> Dust2</label>
+            <label><input type="checkbox" name="Answers[3]" value="Mirage" /> Mirage</label>
+            <label><input type="checkbox" name="Answers[3]" value="Ascent" /> Ascent</label>
+        </div>
+
+        <div class="question">
+            <h4>5. Which two weapons are most iconic in CS:GO? (Select 2)</h4>
+            <label><input type="checkbox" name="Answers[4]" value="AWP" /> AWP</label>
+            <label><input type="checkbox" name="Answers[4]" value="AK-47" /> AK-47</label>
+            <label><input type="checkbox" name="Answers[4]" value="Judge" /> Judge</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="@Url.Action("Index", "Quiz")" class="back-btn">Back to Quiz Selection</a>
+        </div>
+    </form>
+
+    @*allows max 1 checkbox per question *@
+
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+        const checkboxes = question.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+        const checked = Array.from(checkboxes).filter(cb => cb.checked);
+        if (checked.length > 1) {
+        checkbox.checked = false;
+        alert('Only check one answer per question!');
+        }
+        });
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SW3t+D6h1ak=",
+  "dgSpecHash": "zYZZRj2cIr8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kathe\\OneDrive\\Documents\\school\\Spring 2025\\CSSorcerersAddF1\\group-project-part-2-cssorcerers-NFLTeamTableFix\\group-project-part-2-cssorcerers\\SportIQ.csproj",
+  "projectFilePath": "C:\\Users\\kathe\\OneDrive\\Documents\\GitHub\\group-project-part-2-cssorcerers\\group-project-part-2-cssorcerers-NFLTeamTableFix\\group-project-part-2-cssorcerers\\SportIQ.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kathe\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\kathe\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
