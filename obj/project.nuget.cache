@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "UtsiSY/b4ac=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Adich\\Documents\\Projects\\SportsAPI\\SportsAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adich\\.nuget\\packages\\microsoft.openapi\\1.6.24\\microsoft.openapi.1.6.24.nupkg.sha512",
+    "C:\\Users\\Adich\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Adich\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Adich\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

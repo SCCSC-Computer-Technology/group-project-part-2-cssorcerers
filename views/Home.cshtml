@@ -1,0 +1,211 @@
+﻿@* @{ *@
+@*     ViewData["Title"] = "Home Page"; *@
+@* } *@
+
+@* <!DOCTYPE html> *@
+@* <html lang="en"> *@
+@* <head> *@
+@*     <meta charset="UTF-8"> *@
+@*     <meta name="viewport" content="width=device-width, initial-scale=1.0"> *@
+@*     <title>@ViewData["Title"]</title> *@
+@*     <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true"> *@
+@*     <link rel="stylesheet" href="~/css/Common css/Main.css" asp-append-version="true"> *@
+@*     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> *@
+@* </head> *@
+@* <body> *@
+@*     <div class="hero-overlay"></div> *@
+@*     <section id="hero" class="hero-section snap-section"> *@
+@*         <h1 class="hero-title">Your Ultimate Sports Hub</h1> *@
+@*         <p class="hero-subtitle">Discover thrilling moments, track live events, and dive into your favorite sports.</p> *@
+@*         <a href="#sports" class="hero-cta">Explore Now</a> *@
+@*     </section> *@
+
+@*     <section id="sports" class="snap-section"> *@
+@*         <h1 class="sports-title">Explore Sports</h1> *@
+@*         <div class="card-container"> *@
+@*             <a asp-controller="f1" asp-action="index" class="card"> *@
+@*                 <div class="card-image-wrapper"> *@
+@*                     <img src="~/images/RacingPoster.jpg" alt="F1"> *@
+@*                     <div class="card-overlay"></div> *@
+@*                 </div> *@
+@*                 <div class="card-content"> *@
+@*                     <div class="card-header"> *@
+@*                         <h3>Formula 1</h3> *@
+@*                         <div class="btn-small">🔗</div> *@
+@*                     </div> *@
+@*                     <p>Unleash the thrill of high-speed races and legendary moments.</p> *@
+@*                 </div> *@
+@*             </a> *@
+
+@*             <a asp-controller="PremierMatch" asp-action="Match" class="card"> *@
+@*                 <div class="card-image-wrapper"> *@
+@*                     <img src="~/images/soccer.jpg" alt="Soccer"> *@
+@*                     <div class="card-overlay"></div> *@
+@*                 </div> *@
+@*                 <div class="card-content"> *@
+@*                     <div class="card-header"> *@
+@*                         <h3>Soccer</h3> *@
+@*                         <div class="btn-small">🔗</div> *@
+@*                     </div> *@
+@*                     <p>Dive into global leagues and electrifying tournaments.</p> *@
+@*                 </div> *@
+@*             </a> *@
+
+@*             <a asp-controller="nba" asp-action="teams" class="card"> *@
+@*                 <div class="card-image-wrapper"> *@
+@*                     <img src="~/images/NBA.jpg" alt="NBA"> *@
+@*                     <div class="card-overlay"></div> *@
+@*                 </div> *@
+@*                 <div class="card-content"> *@
+@*                     <div class="card-header"> *@
+@*                         <h3>NBA</h3> *@
+@*                         <div class="btn-small">🔗</div> *@
+@*                     </div> *@
+@*                     <p>Track elite basketball talent and iconic teams.</p> *@
+@*                 </div> *@
+@*             </a> *@
+
+@*             <a asp-controller="nfl" asp-action="Teams" class="card"> *@
+@*                 <div class="card-image-wrapper"> *@
+@*                     <img src="~/images/NFL.jpg" alt="NFL"> *@
+@*                     <div class="card-overlay"></div> *@
+@*                 </div> *@
+@*                 <div class="card-content"> *@
+@*                     <div class="card-header"> *@
+@*                         <h3>NFL</h3> *@
+@*                         <div class="btn-small">🔗</div> *@
+@*                     </div> *@
+@*                     <p>Capture the intensity of American football excellence.</p> *@
+@*                 </div> *@
+@*             </a> *@
+
+@*             <a asp-controller="CSGO" asp-action="CSGOView" class="card"> *@
+@*                 <div class="card-image-wrapper"> *@
+@*                     <img src="~/images/CSGO.jpg" alt="CSGO"> *@
+@*                     <div class="card-overlay"></div> *@
+@*                 </div> *@
+@*                 <div class="card-content"> *@
+@*                     <div class="card-header"> *@
+@*                         <h3>CS:GO</h3> *@
+@*                         <div class="btn-small">🔗</div> *@
+@*                     </div> *@
+@*                     <p>Master precision in competitive esports battles.</p> *@
+@*                 </div> *@
+@*             </a> *@
+
+@*             <a asp-controller="Home" asp-action="Guidance" class="card"> *@
+@*                 <div class="card-image-wrapper"> *@
+@*                     <img src="~/images/guidance.jpg" alt="Guidance"> *@
+@*                     <div class="card-overlay"></div> *@
+@*                 </div> *@
+@*                 <div class="card-content"> *@
+@*                     <div class="card-header"> *@
+@*                         <h3>Guidance</h3> *@
+@*                         <div class="btn-small">🔗</div> *@
+@*                     </div> *@
+@*                     <p>Guidance to each sport.</p> *@
+@*                 </div> *@
+@*             </a> *@
+@*         </div> *@
+@*     </section> *@
+
+@*     <section id="events" class="events-section snap-section"> *@
+@*         <h2 class="events-title">Featured Events</h2> *@
+@*         <div class="events-container"> *@
+@*             <!-- Populated dynamically by JavaScript --> *@
+@*         </div> *@
+@*         <div class="pagination"> *@
+@*             <button class="page-btn" data-page="1">1</button> *@
+@*             <button class="page-btn" data-page="2">2</button> *@
+@*             <button class="page-btn" data-page="3">3</button> *@
+@*             <button class="load-more-btn">Load More</button> *@
+@*         </div> *@
+@*     </section> *@
+
+@*     <script> *@
+@*         document.addEventListener('DOMContentLoaded', () => { *@
+@*             const container = document.querySelector('.events-container'); *@
+@*             const pageButtons = document.querySelectorAll('.page-btn'); *@
+@*             const loadMoreBtn = document.querySelector('.load-more-btn'); *@
+@*             let currentPage = 1; *@
+@*             const eventsPerPage = 4; *@
+@*             const sports = ['f1', 'soccer', 'nba', 'nfl', 'csgo']; *@
+
+@*             // Fetch events from API *@
+@*             async function fetchEvents(page) { *@
+@*                 const allEvents = []; *@
+@*                 for (const sport of sports) { *@
+@*                     try { *@
+@*                         const response = await fetch(`/api/v1/${sport}/highlights`); *@
+@*                         const highlights = await response.json(); *@
+@*                         allEvents.push(...highlights.map(h => ({ *@
+@*                             img: h.imageUrl, *@
+@*                             alt: `${sport} Highlight`, *@
+@*                             title: h.title, *@
+@*                             desc: h.description, *@
+@*                             cta: 'Watch Highlight', *@
+@*                             link: h.videoUrl *@
+@*                         }))); *@
+@*                     } catch (error) { *@
+@*                         console.error(`Error fetching ${sport} highlights:`, error); *@
+@*                     } *@
+@*                 } *@
+@*                 const start = (page - 1) * eventsPerPage; *@
+@*                 return allEvents.slice(start, start + eventsPerPage); *@
+@*             } *@
+
+@*             // Render events *@
+@*             async function renderEvents(page) { *@
+@*                 container.innerHTML = ''; *@
+@*                 const events = await fetchEvents(page); *@
+@*                 events.forEach((event, index) => { *@
+@*                     const card = document.createElement('div'); *@
+@*                     card.className = 'event-card'; *@
+@*                     card.style.animationDelay = `${0.15 * index}s`; *@
+@*                     card.innerHTML = ` *@
+@*                         <img src="${event.img}" alt="${event.alt}"> *@
+@*                         <div class="event-content"> *@
+@*                             <h3>${event.title}</h3> *@
+@*                             <p>${event.desc}</p> *@
+@*                             <a href="${event.link}" class="event-cta">${event.cta}</a> *@
+@*                         </div> *@
+@*                     `; *@
+@*                     container.appendChild(card); *@
+@*                 }); *@
+
+@*                 // Update active page button *@
+@*                 pageButtons.forEach(btn => btn.classList.remove('active')); *@
+@*                 const activeBtn = document.querySelector(`.page-btn[data-page="${page}"]`); *@
+@*                 if (activeBtn) activeBtn.classList.add('active'); *@
+@*             } *@
+
+@*             // Page button click handler *@
+@*             pageButtons.forEach(btn => { *@
+@*                 btn.addEventListener('click', () => { *@
+@*                     currentPage = parseInt(btn.dataset.page); *@
+@*                     renderEvents(currentPage); *@
+@*                 }); *@
+@*             }); *@
+
+@*             // Load more (fetch additional highlights or schedules) *@
+@*             loadMoreBtn.addEventListener('click', async () => { *@
+@*                 // Placeholder: Fetch more data or update pagination *@
+@*                 currentPage++; *@
+@*                 await renderEvents(currentPage); *@
+@*                 const newBtn = document.createElement('button'); *@
+@*                 newBtn.className = 'page-btn'; *@
+@*                 newBtn.dataset.page = currentPage + 1; *@
+@*                 newBtn.textContent = currentPage + 1; *@
+@*                 document.querySelector('.pagination').insertBefore(newBtn, loadMoreBtn); *@
+@*                 newBtn.addEventListener('click', () => { *@
+@*                     currentPage = parseInt(newBtn.dataset.page); *@
+@*                     renderEvents(currentPage); *@
+@*                 }); *@
+@*             }); *@
+
+@*             // Initial render *@
+@*             renderEvents(currentPage); *@
+@*         }); *@
+@*     </script> *@
+@* </body> *@
+@* </html> *@
