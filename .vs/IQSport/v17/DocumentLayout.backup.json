@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\IQSport\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\f1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\f1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\home\\guidance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\home\\guidance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\nfl\\player.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\nfl\\player.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\nbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\nbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\premiermatchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\premiermatchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +43,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "F1Controller.cs",
+              "DocumentMoniker": "C:\\IQSport\\Controllers\\F1Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\F1Controller.cs",
+              "ToolTip": "C:\\IQSport\\Controllers\\F1Controller.cs",
+              "RelativeToolTip": "Controllers\\F1Controller.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T05:31:39.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cshtml",
+              "DocumentMoniker": "C:\\IQSport\\Views\\NFL\\Player.cshtml",
+              "RelativeDocumentMoniker": "Views\\NFL\\Player.cshtml",
+              "ToolTip": "C:\\IQSport\\Views\\NFL\\Player.cshtml",
+              "RelativeToolTip": "Views\\NFL\\Player.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T05:30:27.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PremierMatchController.cs",
+              "DocumentMoniker": "C:\\IQSport\\Controllers\\PremierMatchController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PremierMatchController.cs",
+              "ToolTip": "C:\\IQSport\\Controllers\\PremierMatchController.cs",
+              "RelativeToolTip": "Controllers\\PremierMatchController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwIUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T05:15:31.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NBAController.cs",
+              "DocumentMoniker": "C:\\IQSport\\Controllers\\NBAController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NBAController.cs",
+              "ToolTip": "C:\\IQSport\\Controllers\\NBAController.cs",
+              "RelativeToolTip": "Controllers\\NBAController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAkwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T05:15:17.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\IQSport\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\IQSport\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T05:01:27.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Guidance.cshtml",
+              "DocumentMoniker": "C:\\IQSport\\Views\\Home\\Guidance.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Guidance.cshtml",
+              "ToolTip": "C:\\IQSport\\Views\\Home\\Guidance.cshtml",
+              "RelativeToolTip": "Views\\Home\\Guidance.cshtml",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAAABABAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T04:53:47.169Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -5,7 +5,6 @@ using IQSport.Models.SportsModels.CSGO.Models;
 using IQSport.Models.SportsModels.F1.Models;
 using IQSport.Models.SportsModels.NBA.Models;
 using IQSport.Models.SportsModels.NFL.TableModels;
-using IQSport.Models.SportsModels.Premier.Classes;
 using Microsoft.EntityFrameworkCore;
 
 namespace IQSport.Data.DbContext
@@ -26,8 +25,8 @@ namespace IQSport.Data.DbContext
         public DbSet<NFLPlayerCareerSackStat> NFLPlayerCareerSackStat { get; set; }
 
         // ------------------ Premier -------------------- //
-        public DbSet<PremierMatch> PremierMatch { get; set; }
-        public DbSet<PremierTeam> PremierTeam { get; set; }
+        public DbSet<Models.SportsModels.Premier.Classes.PremierMatch> PremierMatch { get; set; }
+        public DbSet<Models.SportsModels.Premier.Classes.PremierTeam> PremierTeam { get; set; }
 
         // ------------------ NBA -------------------- //
         public DbSet<NBATeam> NBATeam { get; set; }
@@ -60,33 +59,33 @@ namespace IQSport.Data.DbContext
 
             // ---------------- PREMIER ----------------- //
             // Configure PremierTeam
-            modelBuilder.Entity<PremierTeam>()
+            modelBuilder.Entity<Models.SportsModels.Premier.Classes.PremierTeam>()
                 .Property(t => t.TeamName)
                 .HasMaxLength(20)
                 .IsRequired();
 
             // Configure PremierMatch
-            modelBuilder.Entity<PremierMatch>()
+            modelBuilder.Entity<Models.SportsModels.Premier.Classes.PremierMatch>()
                 .Property(m => m.FullTimeResult)
                 .HasMaxLength(1)
                 .IsRequired();
 
-            modelBuilder.Entity<PremierMatch>()
+            modelBuilder.Entity<Models.SportsModels.Premier.Classes.PremierMatch>()
                 .Property(m => m.HalfTimeResult)
                 .HasMaxLength(1);
 
-            modelBuilder.Entity<PremierMatch>()
+            modelBuilder.Entity<Models.SportsModels.Premier.Classes.PremierMatch>()
                 .Property(m => m.Referee)
                 .HasMaxLength(25);
 
             // Configure relationships
-            modelBuilder.Entity<PremierMatch>()
+            modelBuilder.Entity<Models.SportsModels.Premier.Classes.PremierMatch>()
                 .HasOne(m => m.HomeTeamNavigation)
                 .WithMany(t => t.HomeMatches)
                 .HasForeignKey(m => m.HomeTeam)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<PremierMatch>()
+            modelBuilder.Entity<Models.SportsModels.Premier.Classes.PremierMatch>()
                 .HasOne(m => m.AwayTeamNavigation)
                 .WithMany(t => t.AwayMatches)
                 .HasForeignKey(m => m.AwayTeam)

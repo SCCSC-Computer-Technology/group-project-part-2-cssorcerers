@@ -56,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQWxsQ29uc3RydWN0b3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/IQSport/Views/F1/AllCurrentConstructors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQWxsQ3VycmVudENvbnN0cnVjdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/IQSport/Views/F1/AllDrivers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQWxsRHJpdmVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/IQSport/Views/F1/Constructor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQ29uc3RydWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/IQSport/Views/F1/CurrentConstructors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQ3VycmVudENvbnN0cnVjdG9ycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/IQSport/Views/F1/Drivers.cshtml]

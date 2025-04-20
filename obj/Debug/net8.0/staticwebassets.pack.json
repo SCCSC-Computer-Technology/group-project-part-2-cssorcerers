@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\css\\Sports css\\csgo.css"
     },
     {
+      "Id": "C:\\IQSport\\wwwroot\\css\\Sports css\\f1.css",
+      "PackagePath": "staticwebassets\\css\\Sports css\\f1.css"
+    },
+    {
       "Id": "C:\\IQSport\\wwwroot\\css\\Sports css\\nba.css",
       "PackagePath": "staticwebassets\\css\\Sports css\\nba.css"
     },
@@ -51,6 +55,26 @@
     {
       "Id": "C:\\IQSport\\wwwroot\\css\\Sports css\\nbaT.css",
       "PackagePath": "staticwebassets\\css\\Sports css\\nbaT.css"
+    },
+    {
+      "Id": "C:\\IQSport\\wwwroot\\css\\Sports css\\nfl.css",
+      "PackagePath": "staticwebassets\\css\\Sports css\\nfl.css"
+    },
+    {
+      "Id": "C:\\IQSport\\wwwroot\\css\\landingPage.css",
+      "PackagePath": "staticwebassets\\css\\landingPage.css"
+    },
+    {
+      "Id": "C:\\IQSport\\wwwroot\\css\\penalty.css",
+      "PackagePath": "staticwebassets\\css\\penalty.css"
+    },
+    {
+      "Id": "C:\\IQSport\\wwwroot\\css\\premier.css",
+      "PackagePath": "staticwebassets\\css\\premier.css"
+    },
+    {
+      "Id": "C:\\IQSport\\wwwroot\\css\\sports.css",
+      "PackagePath": "staticwebassets\\css\\sports.css"
     },
     {
       "Id": "C:\\IQSport\\wwwroot\\favicon.ico",
@@ -83,6 +107,14 @@
     {
       "Id": "C:\\IQSport\\wwwroot\\images\\soccer.jpg",
       "PackagePath": "staticwebassets\\images\\soccer.jpg"
+    },
+    {
+      "Id": "C:\\IQSport\\wwwroot\\js\\filters.js",
+      "PackagePath": "staticwebassets\\js\\filters.js"
+    },
+    {
+      "Id": "C:\\IQSport\\wwwroot\\js\\gameplay.js",
+      "PackagePath": "staticwebassets\\js\\gameplay.js"
     },
     {
       "Id": "C:\\IQSport\\wwwroot\\js\\site.js",

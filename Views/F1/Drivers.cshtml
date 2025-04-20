@@ -1,54 +1,42 @@
 ﻿@model IQSport.Models.SportsModels.F1.Models.F1DriverInfo
-
-
 @{
-	<link rel="stylesheet" href="~/css/common.css">
-	ViewData["title"] = $"{Model.Name ?? "Unknown Driver"}'s Stats";
+    ViewData["title"] = $"{Model.Name ?? "Unknown Driver"}'s Stats";
 }
+
+<html>
 <head>
-	<style>
-		hr {
-			color: black;
-			height: 2px;
-			width: 100%;
-		}
-	</style>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/f1.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-@if (Model != null)
-
-{
-	<div>
-		<h2>@Model.Name's Career Stats</h2>
-
-		@if (Model.Number == null)
-
-		{
-			<h3>Number: None</h3>
-		}
-
-		else
-
-		{
-			<h3>Number: @Model.Number</h3>
-		}
-		<hr style="height: 2px" />
-
-		@if (Model.Code == null && Model.Dob == null && Model.Nationality == null)
-
-		{
-			<h3>No Stats to Display</h3>
-		}
-
-		else
-
-		{
-			<h4>Code: @Model.Code</h4>
-			<h4>Birthdate: @Model.DobDateOnly</h4>
-			<h4>Nationality: @Model.Nationality</h4>
-			<br />
-			<hr style="height: 2px" />
-
-
-		}
-	</div>
-}
+<body>
+    <div class="container">
+        @if (Model != null)
+        {
+            <h2>@Model.Name's Career Stats</h2>
+            @if (Model.Number == null)
+            {
+                <h3>Number: None</h3>
+            }
+            else
+            {
+                <h3>Number: @Model.Number</h3>
+            }
+            <hr />
+            @if (Model.Code == null && Model.Dob == null && Model.Nationality == null)
+            {
+                <h3>No Stats to Display</h3>
+            }
+            else
+            {
+                <div class="info-section">
+                    <h4>Code: @Model.Code</h4>
+                    <h4>Birthdate: @Model.DobDateOnly</h4>
+                    <h4>Nationality: @Model.Nationality</h4>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

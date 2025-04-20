@@ -1,5 +1,4 @@
 using IQSport.Data.DbContext;
-using IQSport.Models.SportsModels.Premier.Classes;
 using Microsoft.EntityFrameworkCore;
 
 namespace IQ_Athlete.Services
@@ -14,7 +13,7 @@ namespace IQ_Athlete.Services
             _context = context;
         }
 
-        public async Task<List<PremierMatch>> GetAllMatchesAsync()
+        public async Task<List<IQSport.Models.SportsModels.Premier.Classes.PremierMatch>> GetAllMatchesAsync()
         {
             return await _context.PremierMatch
                 .Include(m => m.HomeTeamNavigation)
@@ -22,7 +21,7 @@ namespace IQ_Athlete.Services
                 .ToListAsync();
         }
 
-        public async Task<List<PremierMatch>> GetSortedMatchesAsync(string sortBy)
+        public async Task<List<IQSport.Models.SportsModels.Premier.Classes.PremierMatch>> GetSortedMatchesAsync(string sortBy)
         {
             var matches = _context.PremierMatch
                 .Include(m => m.HomeTeamNavigation)
@@ -37,7 +36,7 @@ namespace IQ_Athlete.Services
             };
         }
 
-        public async Task<List<PremierMatch>> GetMatchesByTeamNameAsync(string teamName)
+        public async Task<List<IQSport.Models.SportsModels.Premier.Classes.PremierMatch>> GetMatchesByTeamNameAsync(string teamName)
         {
             return await _context.PremierMatch
                 .Include(m => m.HomeTeamNavigation)

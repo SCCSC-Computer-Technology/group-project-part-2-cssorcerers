@@ -2,36 +2,44 @@
 @using IQSport.Models.SportsModels.NFL.ViewModels
 @model NFLTeamSeasonInfo
 @{
-	ViewData["title"] = "NFL Team";
+    ViewData["title"] = "NFL Team";
 }
-<head>
-	<link rel="stylesheet" href="~/css/common.css">
-	
-</head>
 
-<div style="text-align: left;">
-	<h2>@Model.TeamName</h2>
-	<hr style="color: black; height: 2px;" />
-	@if(Model.Season == -1)
-	{
-		<h3>Overall Stats</h3>
-	}
-	else
-	{
-		<h3>@Model.Season Stats</h3>
-	}
-	<hr style="color: black; height: 2px;" />
-	<h5>Rushing Touchdowns: <span style="text-align: right;">@Model.RushingTouchdowns</span></h5>
-	<h5>Receiving Touchdowns: <span style="text-align: right;">@Model.ReceivingTouchdowns</span></h5>
-	<h5>Total Touchdowns: <span style="text-align: right;">@Model.Touchdowns</span></h5>
-	<h5>Extra Points: <span style="text-align: right;">@Model.ExtraPoints</span></h5>
-	<h5>Two Points: <span style="text-align: right;">@Model.TwoPoints</span></h5>
-	<h5>Field Goals: <span style="text-align: right;">@Model.FieldGoals</span></h5>
-	<h5>Field Goal Attempts: <span style="text-align: right;">@Model.FieldGoalAttempts</span></h5>
-	<h5>Wins: <span style="text-align: right;">@Model.Wins</span></h5>
-	<h5>Losses: <span style="text-align: right;">@Model.Losses</span></h5>
-	<h5>Ties: <span style="text-align: right;">@Model.Ties</span></h5>
-	<h5>Rushing Yards: <span style="text-align: right;">@Model.RushingYards</span></h5>
-	<h5>Passing Yards: <span style="text-align: right;">@Model.PassingYards</span></h5>
-	<h5>Interceptions: <span style="text-align: right;">@Model.Intereceptions</span></h5>
-</div>
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/nfl.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>@Model.TeamName</h2>
+        <hr />
+        @if (Model.Season == -1)
+        {
+            <h3>Overall Stats</h3>
+        }
+        else
+        {
+            <h3>@Model.Season Stats</h3>
+        }
+        <hr />
+        <div class="stats-section">
+            <h5>Rushing Touchdowns: <span class="stat">@Model.RushingTouchdowns</span></h5>
+            <h5>Receiving Touchdowns: <span class="stat">@Model.ReceivingTouchdowns</span></h5>
+            <h5>Total Touchdowns: <span class="stat">@Model.Touchdowns</span></h5>
+            <h5>Extra Points: <span class="stat">@Model.ExtraPoints</span></h5>
+            <h5>Two Points: <span class="stat">@Model.TwoPoints</span></h5>
+            <h5>Field Goals: <span class="stat">@Model.FieldGoals</span></h5>
+            <h5>Field Goal Attempts: <span class="stat">@Model.FieldGoalAttempts</span></h5>
+            <h5>Wins: <span class="stat">@Model.Wins</span></h5>
+            <h5>Losses: <span class="stat">@Model.Losses</span></h5>
+            <h5>Ties: <span class="stat">@Model.Ties</span></h5>
+            <h5>Rushing Yards: <span class="stat">@Model.RushingYards</span></h5>
+            <h5>Passing Yards: <span class="stat">@Model.PassingYards</span></h5>
+            <h5>Interceptions: <span class="stat">@Model.Intereceptions</span></h5>
+        </div>
+    </div>
+</body>
+</html>

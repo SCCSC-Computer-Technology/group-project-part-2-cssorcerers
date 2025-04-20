@@ -31,6 +31,44 @@ public class HomeController : Controller
 
     public IActionResult Guidance()
     {
-        return View();
+        var model = new SportsGuidanceViewModel
+        {
+            RecentHighlights = new List<Highlight>
+        {
+            new Highlight
+            {
+                Sport = "Formula 1",
+                Title = "Monaco Grand Prix 2025",
+                Description = "Charles Leclerc wins his home race in a thrilling finish!",
+                Link = "/f1/races?raceID=123"
+            },
+            new Highlight
+            {
+                Sport = "Premier League",
+                Title = "Man City vs. Liverpool",
+                Description = "Man City secures a 3-2 victory in a thrilling match!",
+                Link = "/premiermatch/match?searchTeam=Man%20City"
+            }
+        },
+            QuickStats = new List<Stat>
+        {
+            new Stat
+            {
+                Sport = "Formula 1",
+                Label = "Top Driver",
+                Value = "Max Verstappen - 145 Points",
+                Link = "/f1/alldrivers?driverID=789"
+            },
+            new Stat
+            {
+                Sport = "Premier League",
+                Label = "Top Team",
+                Value = "Arsenal - 65 Points",
+                Link = "/premiermatch/match?searchTeam=Arsenal"
+            }
+        }
+        };
+
+        return View(model);
     }
 }

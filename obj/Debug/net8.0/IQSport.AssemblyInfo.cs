@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IQSport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d39aacefb1921962029e865fbe22d91ebb9108b")]
 [assembly: System.Reflection.AssemblyProductAttribute("IQSport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IQSport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

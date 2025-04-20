@@ -1,6 +1,7 @@
 ﻿using IQSport.Data.DbContext;
 using IQSport.Models.SportsModels.F1.Models;
 using IQSport.Models.SportsModels.F1.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SportsData.Services;
@@ -17,10 +18,13 @@ namespace SportIQ.Controllers
             _logger = logger;
             _context = context;
         }
+
         public IActionResult Index()
         {
             return View();
         }
+
+        [Authorize]
         public async Task<IActionResult> Drivers()
         {
             string? driverIDStr = Request.Query["driverID"];
