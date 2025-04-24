@@ -1,0 +1,192 @@
+﻿@model IQSport.Models.QuizModels.NBAQuizAnswersViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Quiz</title>
+    <link rel="stylesheet" href="~/css/common.css" />
+    <style>
+        body {
+            background-color: black;
+            background: linear-gradient(to bottom right, #111, #333);
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            padding: 30px;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1, h3 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #b0b0b0;
+            font-weight: foo: 500;
+        }
+
+        form {
+            max-width: 850px;
+            margin: 2rem auto;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(253, 187, 48, 0.2);
+        }
+
+        .question {
+            margin-bottom: 35px;
+            padding: 20px;
+            background: rgba(50, 50, 50, 0.6);
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+            .question:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            }
+
+            .question h4 {
+                color: #e0e0e0;
+                font-size: 1.25em;
+                margin-bottom: 12px;
+                font-weight: 600;
+            }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+            label:hover {
+                background: rgba(255, 255, 255, 0.15);
+            }
+
+        input[type="checkbox"] {
+            margin-right: 12px;
+            accent-color: #FDBB30;
+            transform: scale(1.3);
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 35px auto;
+            padding: 12px 35px;
+            font-size: 1.1em;
+            background: #FDBB30;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+            .submit-btn:hover {
+                background: #E0A529;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+
+        .back-btn {
+            color: #FDBB30;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+            .back-btn:hover {
+                color: #E0A529;
+            }
+    </style>
+</head>
+<body>
+    <h1>NBA Quiz</h1>
+    <h3>Answer the following questions</h3>
+
+    @if (ViewBag.Score != null)
+    {
+        <h3>You scored @ViewBag.Score out of @ViewBag.Total</h3>
+        <p><a href="@Url.Action("NBAQuiz")" class="back-btn">Try Again</a></p>
+    }
+
+    <form asp-action="NBAQuiz" method="post">
+        <div class="question">
+            <h4>1. Who won the 2023 NBA Championship?</h4>
+            <label><input type="checkbox" name="Answers[0]" value="Denver Nuggets" /> Denver Nuggets</label>
+            <label><input type="checkbox" name="Answers[0]" value="Miami Heat" /> Miami Heat</label>
+            <label><input type="checkbox" name="Answers[0]" value="Golden State Warriors" /> Golden State Warriors</label>
+        </div>
+
+        <div class="question">
+            <h4>2. Who is the all-time leader in 3-pointers made?</h4>
+            <label><input type="checkbox" name="Answers[1]" value="Stephen Curry" /> Stephen Curry</label>
+            <label><input type="checkbox" name="Answers[1]" value="Ray Allen" /> Ray Allen</label>
+            <label><input type="checkbox" name="Answers[1]" value="Reggie Miller" /> Reggie Miller</label>
+        </div>
+
+        <div class="question">
+            <h4>3. Which team did Michael Jordan win 6 championships with?</h4>
+            <label><input type="checkbox" name="Answers[2]" value="Chicago Bulls" /> Chicago Bulls</label>
+            <label><input type="checkbox" name="Answers[2]" value="Washington Wizards" /> Washington Wizards</label>
+            <label><input type="checkbox" name="Answers[2]" value="Boston Celtics" /> Boston Celtics</label>
+        </div>
+
+        <div class="question">
+            <h4>4. Who is the 7'4" rookie that debuted in the 2023-24 season?</h4>
+            <label><input type="checkbox" name="Answers[3]" value="Victor Wembanyama" /> Victor Wembanyama</label>
+            <label><input type="checkbox" name="Answers[3]" value="Chet Holmgren" /> Chet Holmgren</label>
+            <label><input type="checkbox" name="Answers[3]" value="Bol Bol" /> Bol Bol</label>
+        </div>
+
+        <div class="question">
+            <h4>5. Which two teams were top seeds in the 2024 playoffs? (Select 2)</h4>
+            <label><input type="checkbox" name="Answers[4]" value="Milwaukee Bucks" /> Milwaukee Bucks</label>
+            <label><input type="checkbox" name="Answers[4]" value="Boston Celtics" /> Boston Celtics</label>
+            <label><input type="checkbox" name="Answers[4]" value="Los Angeles Lakers" /> Los Angeles Lakers</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="@Url.Action("Index", "Quiz")" class="back-btn">Back to Quiz Selection</a>
+        </div>
+    </form>
+
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+            const checkboxes = question.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    const checked = Array.from(checkboxes).filter(cb => cb.checked);
+                    if (checked.length > 1) {
+                        checkbox.checked = false;
+                        alert('Only check one answer per question!');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

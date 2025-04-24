@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\IQSport\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\f1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\f1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\quiz\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\quiz\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\home\\guidance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\home\\guidance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\quiz\\csgoquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\quiz\\csgoquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\nfl\\player.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\nfl\\player.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\quiz\\nbaquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\quiz\\nbaquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\nbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\nbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\controllers\\premiermatchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:controllers\\premiermatchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|c:\\iqsport\\views\\quiz\\f1quiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9472984-949E-4A2F-9B21-574541A4364C}|IQSport.csproj|solutionrelative:views\\quiz\\f1quiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,79 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "F1Controller.cs",
-              "DocumentMoniker": "C:\\IQSport\\Controllers\\F1Controller.cs",
-              "RelativeDocumentMoniker": "Controllers\\F1Controller.cs",
-              "ToolTip": "C:\\IQSport\\Controllers\\F1Controller.cs",
-              "RelativeToolTip": "Controllers\\F1Controller.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwCgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:31:39.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cshtml",
-              "DocumentMoniker": "C:\\IQSport\\Views\\NFL\\Player.cshtml",
-              "RelativeDocumentMoniker": "Views\\NFL\\Player.cshtml",
-              "ToolTip": "C:\\IQSport\\Views\\NFL\\Player.cshtml",
-              "RelativeToolTip": "Views\\NFL\\Player.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\IQSport\\Views\\Quiz\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Quiz\\Index.cshtml",
+              "ToolTip": "C:\\IQSport\\Views\\Quiz\\Index.cshtml",
+              "RelativeToolTip": "Views\\Quiz\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T05:30:27.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PremierMatchController.cs",
-              "DocumentMoniker": "C:\\IQSport\\Controllers\\PremierMatchController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PremierMatchController.cs",
-              "ToolTip": "C:\\IQSport\\Controllers\\PremierMatchController.cs",
-              "RelativeToolTip": "Controllers\\PremierMatchController.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAkwIUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:15:31.066Z",
+              "WhenOpened": "2025-04-24T16:59:20.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "NBAController.cs",
-              "DocumentMoniker": "C:\\IQSport\\Controllers\\NBAController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NBAController.cs",
-              "ToolTip": "C:\\IQSport\\Controllers\\NBAController.cs",
-              "RelativeToolTip": "Controllers\\NBAController.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAkwJcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:15:17.673Z",
+              "Title": "F1Quiz.cshtml",
+              "DocumentMoniker": "C:\\IQSport\\Views\\Quiz\\F1Quiz.cshtml",
+              "RelativeDocumentMoniker": "Views\\Quiz\\F1Quiz.cshtml",
+              "ToolTip": "C:\\IQSport\\Views\\Quiz\\F1Quiz.cshtml",
+              "RelativeToolTip": "Views\\Quiz\\F1Quiz.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T17:07:17.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\IQSport\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\IQSport\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T05:01:27.381Z",
+              "DocumentIndex": 2,
+              "Title": "NBAQuiz.cshtml",
+              "DocumentMoniker": "C:\\IQSport\\Views\\Quiz\\NBAQuiz.cshtml",
+              "RelativeDocumentMoniker": "Views\\Quiz\\NBAQuiz.cshtml",
+              "ToolTip": "C:\\IQSport\\Views\\Quiz\\NBAQuiz.cshtml",
+              "RelativeToolTip": "Views\\Quiz\\NBAQuiz.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-24T17:17:23.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Guidance.cshtml",
-              "DocumentMoniker": "C:\\IQSport\\Views\\Home\\Guidance.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Guidance.cshtml",
-              "ToolTip": "C:\\IQSport\\Views\\Home\\Guidance.cshtml",
-              "RelativeToolTip": "Views\\Home\\Guidance.cshtml",
-              "ViewState": "AgIAAAsBAAAAAAAAAAAAABABAAAHAAAAAAAAAA==",
+              "Title": "CSGOQuiz.cshtml",
+              "DocumentMoniker": "C:\\IQSport\\Views\\Quiz\\CSGOQuiz.cshtml",
+              "RelativeDocumentMoniker": "Views\\Quiz\\CSGOQuiz.cshtml",
+              "ToolTip": "C:\\IQSport\\Views\\Quiz\\CSGOQuiz.cshtml",
+              "RelativeToolTip": "Views\\Quiz\\CSGOQuiz.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T04:53:47.169Z",
+              "WhenOpened": "2025-04-24T16:58:56.548Z",
               "EditorCaption": ""
             }
           ]

@@ -15,6 +15,13 @@ C:\IQSport\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\IQSport\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\IQSport\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\IQSport\bin\Debug\net8.0\System.Text.Json.dll
+C:\IQSport\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\IQSport\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\IQSport\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\IQSport\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\IQSport\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\IQSport\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\IQSport\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\IQSport\bin\Debug\net8.0\appsettings.Development.json
 C:\IQSport\bin\Debug\net8.0\appsettings.json
 C:\IQSport\bin\Debug\net8.0\IQSport.staticwebassets.runtime.json
@@ -32,10 +39,7 @@ C:\IQSport\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.
 C:\IQSport\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\IQSport\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\IQSport\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\IQSport\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -43,7 +47,6 @@ C:\IQSport\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\IQSport\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\IQSport\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\IQSport\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\IQSport\bin\Debug\net8.0\System.ClientModel.dll
@@ -53,7 +56,6 @@ C:\IQSport\bin\Debug\net8.0\System.Composition.Convention.dll
 C:\IQSport\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\IQSport\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\IQSport\bin\Debug\net8.0\System.Composition.TypedParts.dll
-C:\IQSport\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\IQSport\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\IQSport\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\IQSport\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
@@ -128,10 +130,8 @@ C:\IQSport\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHo
 C:\IQSport\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\IQSport\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\IQSport\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\IQSport\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\IQSport\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 C:\IQSport\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\IQSport\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\IQSport\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\IQSport\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\IQSport\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll

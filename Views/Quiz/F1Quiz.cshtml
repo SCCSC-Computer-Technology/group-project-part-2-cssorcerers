@@ -1,0 +1,224 @@
+﻿@model IQSport.Models.QuizModels.F1QuizAnswersViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F1 Quiz</title>
+    <link rel="stylesheet" href="~/css/common.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+            color: white;
+        }
+
+        h1, h3 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #b0b0b0;
+            font-weight: foo: 500;
+        }
+
+        form {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .question {
+            margin-bottom: 35px;
+            padding: 20px;
+            background: rgba(50, 50, 50, 0.6);
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+            .question:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            }
+
+            .question h4 {
+                color: #e0e0e0;
+                font-size: 1.25em;
+                margin-bottom: 12px;
+                font-weight: 600;
+            }
+
+        label {
+            display: flex;
+            align-items: center;
+            padding: 8px 10px;
+            margin: 5px 0;
+            font-size: 15px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+
+            label:hover {
+                background-color: rgba(255, 255, 255, 0.08);
+            }
+
+        input[type="checkbox"] {
+            margin-right: 12px;
+            transform: scale(1.3);
+            accent-color: #007bff;
+        }
+
+        .submit-btn, .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 10px 0;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+            .submit-btn:hover, .back-btn:hover {
+                background-color: #0056b3;
+                cursor: pointer;
+            }
+
+        .back-btn {
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>F1 Quiz</h1>
+    <h3>Select the two current drivers for each F1 team</h3>
+
+    @if (ViewBag.Score != null)
+    {
+        <h3>You scored @ViewBag.Score out of @ViewBag.Total</h3>
+        <p style="text-align:center;"><a href="@Url.Action("F1Quiz")" class="back-btn">Try Again</a></p>
+    }
+
+    <form asp-action="F1Quiz" method="post">
+        @for (int i = 0; i < 10; i++)
+        {
+            <div class="question">
+                <h4>Question @(i + 1): Which drivers race for @ViewBag.GetTeamName(i)?</h4>
+
+                @switch (i)
+                {
+                    case 0:
+                        <label><input type="checkbox" name="Answers[@i]" value="Max Verstappen" /> Max Verstappen</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Yuki Tsunoda" /> Yuki Tsunoda</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Liam Lawson" /> Liam Lawson</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Lando Norris" /> Lando Norris</label>
+                        break;
+
+                    case 1:
+                        <label><input type="checkbox" name="Answers[@i]" value="Kimi Antonelli" /> Kimi Antonelli</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="George Russell" /> George Russell</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Valtteri Bottas" /> Valtteri Bottas</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Lewis Hamilton" /> Lewis Hamilton</label>
+                        break;
+
+                    case 2:
+                        <label><input type="checkbox" name="Answers[@i]" value="Charles Leclerc" /> Charles Leclerc</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Lewis Hamilton" /> Lewis Hamilton</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Oscar Piastri" /> Oscar Piastri</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Lance Stroll" /> Lance Stroll</label>
+                        break;
+
+                    case 3:
+                        <label><input type="checkbox" name="Answers[@i]" value="Lando Norris" /> Lando Norris</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Oscar Piastri" /> Oscar Piastri</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Max Verstappen" /> Max Verstappen</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Carlos Sainz" /> Carlos Sainz</label>
+                        break;
+
+                    case 4:
+                        <label><input type="checkbox" name="Answers[@i]" value="Fernando Alonso" /> Fernando Alonso</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Gabriel Bortoleto" /> Gabriel Bortoleto</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Esteban Ocon" /> Esteban Ocon</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Lance Stroll" /> Lance Stroll</label>
+                        break;
+
+                    case 5:
+                        <label><input type="checkbox" name="Answers[@i]" value="Ollie Bearman" /> Ollie Bearman</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Isack Hadjar" /> Isack Hadjar</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Jack Doohan" /> Jack Doohan</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Pierre Gasly" /> Pierre Gasly</label>
+                        break;
+
+                    case 6:
+                        <label><input type="checkbox" name="Answers[@i]" value="Alex Albon" /> Alex Albon</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Logan Sargeant" /> Logan Sargeant</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Jack Doohan" /> Jack Doohan</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Carlos Sainz" /> Carlos Sainz</label>
+                        break;
+
+                    case 7:
+                        <label><input type="checkbox" name="Answers[@i]" value="Yuki Tsunoda" /> Yuki Tsunoda</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Pierre Gasly" /> Pierre Gasly</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Isack Hadjar" /> Isack Hadjar</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Liam Lawson" /> Liam Lawson</label>
+                        break;
+
+                    case 8:
+                        <label><input type="checkbox" name="Answers[@i]" value="Alex Albon" /> Alex Albon</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Gabriel Bortoleto" /> Gabriel Bortoleto</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Nico Hulkenberg" /> Nico Hulkenberg</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Zhou Guanyu" /> Zhou Guanyu</label>
+                        break;
+
+                    case 9:
+                        <label><input type="checkbox" name="Answers[@i]" value="Ollie Bearman" /> Ollie Bearman</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Nico Hulkenberg" /> Nico Hulkenberg</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Esteban Ocon" /> Esteban Ocon</label>
+                        <label><input type="checkbox" name="Answers[@i]" value="Fernando Alonso" /> Fernando Alonso</label>
+                        break;
+                }
+            </div>
+        }
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+        <div style="text-align: center;">
+            <a href="@Url.Action("Index", "Quiz")" class="back-btn">Back to Quiz Selection</a>
+        </div>
+    </form>
+
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+            const checkboxes = question.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    const checked = Array.from(checkboxes).filter(cb => cb.checked);
+                    if (checked.length > 2) {
+                        checkbox.checked = false;
+                        alert('Only select two drivers per team!');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

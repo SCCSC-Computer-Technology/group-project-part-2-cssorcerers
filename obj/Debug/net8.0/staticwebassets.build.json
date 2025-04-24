@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mT6I8WGJd0P1ypQpbFg9b28G3/MvbcF2gg3C7Ai3pWo=",
+  "Hash": "9JVWab/qQ7nEUSX0SJ44aMn7SuL70nsB81jEXaTL6cI=",
   "Source": "IQSport",
   "BasePath": "_content/IQSport",
   "Mode": "Default",
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a1sow0uryz",
-      "Integrity": "7mMYBW7yuF1u0jFvNz1/Z4y8J4w7T3hLrDYF/JbOvE0=",
+      "Fingerprint": "3sauainiga",
+      "Integrity": "7atXklLS7leEta/n7qpSUsM9SfCwVyQCGSbXFNDwcLM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Common css\\site.css"
@@ -2359,7 +2359,7 @@
       ]
     },
     {
-      "Route": "css/Common css/site.a1sow0uryz.css",
+      "Route": "css/Common css/site.3sauainiga.css",
       "AssetFile": "C:\\IQSport\\wwwroot\\css\\Common css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2377,11 +2377,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7mMYBW7yuF1u0jFvNz1/Z4y8J4w7T3hLrDYF/JbOvE0=\""
+          "Value": "\"7atXklLS7leEta/n7qpSUsM9SfCwVyQCGSbXFNDwcLM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 22:07:58 GMT"
+          "Value": "Thu, 24 Apr 2025 16:54:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2391,7 +2391,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a1sow0uryz"
+          "Value": "3sauainiga"
         },
         {
           "Name": "label",
@@ -2399,7 +2399,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7mMYBW7yuF1u0jFvNz1/Z4y8J4w7T3hLrDYF/JbOvE0="
+          "Value": "sha256-7atXklLS7leEta/n7qpSUsM9SfCwVyQCGSbXFNDwcLM="
         }
       ]
     },
@@ -2422,11 +2422,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7mMYBW7yuF1u0jFvNz1/Z4y8J4w7T3hLrDYF/JbOvE0=\""
+          "Value": "\"7atXklLS7leEta/n7qpSUsM9SfCwVyQCGSbXFNDwcLM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 30 Mar 2025 22:07:58 GMT"
+          "Value": "Thu, 24 Apr 2025 16:54:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2436,7 +2436,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7mMYBW7yuF1u0jFvNz1/Z4y8J4w7T3hLrDYF/JbOvE0="
+          "Value": "sha256-7atXklLS7leEta/n7qpSUsM9SfCwVyQCGSbXFNDwcLM="
         }
       ]
     },
@@ -4021,7 +4021,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 18:29:26 GMT"
+          "Value": "Thu, 24 Apr 2025 14:57:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4058,7 +4058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 18:29:26 GMT"
+          "Value": "Thu, 24 Apr 2025 14:57:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4103,7 +4103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 18:29:26 GMT"
+          "Value": "Thu, 24 Apr 2025 14:57:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4148,7 +4148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 18:29:26 GMT"
+          "Value": "Thu, 24 Apr 2025 14:57:55 GMT"
         },
         {
           "Name": "Cache-Control",
