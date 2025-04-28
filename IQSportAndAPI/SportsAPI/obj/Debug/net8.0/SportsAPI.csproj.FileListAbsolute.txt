@@ -1,0 +1,461 @@
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.AssemblyReference.cache
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfoInputs.cache
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfo.cs
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.CoreCompileInputs.cache
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\appsettings.Development.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\appsettings.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsAPI.staticwebassets.endpoints.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsAPI.exe
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsAPI.deps.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsAPI.runtimeconfig.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsAPI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsAPI.pdb
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Azure.Core.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Azure.Identity.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.ClientModel.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Memory.Data.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Text.Json.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsData.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\bin\Debug\net8.0\SportsData.pdb
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\scopedcss\bundle\SportsAPI.styles.css
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets.build.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets.development.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.SportsAPI.props
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SportsAPI.props
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SportsAPI.props
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets.pack.json
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.Up2Date
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\refint\SportsAPI.dll
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.pdb
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\SportsAPI.genruntimeconfig.cache
+D:\SCC\CPT-206\Group Projects\SportsAPI\obj\Debug\net8.0\ref\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\refint\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.pdb
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.staticwebassets.endpoints.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.exe
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.deps.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.runtimeconfig.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.pdb
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsData.dll
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\bin\Debug\net8.0\SportsData.pdb
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.AssemblyReference.cache
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfoInputs.cache
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfo.cs
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.CoreCompileInputs.cache
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.sourcelink.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\scopedcss\bundle\SportsAPI.styles.css
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.SportsAPI.props
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SportsAPI.props
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SportsAPI.props
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.Up2Date
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.genruntimeconfig.cache
+C:\Users\tjspe\Downloads\IQSport\IQSport\SportsAPI\obj\Debug\net8.0\ref\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.staticwebassets.endpoints.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.exe
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.deps.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.runtimeconfig.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsAPI.pdb
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsData.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\bin\Debug\net8.0\SportsData.pdb
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.AssemblyReference.cache
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfoInputs.cache
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfo.cs
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.CoreCompileInputs.cache
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\scopedcss\bundle\SportsAPI.styles.css
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.SportsAPI.props
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SportsAPI.props
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SportsAPI.props
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.Up2Date
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\refint\SportsAPI.dll
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.pdb
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\SportsAPI.genruntimeconfig.cache
+C:\Users\tjspe\Downloads\IQSport\SportsAPI\obj\Debug\net8.0\ref\SportsAPI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\appsettings.Development.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\appsettings.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.staticwebassets.endpoints.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.exe
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.deps.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.runtimeconfig.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.pdb
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Azure.Core.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Azure.Identity.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.ClientModel.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Memory.Data.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Text.Json.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsData.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsData.pdb
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.AssemblyReference.cache
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfoInputs.cache
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfo.cs
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.CoreCompileInputs.cache
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\scopedcss\bundle\SportsAPI.styles.css
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.build.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.development.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.SportsAPI.props
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SportsAPI.props
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SportsAPI.props
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.pack.json
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.Up2Date
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\refint\SportsAPI.dll
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.pdb
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.genruntimeconfig.cache
+D:\SCC\CPT-206\Group Projects\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\ref\SportsAPI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\appsettings.json
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.staticwebassets.endpoints.json
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.exe
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.deps.json
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.runtimeconfig.json
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsAPI.pdb
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Azure.Core.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Azure.Identity.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.ClientModel.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Memory.Data.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Text.Json.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsData.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\bin\Debug\net8.0\SportsData.pdb
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.AssemblyReference.cache
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfoInputs.cache
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.AssemblyInfo.cs
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.CoreCompileInputs.cache
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\scopedcss\bundle\SportsAPI.styles.css
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.SportsAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.SportsAPI.props
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SportsAPI.props
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SportsAPI.props
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.csproj.Up2Date
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\refint\SportsAPI.dll
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.pdb
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\SportsAPI.genruntimeconfig.cache
+C:\StatStream\IQSportAndAPI\SportsAPI\obj\Debug\net8.0\ref\SportsAPI.dll

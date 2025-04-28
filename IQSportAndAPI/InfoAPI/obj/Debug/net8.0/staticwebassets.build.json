@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5crtu+V94cGemK0tWvgYLYVCSuTcZonVGlmknW1HCeM=",
+  "Source": "InfoAPI",
+  "BasePath": "_content/InfoAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
