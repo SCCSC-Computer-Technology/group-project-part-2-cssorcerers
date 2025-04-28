@@ -1,0 +1,124 @@
+﻿@using IQSport.ViewModels.NFL
+@using SportsData.Models
+@model NFLPlayersStatsViewModel
+@{
+    ViewData["title"] = "NFL Players";
+}
+
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/nfl.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>NFL Players</h2>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="page-control">
+                <p>Page</p>
+                <div>
+                    <input type="text" min="1" max="@Model.MaxPage" id="pageInput" value="@Model.CurrentPage" />
+                    <span>/ @Model.MaxPage</span>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <p>Status</p>
+                <select id="activeSelect" onchange="LoadActive()">
+                    <option value="Any">Any</option>
+                    <option value="Active">Active</option>
+                    <option value="Retired">Retired</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <table class="players-table">
+                <thead>
+                    <tr class="sort-links">
+                        <th>
+                            <a asp-controller="nfl" asp-action="players"
+                               asp-route-page="@Model.CurrentPage" asp-route-active="@(Model.IsActive.HasValue ? Model.IsActive.Value : "all")" asp-route-team="@Model.TeamID"
+                               asp-route-sort="@(Model.SortOrder == "name_asc" ? "name_desc" : "name_asc")">
+                                Player
+                            </a>
+                        </th>
+                        <th>Team</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                @if (Model != null)
+                {
+                    <tbody>
+                        @foreach (NFLPlayer player in Model.nflPlayers)
+                        {
+                            <tr onclick="Redirect('/nfl/player?id=@player.ID')">
+                                <td data-label="Player">@(player.Name ?? "Unknown")</td>
+                                <td data-label="Team">@(player.Team?.Name ?? "None")</td>
+                                <td data-label="Status">@(player.IsActive.HasValue ? (player.IsActive.Value ? "Active" : "Retired") : "N/A")</td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a asp-controller="nfl" asp-action="players"
+               asp-route-page="1" asp-route-active="@(Model.IsActive.HasValue ? Model.IsActive.Value : "all")" asp-route-team="@Model.TeamID" asp-route-sort="@Model.SortOrder" role="button"><<</a>
+            <a asp-controller="nfl" asp-action="players"
+               asp-route-page="@(Model.CurrentPage > 1 ? Model.CurrentPage-1 : 1)" asp-route-active="@(Model.IsActive.HasValue ? Model.IsActive.Value : "all")"
+               asp-route-team="@Model.TeamID" asp-route-sort="@Model.SortOrder" role="button"><</a>
+            <a asp-controller="nfl" asp-action="players"
+               asp-route-page="@(Model.CurrentPage < Model.MaxPage ? Model.CurrentPage+1 : Model.MaxPage)" asp-route-active="@(Model.IsActive.HasValue ? Model.IsActive.Value : "all")"
+               asp-route-team="@Model.TeamID" asp-route-sort="@Model.SortOrder" role="button">></a>
+            <a asp-controller="nfl" asp-action="players"
+               asp-route-page="@Model.MaxPage" asp-route-active="@(Model.IsActive.HasValue ? Model.IsActive.Value : "all")" asp-route-team="@Model.TeamID" asp-route-sort="@Model.SortOrder" role="button">>></a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = SetActiveSelection();
+
+        function SetActiveSelection() {
+            let isActive = "@(!Model.IsActive.HasValue ? "null" : Model.IsActive)";
+            if (isActive != "null") {
+                document.getElementById('activeSelect').value = isActive === "True" ? "Active" : "Retired";
+            } else {
+                document.getElementById('activeSelect').value = "Any";
+            }
+        }
+
+        let pageInput = document.getElementById('pageInput');
+        pageInput.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                let page = Number(pageInput.value);
+                if (!isNaN(page)) {
+                    let teamID = @Model.TeamID;
+                    let isActive = "@(Model.IsActive.HasValue ? (Model.IsActive.Value ? "true" : "false") : "all")";
+                    let sort = "@(Model.SortOrder != "" ? Model.SortOrder : "default")";
+                    window.location.href = `/nfl/players?page=${page}&team=${teamID}&active=${isActive}&sort=${sort}`;
+                } else {
+                    alert("Page number must be numeric");
+                    pageInput.value = @Model.CurrentPage;
+                }
+            }
+        });
+
+        function Redirect(link) {
+            window.open(link, "_blank");
+        }
+
+        function LoadActive() {
+            let isActive = document.getElementById("activeSelect").value;
+            window.location.href = `/nfl/players?active=${isActive == "Active" ? "True" : isActive == "Retired" ? "False" : "all"}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿@using IQSport.Models.AuthModels
+@model User
+
+@{
+    ViewData["Title"] = "SportIQ - Register";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Auth css/register.css" asp-append-version="true">
+</head>
+
+<div class="register-container">
+    <div class="register-card">
+        <h2 class="register-title">Register</h2>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger text-center">@ViewBag.Error</div>
+        }
+
+        <form asp-action="Register" method="post" class="register-form" id="registerForm">
+            <div class="form-sections">
+                <div class="form-left-section">
+                    <div class="form-group">
+                        <label for="UserName" class="form-label">Username</label>
+                        <input asp-for="UserName" type="text" class="form-input" id="UserName" placeholder="Enter username" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="form-label">Email</label>
+                        <input asp-for="Email" type="email" class="form-input" id="Email" placeholder="Enter email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Password" class="form-label">Password</label>
+                        <input asp-for="Password" type="password" class="form-input" id="Password" placeholder="Enter password" required />
+                    </div>
+                </div>
+                <div class="form-right-section">
+                    <div class="form-group">
+                        <label for="SecurityQuestion" class="form-label">Security Question</label>
+                        <select asp-for="SecurityQuestionId" class="form-control" required>
+                            <option value="">Select a Security Question</option>
+                            @if (ViewBag.SecurityQuestions != null && (ViewBag.SecurityQuestions as SelectList).Any())
+                            {
+                                foreach (var question in ViewBag.SecurityQuestions as SelectList)
+                                {
+                                    <option value="@question.Value">@question.Text</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Answer" class="form-label">Answer to Security Question</label>
+                        <input asp-for="SecurityAnswer" type="text" class="form-input" id="Answer" name="SecurityAnswer" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="Role" class="form-label">Role</label>
+                        <select asp-for="Role" class="form-control" required>
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">
+                Register
+            </button>
+        </form>
+
+        <div class="register-link">
+            <small>Already have an account? <a asp-action="Login">Login</a></small>
+        </div>
+    </div>
+</div>

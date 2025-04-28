@@ -1,0 +1,43 @@
+﻿@model SportsData.Models.F1RaceInfo
+@{
+    ViewData["Title"] = Model.Name ?? "Race Details";
+}
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/f1.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>@Model.Name</h2>
+        @if (Model != null)
+        {
+            <div class="info-section">
+                <p><strong>Year:</strong> @Model.Year</p>
+                <p><strong>Round:</strong> @Model.Round</p>
+                <p><strong>Date:</strong> @Model.Date</p>
+                <p><strong>Time:</strong> @Model.Time</p>
+                <p><strong>Circuit:</strong> @Model.CircuitName</p>
+                <p>
+                    <strong>URL:</strong>
+                    @if (!string.IsNullOrEmpty(Model.Url))
+                    {
+                        <a href="@Model.Url" target="_blank">More Info</a>
+                    }
+                    else
+                    {
+                        <span>N/A</span>
+                    }
+                </p>
+            </div>
+        }
+        else
+        {
+            <p>No race details found.</p>
+        }
+    </div>
+</body>
+</html>

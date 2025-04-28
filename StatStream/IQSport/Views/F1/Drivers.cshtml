@@ -1,0 +1,42 @@
+﻿@model SportsData.Models.F1DriverInfo
+@{
+    ViewData["title"] = $"{Model.Name ?? "Unknown Driver"}'s Stats";
+}
+
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/f1.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        @if (Model != null)
+        {
+            <h2>@Model.Name's Career Stats</h2>
+            @if (Model.Number == null)
+            {
+                <h3>Number: None</h3>
+            }
+            else
+            {
+                <h3>Number: @Model.Number</h3>
+            }
+            <hr />
+            @if (Model.Code == null && Model.Dob == null && Model.Nationality == null)
+            {
+                <h3>No Stats to Display</h3>
+            }
+            else
+            {
+                <div class="info-section">
+                    <h4>Code: @Model.Code</h4>
+                    <h4>Birthdate: @Model.DobDateOnly</h4>
+                    <h4>Nationality: @Model.Nationality</h4>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿@model SportsData.Models.F1CurrentConstructor
+@{
+    ViewData["Title"] = $"{Model.TeamName ?? "Unknown Constructor"} Details";
+}
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/f1.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>@Model.TeamName Details</h2>
+        <hr />
+        @if (Model != null)
+        {
+            <div class="info-section">
+                <p><strong>Principal:</strong> @(Model.Principal ?? "N/A")</p>
+                <p><strong>Driver 1:</strong> @(Model.Driver1 ?? "N/A")</p>
+                <p><strong>Driver 1 Number:</strong> @(Model.D1Num.HasValue ? Model.D1Num.Value.ToString() : "N/A")</p>
+                <p><strong>Driver 2:</strong> @(Model.Driver2 ?? "N/A")</p>
+                <p><strong>Driver 2 Number:</strong> @(Model.D2Num.HasValue ? Model.D2Num.Value.ToString() : "N/A")</p>
+                <p><strong>Championships:</strong> @(Model.Championships.HasValue ? Model.Championships.Value.ToString() : "N/A")</p>
+                <p><strong>Base:</strong> @(Model.Base ?? "N/A")</p>
+                <p><strong>Power Unit:</strong> @(Model.PowerUnit ?? "N/A")</p>
+            </div>
+        }
+        else
+        {
+            <h3>No constructor data found.</h3>
+        }
+    </div>
+</body>
+</html>

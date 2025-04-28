@@ -1,0 +1,52 @@
+﻿@using SportsData.Models
+@model NBAPlayerInfo
+@{
+	<link rel="stylesheet" href="~/css/common.css">
+	ViewData["title"] = $"{Model?.NBAPlayer?.Name ?? "Unknown Player"}'s Stats";
+}
+<head>
+	<style>
+		hr {
+			color: black;
+			height: 2px;
+			width: 100%;
+		}
+	</style>
+</head>
+@if (Model != null)
+{
+	<div>
+		<h2>@(Model.NBAPlayer?.Name ?? "Unknown Player")'s Career Stats</h2>
+		@if (Model.TeamName != null)
+		{
+			<h3>@Model.TeamName</h3>
+		}
+
+		<hr style="color: black; height: 2px;" />
+		@if (Model.CareerStats != null)
+		{
+
+			<h5>Field Goals: <span>@Model.CareerStats.FieldGoals</span></h5>
+			<h5>Field Goal Attempts: <span>@Model.CareerStats.FieldGoalAttempts</span></h5>
+			<h5>Three Pointers: <span>@Model.CareerStats.ThreePoints</span></h5>
+			<h5>Three Point Attempts: <span>@Model.CareerStats.ThreePointAttempts</span></h5>
+			<h5>Two Pointers: <span>@Model.CareerStats.TwoPoints</span></h5>
+			<h5>Two Point Attempts: <span>@Model.CareerStats.TwoPointAttempts</span></h5>
+			<h5>Free Throws: <span>@Model.CareerStats.FreeThrows</span></h5>
+			<h5>Free Throw Attempts: <span>@Model.CareerStats.FreeThrowAttempts</span></h5>
+			<h5>Offensive Rebounds: <span>@Model.CareerStats.OffensiveRebounds</span></h5>
+			<h5>Defensive Rebounds: <span>@Model.CareerStats.DefesniveRebounds</span></h5>
+			<h5>Assists: <span>@Model.CareerStats.Assists</span></h5>
+			<h5>Steals: <span>@Model.CareerStats.Steals</span></h5>
+			<h5>Blocks: <span>@Model.CareerStats.Blocks</span></h5>
+			<h5>Turnovers: <span>@Model.CareerStats.Turnovers</span></h5>
+			<h5>Personal Fouls: <span>@Model.CareerStats.PersonalFouls</span></h5>
+			<h5>Total Points: <span>@Model.CareerStats.TotalPoints</span></h5>
+
+		}
+		else
+		{
+			<h5>Unable to Retrieve Stats</h5>
+		}
+	</div>
+}

@@ -1,0 +1,262 @@
+:root {
+    --primary-color: #121212;
+    --secondary-color: rgba(0, 0, 0, 0.25);
+    --light-bg: #2a2a2a;
+    --white: #ffffff;
+    --text-dark: white;
+    --accent-color: #ff3b3b;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+}
+
+html {
+    font-size: var(--font-size-base);
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: var(--font-size-lg);
+    }
+}
+
+body {
+    overflow: auto;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Glassmorphic Navbar with Refined Depth (Large Screens) */
+.navbar {
+    background: transparent;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 100%;
+    height: 6%;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Navbar styles for small screens */
+@media (max-width: 767.98px) {
+    .navbar {
+        background-color: #333;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+.navbar-toggler {
+    padding: 0px 8px;
+    margin-top: -5px;
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    margin-right: 10px; /* Add right margin */
+}
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+    }
+
+.navbar-toggler-icon {
+    font-family: 'Material Icons';
+    filter: brightness(0) invert(1);
+    width: 24px;
+    height: 24px;
+    color: white !important;
+    line-height: 1;
+}
+
+/* Aligning Navbar Items */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: static;
+}
+
+/* Small screen styles for navbar collapse */
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #333;
+        position: static;
+        margin-top: 25px;
+        border-radius: 8px;
+        padding-top: 0px; /* Add top padding */
+        padding-bottom: 0px; /* Add bottom padding */
+    }
+
+    /* Remove the last line */
+    .navbar-nav .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar nav styles for small screens */
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.navbar-nav .nav-item {
+    width: auto;
+}
+
+/* Navbar nav item styles for small screens */
+@media (max-width: 767.98px) {
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    margin: 0 1px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar nav link styles for small screens */
+@media (max-width: 767.98px) {
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.navbar-nav.mx-auto,
+.navbar-nav.ms-auto {
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+.navbar .btn {
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    backdrop-filter: blur(8px);
+}
+
+/* Button styles for small screens */
+@media (max-width: 767.98px) {
+    .navbar .btn {
+        margin: 5px 15px;
+        width: auto;
+    }
+}
+
+.btn-light {
+    background-color: rgba(211, 211, 211, 0.5);
+    color: black;
+}
+
+.btn-secondary {
+    background-color: rgba(211, 211, 211, 0.5);
+    color: var(--accent-color);
+}
+
+    .btn-light:hover,
+    .btn-secondary:hover {
+        background-color: rgba(196, 196, 196, 0.6);
+    }
+
+.navbar .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .btn:active {
+    transform: scale(0.97);
+}
+
+
+/* --------------------------- END OF MAIN FORM --------------------------------------*/
+
+/* Home View Styling */
+main {
+    /*    flex: 1;*/
+    /*    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+    padding-top: 10%;
+    margin: 0;
+}
+
+
+/*.home-container {
+    width: 100%;
+    height: 20%;
+    max-width: 800px;
+    padding: 20px;
+}*/
+
+/* Ensuring text remains centered */
+/*.home-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-subtext {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    opacity: 0.8;
+    text-align: center;
+}*/
+
+
+/* Footer */
+/*footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}*/
+
+/* Full-width fix  for footer */
+/*.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}*/

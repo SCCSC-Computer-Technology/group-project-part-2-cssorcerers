@@ -1,0 +1,179 @@
+﻿/* Modern Global Reset (if not already included elsewhere) */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables for Theming */
+:root {
+    --font-family-base: 'Roboto', Arial, sans-serif;
+    --color-background-body: #7f8c8d; /* Soft Grey Background */
+    --color-text-primary: #ecf0f1; /* Light text color */
+    --color-text-secondary: #bdc3c7;
+    --color-background-container: #34495e; /* Darker container background */
+    --color-border-primary: #95a5a6;
+    --color-border-secondary: #bdc3c7;
+    --color-primary: #e74c3c; /* Coral Red */
+    --color-primary-darker: #c0392b; /* Darker Coral Red */
+    --color-text-on-primary: #ffffff;
+    --color-background-table-row: #34495e; /* Dark background for table rows */
+    --color-background-table-row-hover: #2c3e50; /* Hover effect on rows */
+    --border-radius-small: 6px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 12px;
+    --box-shadow-primary: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --spacing-small: 8px;
+    --spacing-medium: 12px;
+    --spacing-large: 20px;
+    --spacing-extra-large: 24px;
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-medium: 1rem; /* 16px (base) */
+    --font-size-large: 1.75rem; /* 28px */
+    --transition-duration: 0.3s ease;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--font-family-base);
+    background: linear-gradient(to bottom, #7f8c8d, #e74c3c); /* Gradient from grey to coral red */
+    color: var(--color-text-primary);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+/* Main Container */
+.match-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: var(--spacing-extra-large);
+    background-color: var(--color-background-container);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--box-shadow-primary);
+    transition: background-color var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: var(--font-size-large);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-extra-large);
+}
+
+/* Search Container */
+.search-container input {
+    width: 100%;
+    max-width: 320px;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-small);
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-large);
+    box-sizing: border-box;
+    transition: border-color var(--transition-duration);
+}
+
+    .search-container input:focus {
+        outline: none;
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 0.2rem rgba(var(--color-primary-rgb, 231, 76, 60), 0.25); /* Focus glow effect */
+    }
+
+/* Matches Table */
+.matches-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+    margin-top: var(--spacing-large);
+    border: 1px solid var(--color-border-secondary); /* Table border color */
+}
+
+    .matches-table th,
+    .matches-table td {
+        padding: var(--spacing-small) var(--spacing-medium);
+        text-align: center;
+        border-bottom: 1px solid var(--color-border-secondary);
+        font-size: var(--font-size-small);
+        color: var(--color-text-secondary);
+    }
+
+    .matches-table th {
+        background-color: var(--color-primary); /* Coral Red header */
+        color: var(--color-text-on-primary);
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color var(--transition-duration);
+    }
+
+        .matches-table th:hover {
+            background-color: var(--color-primary-darker); /* Darker Coral Red on hover */
+        }
+
+        .matches-table th:focus {
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(var(--color-primary-rgb, 231, 76, 60), 0.25); /* Subtle focus glow */
+        }
+
+    .matches-table td {
+        background-color: var(--color-background-table-row);
+        transition: background-color var(--transition-duration);
+    }
+
+    .matches-table tr:hover td {
+        background-color: var(--color-background-table-row-hover); /* Darker row on hover */
+    }
+
+    .matches-table tr:last-child td {
+        border-bottom: none; /* Remove border on the last row */
+    }
+
+/* Pagination Controls */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-large);
+}
+
+    .pagination a {
+        margin-left: var(--spacing-small);
+        margin-right: var(--spacing-small);
+        padding: var(--spacing-small) var(--spacing-medium);
+        text-decoration: none;
+        background-image: linear-gradient(to bottom, var(--color-primary), var(--color-primary-darker)); /* Gradient background */
+        color: var(--color-text-on-primary);
+        border-radius: 5px;
+        transition: background-image var(--transition-duration), box-shadow var(--transition-duration);
+        font-size: var(--font-size-small);
+    }
+
+        .pagination a:hover {
+            background-image: linear-gradient(to bottom, var(--color-primary-darker), #c0392b); /* Darker gradient on hover */
+        }
+
+.page-info {
+    font-size: var(--font-size-small);
+    color: var(--color-text-primary);
+}
+
+/* Table row hover effect */
+.matches-table tr:hover td {
+    background-color: var(--color-background-table-row-hover);
+}
+
+/* Define the primary color in RGB for rgba usage in focus styles */
+:root {
+    --color-primary-rgb: 231, 76, 60; /* RGB value of #e74c3c (Coral Red) */
+}

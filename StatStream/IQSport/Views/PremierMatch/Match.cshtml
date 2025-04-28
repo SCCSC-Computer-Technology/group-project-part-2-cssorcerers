@@ -1,0 +1,92 @@
+﻿@model IQSport.ViewModels.Premier.PremierMatchesViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Matches</title>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Sports css/premier.css" asp-append-version="true">
+</head>
+<body>
+    <div class="container">
+        <h2>Premier League Matches</h2>
+
+        <!-- Filter Form -->
+        <form method="get" asp-action="Match" class="filter-form">
+            <div>
+                <label for="searchTeam">Team Search:</label>
+                <input id="searchTeam" name="searchTeam" value="@Model.SearchTeam" placeholder="Enter team name" />
+            </div>
+            <div>
+                <label for="dateFrom">Date From:</label>
+                <input id="dateFrom" name="dateFrom" type="date" value="@Model.DateFrom?.ToString("yyyy-MM-dd")" />
+            </div>
+            <div>
+                <label for="dateTo">Date To:</label>
+                <input id="dateTo" name="dateTo" type="date" value="@Model.DateTo?.ToString("yyyy-MM-dd")" />
+            </div>
+            <button type="submit">Apply Filters</button>
+        </form>
+
+        <!-- Sorting Links -->
+        <div class="sort-links">
+            <a asp-action="Match" asp-route-sortOrder="date_asc" asp-route-page="@Model.Pagination.CurrentPage" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Date ↑</a>
+            <a asp-action="Match" asp-route-sortOrder="date_desc" asp-route-page="@Model.Pagination.CurrentPage" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Date ↓</a>
+            <a asp-action="Match" asp-route-sortOrder="hometeam_asc" asp-route-page="@Model.Pagination.CurrentPage" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Home Team ↑</a>
+            <a asp-action="Match" asp-route-sortOrder="hometeam_desc" asp-route-page="@Model.Pagination.CurrentPage" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Home Team ↓</a>
+            <a asp-action="Match" asp-route-sortOrder="goals_asc" asp-route-page="@Model.Pagination.CurrentPage" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Total Goals ↑</a>
+            <a asp-action="Match" asp-route-sortOrder="goals_desc" asp-route-page="@Model.Pagination.CurrentPage" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Total Goals ↓</a>
+        </div>
+
+        <!-- Matches Table -->
+        <div class="table-container">
+            <table class="matches-table">
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>HOME TEAM</th>
+                        <th>AWAY TEAM</th>
+                        <th>SCORE</th>
+                        <th>HALF-TIME</th>
+                        <th>REFEREE</th>
+                        <th>DETAILS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var match in Model?.Matches)
+                    {
+                        <tr>
+                            <td data-label="Date">@match.Match?.Date.ToString("yyyy-MM-dd")</td>
+                            <td data-label="Home Team">@match.Match?.HomeTeamNavigation?.TeamName</td>
+                            <td data-label="Away Team">@match.Match?.AwayTeamNavigation?.TeamName</td>
+                            <td data-label="Score" class="score">@match.ScoreDisplay (@match.Match?.FullTimeResult)</td>
+                            <td data-label="Half-Time">@match.HalfTimeScoreDisplay</td>
+                            <td data-label="Referee">@match.Match?.Referee</td>
+                            <td data-label="Details" class="details">
+                                Shots: @(match.Match?.HomeShots ?? 0)-@(match.Match?.AwayShots ?? 0)<br />
+                                Corners: @(match.Match?.HomeCorners ?? 0)-@(match.Match?.AwayCorners ?? 0)<br />
+                                Cards: @((match.Match?.HomeYellowCards ?? 0) + (match.Match?.HomeRedCards ?? 0))-@((match.Match?.AwayYellowCards ?? 0) + (match.Match?.AwayRedCards ?? 0))
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <span>Page @Model.Pagination.CurrentPage of @Model.Pagination.TotalPages</span>
+            @if (Model.Pagination.CurrentPage > 1)
+            {
+                <a asp-action="Match" asp-route-page="@(Model.Pagination.CurrentPage - 1)" asp-route-sortOrder="@Model.CurrentSort" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Previous</a>
+            }
+            @if (Model.Pagination.CurrentPage < Model.Pagination.TotalPages)
+            {
+                <a asp-action="Match" asp-route-page="@(Model.Pagination.CurrentPage + 1)" asp-route-sortOrder="@Model.CurrentSort" asp-route-searchTeam="@Model.SearchTeam" asp-route-dateFrom="@Model.DateFrom?.ToString("yyyy-MM-dd")" asp-route-dateTo="@Model.DateTo?.ToString("yyyy-MM-dd")">Next</a>
+            }
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿﻿﻿@using SportsData.Models
+@model NBATeamSeasonInfo
+@{
+	ViewData["title"] = "NBA Team";
+}
+<head>
+	<link rel="stylesheet" href="~/css/common.css">
+	<style>
+		span {
+			text-align: right;
+		}
+	</style>
+</head>
+@if (Model != null)
+{
+	<div style="text-align: left;">
+		<h2>@Model.Name</h2>
+		<hr style="color: black; height: 2px;" />
+		@if (Model.TeamStats != null)
+		{
+			@if (Model.TeamStats.Season == -1)
+			{
+				<h3>Overall Stats</h3>
+			}
+			else
+			{
+				<h3>@Model.TeamStats.Season Stats</h3>
+			}
+
+
+			<hr style="color: black; height: 2px;" />
+			<h5>Field Goals: <span>@(Model.TeamStats.FieldGoals?.ToString() ?? "N/A")</span></h5>
+			<h5>Field Goal Attempts: <span>@(Model.TeamStats.FieldGoalAttempts?.ToString() ?? "N/A")</span></h5>
+			<h5>Three Pointers: <span>@(Model.TeamStats.ThreePoints?.ToString() ?? "N/A")</span></h5>
+			<h5>Three Point Attempts: <span>@(Model.TeamStats.ThreePointAttempts?.ToString() ?? "N/A")</span></h5>
+			<h5>Two Pointers: <span>@(Model.TeamStats.TwoPoints?.ToString() ?? "N/A")</span></h5>
+			<h5>Two Point Attempts: <span>@(Model.TeamStats.TwoPointAttempts?.ToString() ?? "N/A")</span></h5>
+			<h5>Free Throws: <span>@(Model.TeamStats.FreeThrows?.ToString() ?? "N/A")</span></h5>
+			<h5>Free Throw Attempts: <span>@(Model.TeamStats.FreeThrowAttempts?.ToString() ?? "N/A")</span></h5>
+			<h5>Offensive Rebounds: <span>@(Model.TeamStats.OffensiveRebounds?.ToString() ?? "N/A")</span></h5>
+			<h5>Defensive Rebounds: <span>@(Model.TeamStats.DefesniveRebounds?.ToString() ?? "N/A")</span></h5>
+			<h5>Assists: <span>@(Model.TeamStats.Assists?.ToString() ?? "N/A")</span></h5>
+			<h5>Steals: <span>@(Model.TeamStats.Steals?.ToString() ?? "N/A")</span></h5>
+			<h5>Blocks: <span>@(Model.TeamStats.Blocks?.ToString() ?? "N/A")</span></h5>
+			<h5>Turnovers: <span>@(Model.TeamStats.Turnovers?.ToString() ?? "N/A")</span></h5>
+			<h5>Personal Fouls: <span>@(Model.TeamStats.PersonalFouls?.ToString() ?? "N/A")</span></h5>
+			<h5>Total Points: <span>@(Model.TeamStats.TotalPoints?.ToString() ?? "N/A")</span></h5>
+
+		}
+
+	</div>
+}

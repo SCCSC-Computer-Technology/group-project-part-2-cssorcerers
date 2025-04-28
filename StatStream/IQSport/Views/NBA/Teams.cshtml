@@ -1,0 +1,196 @@
+﻿@using IQSport.ViewModels.NBA
+@using SportsData.Models
+@model NBATeamsStatsViewModel
+@{
+    ViewData["title"] = "NBA Team Stats";
+}
+
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/nba.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>NBA Team Stats</h1>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="page-control">
+                <p>Page</p>
+                <div>
+                    <input type="text" min="1" max="@Model.MaxPage" id="pageInput" value="@Model.CurrentPage" />
+                    <span>/ @Model.MaxPage</span>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <p>Season</p>
+                <select id="seasonSelect" onchange="LoadSeason()">
+                    <option value="All Seasons">All Seasons</option>
+                    @for (int i = 2025; i >= 1950; i--)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <table class="players-table">
+                <thead>
+                    <tr class="sort-links">
+                        <th>Team</th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "ssn_asc" ? "ssn_desc" : "ssn_asc")">
+                                Season
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "fg_asc" ? "fg_desc" : "fg_asc")">
+                                Field Goals
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "3pt_asc" ? "3pt_desc" : "3pt_asc")">
+                                Three Pointers
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "2pt_asc" ? "2pt_desc" : "2pt_asc")">
+                                Two Pointers
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "ft_asc" ? "ft_desc" : "ft_asc")">
+                                Free Throws
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "offr_asc" ? "offr_desc" : "offr_asc")">
+                                Offensive Rebounds
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "defr_asc" ? "defr_desc" : "defr_asc")">
+                                Defensive Rebounds
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "ast_asc" ? "ast_desc" : "ast_asc")">
+                                Assists
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "stl_asc" ? "stl_desc" : "stl_asc")">
+                                Steals
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "blk_asc" ? "blk_desc" : "blk_asc")">
+                                Blocks
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "tnvr_asc" ? "tnvr_desc" : "tnvr_asc")">
+                                Turnovers
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "pfl_asc" ? "pfl_desc" : "pfl_asc")">
+                                Personal Fouls
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nba" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "tpt_asc" ? "tpt_desc" : "tpt_asc")">
+                                Total Points
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                @if (Model != null)
+                {
+                    <tbody>
+                        @foreach (NBATeamSeasonInfo stat in Model.TeamsStats)
+                        {
+                            <tr onclick="Redirect('/nba/team?id=@stat.Name&season=@stat.TeamStats.Season')">
+                                <td data-label="Team">@stat.Name</td>
+                                <td data-label="Season">@stat.TeamStats.Season</td>
+                                <td data-label="Field Goals" class="stat">@stat.TeamStats.FieldGoals</td>
+                                <td data-label="Three Pointers" class="stat">@stat.TeamStats.ThreePoints</td>
+                                <td data-label="Two Pointers" class="stat">@stat.TeamStats.TwoPoints</td>
+                                <td data-label="Free Throws" class="stat">@stat.TeamStats.FreeThrows</td>
+                                <td data-label="Offensive Rebounds" class="stat">@stat.TeamStats.OffensiveRebounds</td>
+                                <td data-label="Defensive Rebounds" class="stat">@stat.TeamStats.DefesniveRebounds</td>
+                                <td data-label="Assists" class="stat">@stat.TeamStats.Assists</td>
+                                <td data-label="Steals" class="stat">@stat.TeamStats.Steals</td>
+                                <td data-label="Blocks" class="stat">@stat.TeamStats.Blocks</td>
+                                <td data-label="Turnovers" class="stat">@stat.TeamStats.Turnovers</td>
+                                <td data-label="Personal Fouls" class="stat">@stat.TeamStats.PersonalFouls</td>
+                                <td data-label="Total Points" class="stat">@stat.TeamStats.TotalPoints</td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a asp-controller="nba" asp-action="teams"
+               asp-route-page="1" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">&lt;&lt;</a>
+            <a asp-controller="nba" asp-action="teams"
+               asp-route-page="@(Model.CurrentPage > 1 ? Model.CurrentPage-1 : 1)" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">&lt;</a>
+            <a asp-controller="nba" asp-action="teams"
+               asp-route-page="@(Model.CurrentPage < Model.MaxPage ? Model.CurrentPage+1 : Model.MaxPage)" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">&gt;</a>
+            <a asp-controller="nba" asp-action="teams"
+               asp-route-page="@Model.MaxPage" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">&gt;&gt;</a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = SetSeasonSelection();
+
+        function SetSeasonSelection() {
+            document.getElementById('seasonSelect').value = "@(Model.Season != -1 ? Model.Season : "All Seasons")";
+        }
+
+        function LoadSeason() {
+            let season = document.getElementById("seasonSelect").value;
+            window.location.href = `/nba/teams?season=${season}`;
+        }
+
+        document.getElementById('pageInput').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                let page = Number(document.getElementById('pageInput').value);
+                if (!isNaN(page)) {
+                    window.location.href = `/nba/teams?page=${page}&sort=@(string.IsNullOrEmpty(Model.SortOrder) ? "default" : Model.SortOrder)&season=${@Model.Season}`;
+                } else {
+                    alert("Page number must be numeric");
+                    document.getElementById('pageInput').value = @Model.CurrentPage;
+                }
+            }
+        });
+
+        function Redirect(link) {
+            window.open(link, "_blank");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "NFL Home";
+}
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/nfl.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-menu">
+        <a class="nav-btn" asp-controller="home" asp-action="index">Home</a>
+        <a class="nav-btn" asp-controller="nfl" asp-action="teams">Teams Table</a>
+        <a class="nav-btn" asp-controller="nfl" asp-action="team" asp-route-team="">Individual Teams</a>
+        <a class="nav-btn" asp-controller="nfl" asp-action="players">Player Table</a>
+        <a class="nav-btn" asp-controller="nfl" asp-action="player">Individual Players</a>
+    </div>
+</body>
+</html>

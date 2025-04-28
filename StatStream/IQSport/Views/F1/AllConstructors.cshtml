@@ -1,0 +1,98 @@
+﻿@model IQSport.ViewModels.F1.F1ConstructorsViewModel;
+@{
+    ViewData["Title"] = "F1 Constructors";
+}
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/f1.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>F1 Constructors</h2>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="page-control">
+                <p>Page</p>
+                <div>
+                    <input type="text" min="1" max="@Model.MaxPage" id="pageInput" value="@Model.CurrentPage" />
+                    <span>/ @Model.MaxPage</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <table class="players-table">
+                <thead>
+                    <tr class="sort-links">
+                        <th>
+                            <a asp-controller="F1" asp-action="AllConstructors"
+                               asp-route-page="@Model.CurrentPage"
+                               asp-route-sort="@(Model.SortOrder == "name_asc" ? "name_desc" : "name_asc")">
+                                Constructor
+                            </a>
+                        </th>
+                        <th>Nationality</th>
+                    </tr>
+                </thead>
+                @if (Model.F1Constructor != null && Model.F1Constructor.Any())
+                {
+                    <tbody>
+                        @foreach (var constructor in Model.F1Constructor)
+                        {
+                            <tr>
+                                <td data-label="Constructor">
+                                    <a href="@Url.Action("Constructor", "F1", new { constructorID = constructor.ConstructorID })">
+                                        @(constructor.Name ?? "Unknown")
+                                    </a>
+                                </td>
+                                <td data-label="Nationality">@(constructor.Nationality ?? "Unknown")</td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+                else
+                {
+                    <tbody>
+                        <tr>
+                            <td colspan="2">No constructors available.</td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a asp-controller="F1" asp-action="AllConstructors"
+               asp-route-page="1" asp-route-sort="@Model.SortOrder" role="button"><<</a>
+            <a asp-controller="F1" asp-action="AllConstructors"
+               asp-route-page="@(Model.CurrentPage > 1 ? Model.CurrentPage - 1 : 1)" asp-route-sort="@Model.SortOrder" role="button"><</a>
+            <a asp-controller="F1" asp-action="AllConstructors"
+               asp-route-page="@(Model.CurrentPage < Model.MaxPage ? Model.CurrentPage + 1 : Model.MaxPage)" asp-route-sort="@Model.SortOrder" role="button">></a>
+            <a asp-controller="F1" asp-action="AllConstructors"
+               asp-route-page="@Model.MaxPage" asp-route-sort="@Model.SortOrder" role="button">>></a>
+        </div>
+    </div>
+
+    <script>
+        let pageInput = document.getElementById('pageInput');
+        pageInput.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                let page = Number(pageInput.value);
+                if (!isNaN(page)) {
+                    window.location.href = `/f1/AllConstructors?page=${page}&sort=@Model.SortOrder`;
+                } else {
+                    alert("Page number must be numeric");
+                    pageInput.value = @Model.CurrentPage;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

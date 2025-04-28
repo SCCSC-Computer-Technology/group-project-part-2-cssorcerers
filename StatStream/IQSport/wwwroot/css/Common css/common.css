@@ -1,0 +1,23 @@
+﻿/*-------------------- SHARED COMMON CSS -----------------------*/
+
+footer {
+    width: 100%;
+    background: linear-gradient(to right, rgba(50, 50, 50, 0.8), rgba(60, 60, 60, 0.9)); /* Dark but soft gradient */
+    color: #E5E5E5; /* Light gray text for contrast */
+    text-align: center;
+    padding: 20px 0; /* Spacious padding */
+    margin-top: auto;
+    font-size: 14px; /* Elegant font size */
+    letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+    /* Optional: Add hover effect for links inside the footer */
+    footer a {
+        color: #E63946; /* Soft red accent for links */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        footer a:hover {
+            color: #F1F1F1; /* Light color on hover for contrast */
+        }

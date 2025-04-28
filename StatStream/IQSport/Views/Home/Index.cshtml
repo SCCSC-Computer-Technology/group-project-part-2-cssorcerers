@@ -1,0 +1,375 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/Main.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-overlay"></div>
+    <section id="hero" class="hero-section snap-section">
+        <h1 class="hero-title">Your Ultimate Sports Hub</h1>
+        <p class="hero-subtitle">Discover thrilling moments, track live events, and dive into your favorite sports.</p>
+        <a href="#sports" class="hero-cta">Explore Now</a>
+    </section>
+
+    <section id="sports" class="snap-section">
+        <h1 class="sports-title">Explore Sports</h1>
+        <div class="card-container">
+            <a asp-controller="f1" asp-action="index" class="card">
+                <div class="card-image-wrapper">
+                    <img src="~/images/RacingPoster.jpg" alt="F1">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Formula 1</h3>
+                        <div class="btn-small">🔗</div>
+                    </div>
+                    <p>Unleash the thrill of high-speed races and legendary moments.</p>
+                </div>
+            </a>
+
+            <a asp-controller="PremierMatch" asp-action="Match" class="card">
+                <div class="card-image-wrapper">
+                    <img src="~/images/soccer.jpg" alt="Soccer">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Soccer</h3>
+                        <div class="btn-small">🔗</div>
+                    </div>
+                    <p>Dive into global leagues and electrifying tournaments.</p>
+                </div>
+            </a>
+
+            <a asp-controller="nba" asp-action="teams" class="card">
+                <div class="card-image-wrapper">
+                    <img src="~/images/NBA.jpg" alt="NBA">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>NBA</h3>
+                        <div class="btn-small">🔗</div>
+                    </div>
+                    <p>Track elite basketball talent and iconic teams.</p>
+                </div>
+            </a>
+
+            <a asp-controller="nfl" asp-action="Teams" class="card">
+                <div class="card-image-wrapper">
+                    <img src="~/images/NFL.jpg" alt="NFL">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>NFL</h3>
+                        <div class="btn-small">🔗</div>
+                    </div>
+                    <p>Capture the intensity of American football excellence.</p>
+                </div>
+            </a>
+
+            <a asp-controller="CSGO" asp-action="CSGOView" class="card">
+                <div class="card-image-wrapper">
+                    <img src="~/images/CSGO.jpg" alt="CSGO">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>CS:GO</h3>
+                        <div class="btn-small">🔗</div>
+                    </div>
+                    <p>Master precision in competitive esports battles.</p>
+                </div>
+            </a>
+
+            <a asp-controller="Home" asp-action="Guidance" class="card">
+                <div class="card-image-wrapper">
+                    <img src="~/images/guidance.jpg" alt="Guidance">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Guidance</h3>
+                        <div class="btn-small">🔗</div>
+                    </div>
+                    <p>Guidance to each sport.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="events" class="events-section snap-section">
+        <h2 class="events-title">Featured Events</h2>
+        <div class="events-container">
+            <!-- Populated dynamically by JavaScript -->
+        </div>
+        <div class="pagination">
+            <button class="page-btn active" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+            <button class="page-btn" data-page="3">3</button>
+            <button class="load-more-btn">Load More</button>
+        </div>
+    </section>
+
+    <section id="schedules" class="schedules-section snap-section">
+        <h2 class="schedules-title">Upcoming Schedules</h2>
+        <div class="schedules-container">
+            <!-- Populated dynamically by JavaScript -->
+        </div>
+        <div class="pagination">
+            <button class="sched-page-btn active" data-page="1">1</button>
+            <button class="sched-page-btn" data-page="2">2</button>
+            <button class="sched-page-btn" data-page="3">3</button>
+            <button class="sched-load-more-btn">Load More</button>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Highlights Section
+            const eventsContainer = document.querySelector('.events-container');
+            let eventCurrentPage = 1;
+            const eventsPerPage = 6;
+            const apiBaseUrl = 'https://localhost:7150';
+
+            // Schedules Section
+            const schedulesContainer = document.querySelector('.schedules-container');
+            let schedCurrentPage = 1;
+            const schedulesPerPage = 6;
+
+            // Log container elements to ensure they're found
+            console.log('Events container:', eventsContainer);
+            console.log('Schedules container:', schedulesContainer);
+            if (!eventsContainer) console.error('Events container not found in DOM');
+            if (!schedulesContainer) console.error('Schedules container not found in DOM');
+
+            // Fetch highlights from API
+                    async function fetchEvents(page) {
+            try {
+                const url = `${apiBaseUrl}/api/v1/highlights?page=${page}&size=${eventsPerPage}`;
+                console.log(`Fetching highlights from: ${url}`);
+                const response = await fetch(url);
+                console.log(`Highlights response status: ${response.status}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log(`Highlights data on page ${page}:`, data);
+                // Handle object response with highlights array
+                const eventsArray = data.highlights || [];
+                if (!Array.isArray(eventsArray)) {
+                    console.warn('Highlights data is not an array:', eventsArray);
+                    return { events: [], totalCount: 0 };
+                }
+                return {
+                    events: eventsArray.map(h => ({
+                        img: h.imageUrl || 'https://img.freepik.com/premium-vector/gradient-blurred-blue-white-red-rose-quartz-gradient-wallpaper-background-vector-illustration_172010-1351.jpg',
+                        alt: `${h.sport} Highlight`,
+                        title: h.title || 'Untitled Highlight',
+                        desc: h.description || 'No description available',
+                        cta: 'Watch Highlight',
+                        link: h.videoUrl || '#'
+                    })),
+                    totalCount: data.totalCount || 15 // Use API-provided totalCount
+                };
+            } catch (error) {
+                console.error(`Error fetching highlights:`, error);
+                eventsContainer.innerHTML = '<p>Error loading events. Please try again later.</p>';
+                return { events: [], totalCount: 0 };
+            }
+        }
+
+            // Fetch schedules from API
+            async function fetchSchedules(page) {
+                try {
+                    const url = `${apiBaseUrl}/api/v1/schedules?page=${page}&size=${schedulesPerPage}`;
+                    console.log(`Fetching schedules from: ${url}`);
+                    const response = await fetch(url);
+                    console.log(`Schedules response status: ${response.status}`);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    const data = await response.json();
+                    console.log(`Schedules data on page ${page}:`, data);
+                    if (data && data.schedules && Array.isArray(data.schedules)) {
+                        return {
+                            schedules: data.schedules.map(s => ({
+                                title: s.eventName || 'Untitled Event',
+                                date: s.matchDate ? new Date(s.matchDate).toLocaleDateString() : 'TBD',
+                                time: s.matchDate ? new Date(s.matchDate).toLocaleTimeString() : 'TBD',
+                                teams: s.teams || 'TBD',
+                                location: s.location || 'TBD',
+                                sport: s.sport || 'Unknown'
+                            })),
+                            totalCount: data.totalCount || 0
+                        };
+                    }
+                    console.log('No valid schedules data returned from API');
+                    return { schedules: [], totalCount: 0 };
+                } catch (error) {
+                    console.error(`Error fetching schedules:`, error);
+                    throw error;
+                }
+            }
+
+            // Render highlights
+            async function renderEvents(page) {
+                if (!eventsContainer) {
+                    console.error('Cannot render events: eventsContainer is null');
+                    return;
+                }
+                eventsContainer.innerHTML = '';
+                try {
+                    const { events: newEvents, totalCount } = await fetchEvents(page);
+                    console.log(`Rendering events for page ${page}:`, newEvents);
+
+                    if (!newEvents || newEvents.length === 0) {
+                        console.log('No events to render - displaying placeholder message');
+                        eventsContainer.innerHTML = '<p>No events available.</p>';
+                        return;
+                    }
+
+                    console.log(`Rendering ${newEvents.length} event cards`);
+                    newEvents.forEach((event, index) => {
+                        console.log(`Creating event card ${index + 1}:`, event);
+                        const card = document.createElement('div');
+                        card.className = 'event-card';
+                        card.style.animationDelay = `${0.15 * index}s`;
+                        card.innerHTML = `
+                            <img src="${event.img}" alt="${event.alt}" onerror="this.onerror=null; this.src='https://thafd.bing.com/th/id/OIP.BtfUqTLJ1qtWDoKX62lrZAAAAA?rs=1&pid=ImgDetMain'; console.log('Image failed to load for event ${event.title}: ${event.img}');">
+                            <div class="event-content">
+                                <h3>${event.title}</h3>
+                                <p>${event.desc}</p>
+                                <a href="${event.link}" class="event-cta">${event.cta}</a>
+                            </div>
+                        `;
+                        console.log(`Appending event card ${index + 1} to container`);
+                        eventsContainer.appendChild(card);
+                    });
+
+                    console.log('Updating events pagination buttons');
+                    const totalPages = Math.ceil(totalCount / eventsPerPage) || 1;
+                    const paginationContainer = document.querySelector('#events .pagination');
+                    if (!paginationContainer) {
+                        console.error('Events pagination container not found');
+                        return;
+                    }
+                    paginationContainer.innerHTML = '';
+                    for (let i = 1; i <= totalPages; i++) {
+                        const btn = document.createElement('button');
+                        btn.className = `page-btn ${i === page ? 'active' : ''}`;
+                        btn.dataset.page = i;
+                        btn.textContent = i;
+                        btn.addEventListener('click', () => {
+                            eventCurrentPage = i;
+                            renderEvents(eventCurrentPage);
+                        });
+                        paginationContainer.appendChild(btn);
+                    }
+                    const loadMoreBtn = document.createElement('button');
+                    loadMoreBtn.className = 'load-more-btn';
+                    loadMoreBtn.textContent = 'Load More';
+                    loadMoreBtn.addEventListener('click', async () => {
+                        eventCurrentPage++;
+                        await renderEvents(eventCurrentPage);
+                    });
+                    paginationContainer.appendChild(loadMoreBtn);
+                    console.log(`Events pagination updated with ${totalPages} pages`);
+                } catch (error) {
+                    console.error('Failed to render events:', error);
+                    eventsContainer.innerHTML = '<p>Error loading events. Please try again later.</p>';
+                }
+            }
+
+            // Render schedules
+            async function renderSchedules(page) {
+                if (!schedulesContainer) {
+                    console.error('Cannot render schedules: schedulesContainer is null');
+                    return;
+                }
+                schedulesContainer.innerHTML = '';
+                try {
+                    const { schedules: newSchedules, totalCount } = await fetchSchedules(page);
+                    console.log(`Rendering schedules for page ${page}:`, newSchedules);
+
+                    if (!newSchedules || newSchedules.length === 0) {
+                        console.log('No schedules to render - displaying placeholder message');
+                        schedulesContainer.innerHTML = '<p>No schedules available.</p>';
+                        return;
+                    }
+
+                    console.log(`Rendering ${newSchedules.length} schedule cards`);
+                    newSchedules.forEach((schedule, index) => {
+                        console.log(`Creating schedule card ${index + 1}:`, schedule);
+                        const card = document.createElement('div');
+                        card.className = 'schedule-card';
+                        card.style.animationDelay = `${0.15 * index}s`;
+                        card.innerHTML = `
+                            <div class="schedule-content">
+                                <h3>${schedule.title}</h3>
+                                <p><strong>Date:</strong> ${schedule.date}</p>
+                                <p><strong>Time:</strong> ${schedule.time}</p>
+                                <p><strong>Teams:</strong> ${schedule.teams}</p>
+                                <p><strong>Location:</strong> ${schedule.location}</p>
+                                <p><strong>Sport:</strong> ${schedule.sport.toUpperCase()}</p>
+                            </div>
+                        `;
+                        console.log(`Appending schedule card ${index + 1} to container`);
+                        schedulesContainer.appendChild(card);
+                    });
+
+                    console.log('Updating schedules pagination buttons');
+                    const totalPages = Math.ceil(totalCount / schedulesPerPage) || 1;
+                    const paginationContainer = document.querySelector('#schedules .pagination');
+                    if (!paginationContainer) {
+                        console.error('Schedules pagination container not found');
+                        return;
+                    }
+                    paginationContainer.innerHTML = '';
+                    for (let i = 1; i <= totalPages; i++) {
+                        const btn = document.createElement('button');
+                        btn.className = `sched-page-btn ${i === page ? 'active' : ''}`;
+                        btn.dataset.page = i;
+                        btn.textContent = i;
+                        btn.addEventListener('click', () => {
+                            schedCurrentPage = i;
+                            renderSchedules(schedCurrentPage);
+                        });
+                        paginationContainer.appendChild(btn);
+                    }
+                    const loadMoreBtn = document.createElement('button');
+                    loadMoreBtn.className = 'sched-load-more-btn';
+                    loadMoreBtn.textContent = 'Load More';
+                    loadMoreBtn.addEventListener('click', async () => {
+                        schedCurrentPage++;
+                        await renderSchedules(schedCurrentPage);
+                    });
+                    paginationContainer.appendChild(loadMoreBtn);
+                    console.log(`Schedules pagination updated with ${totalPages} pages`);
+                } catch (error) {
+                    console.error('Failed to render schedules:', error);
+                    schedulesContainer.innerHTML = '<p>Error loading schedules. Please try again later.</p>';
+                }
+            }
+
+            // Initial render for both sections
+            console.log('Initiating initial render for both sections');
+            renderEvents(eventCurrentPage);
+            renderSchedules(schedCurrentPage);
+        });
+    </script>
+</body>
+</html>

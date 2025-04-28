@@ -1,0 +1,283 @@
+﻿/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #ff6f61;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Filter Form */
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #3a3a3a;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+    .filter-form label {
+        font-weight: 500;
+        color: #e0e0e0;
+        font-size: 13px;
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    .filter-form input[type="text"],
+    .filter-form input[type="date"] {
+        padding: 8px 12px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        font-size: 13px;
+        min-width: 200px;
+        background: #222;
+        color: #e0e0e0;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+        .filter-form input[type="text"]:focus,
+        .filter-form input[type="date"]:focus {
+            border-color: #ff6f61;
+            box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+            outline: none;
+        }
+
+    .filter-form button {
+        padding: 8px 20px;
+        background-color: #ff6f61;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    }
+
+        .filter-form button:hover {
+            background-color: #e65a50;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 111, 97, 0.4);
+        }
+
+        .filter-form button:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+/* Sorting Links */
+.sort-links {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+    .sort-links a {
+        color: #ff6f61;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: 500;
+        transition: color 0.3s, text-shadow 0.3s;
+    }
+
+        .sort-links a:hover {
+            color: #e65a50;
+            text-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+        }
+
+/* Matches Table */
+.table-container {
+    overflow-x: auto;
+}
+
+.matches-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .matches-table th,
+    .matches-table td {
+        padding: 8px 12px;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .matches-table th {
+        background: #1f1f1f;
+        color: #ff6f61;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .matches-table tr {
+        transition: background 0.3s;
+    }
+
+        .matches-table tr:nth-child(even) {
+            background: #2a2a2a;
+        }
+
+        .matches-table tr:hover {
+            background: #3f3f3f;
+        }
+
+    .matches-table .score {
+        font-weight: 700;
+        color: #ff6f61;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .matches-table .details {
+        font-size: 11px;
+        color: #b0b0b0;
+        line-height: 1.6;
+    }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+    .pagination a {
+        padding: 8px 16px;
+        background: #ff6f61;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
+    }
+
+        .pagination a:hover {
+            background: #e65a50;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 111, 97, 0.4);
+        }
+
+        .pagination a:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+    .pagination span {
+        color: #e0e0e0;
+        font-weight: 500;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .filter-form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+        .filter-form input[type="text"],
+        .filter-form input[type="date"] {
+            min-width: 100%;
+        }
+
+    .matches-table {
+        font-size: 12px;
+    }
+
+        .matches-table th,
+        .matches-table td {
+            padding: 6px 10px;
+        }
+}
+
+@media (max-width: 768px) {
+    .matches-table thead {
+        display: none;
+    }
+
+    .matches-table tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background: #2a2a2a;
+    }
+
+    .matches-table td {
+        display: block;
+        text-align: left;
+        padding: 6px 12px;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+        .matches-table td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 12px;
+            width: 45%;
+            font-weight: 600;
+            color: #ff6f61;
+            font-size: 11px;
+        }
+
+    .matches-table .details {
+        line-height: 1.5;
+    }
+
+    .sort-links a {
+        display: inline-block;
+        margin: 5px;
+    }
+}

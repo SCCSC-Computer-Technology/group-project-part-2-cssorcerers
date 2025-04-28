@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "IQSportAndAPI",
+    "Projects": [
+      {
+        "Path": "IQSport.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\SportsAPI\\SportsAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\..\\InfoAPI\\InfoAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

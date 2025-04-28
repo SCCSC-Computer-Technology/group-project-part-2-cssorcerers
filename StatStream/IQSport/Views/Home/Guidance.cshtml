@@ -1,0 +1,273 @@
+﻿@model IQSport.Models.SportsGuidanceViewModel
+@{
+    ViewData["Title"] = "Sports Guidance";
+}
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 5px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .highlights-section, .stats-section {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .highlight-card, .stats-card {
+            background: #2c2c2c;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #3a3a3a;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+            .highlight-card:hover, .stats-card:hover {
+                transform: translateY(-3px);
+            }
+
+            .highlight-card p, .stats-card p {
+                margin: 5px 0;
+                font-size: 1rem;
+                color: #e0e0e0;
+            }
+
+            .highlight-card .sport-label, .stats-card .sport-label {
+                font-weight: 600;
+                color: #ff6f61;
+                font-size: 1.1rem;
+            }
+
+            .highlight-card a, .stats-card a {
+                color: #ff6f61;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+
+                .highlight-card a:hover, .stats-card a:hover {
+                    color: #e65a50;
+                }
+
+        .sports-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            background: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #3a3a3a;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-section {
+            position: relative;
+        }
+
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff6f61;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+            .nav-btn i {
+                font-size: 1.2rem;
+            }
+
+            .nav-btn:hover {
+                background: #e65a50;
+                transform: translateY(-2px);
+            }
+
+        @@media (max-width: 992px) {
+            .content-wrapper
+
+        {
+            flex-direction: column;
+        }
+
+        .highlights-section, .stats-section {
+            width: 100%;
+        }
+
+        }
+
+        @@media (max-width: 768px) {
+            h1
+
+        {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .highlight-card, .stats-card {
+            padding: 15px;
+        }
+
+        .sports-nav {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-btn {
+            padding: 10px 15px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        }
+
+        @@media (max-width: 480px) {
+            h1
+
+        {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        .highlight-card p, .stats-card p {
+            font-size: 0.9rem;
+        }
+
+        .nav-btn {
+            padding: 8px 12px;
+            font-size: 0.9rem;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sports Guidance Dashboard</h1>
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+            <!-- Recent Highlights Section -->
+            <div class="highlights-section">
+                <h2>Recent Highlights</h2>
+                @if (Model?.RecentHighlights != null && Model.RecentHighlights.Any())
+                {
+                    @foreach (var highlight in Model.RecentHighlights)
+                    {
+                        <div class="highlight-card">
+                            <p class="sport-label">@highlight.Sport</p>
+                            <p>@highlight.Title</p>
+                            <p>@highlight.Description</p>
+                            <p><a href="@highlight.Link">View Details</a></p>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="highlight-card">
+                        <p>No recent highlights available.</p>
+                    </div>
+                }
+            </div>
+
+            <!-- Quick Stats Section -->
+            <div class="stats-section">
+                <h2>Quick Stats</h2>
+                @if (Model?.QuickStats != null && Model.QuickStats.Any())
+                {
+                    @foreach (var stat in Model.QuickStats)
+                    {
+                        <div class="stats-card">
+                            <p class="sport-label">@stat.Sport</p>
+                            <p>@stat.Label: @stat.Value</p>
+                            <p><a href="@stat.Link">Explore More</a></p>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="stats-card">
+                        <p>No stats available.</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="sports-nav">
+            <!-- NBA -->
+            <div class="nav-section">
+                <a class="nav-btn" asp-controller="NBA" asp-action="Index"><i class="fas fa-basketball-ball"></i> NBA</a>
+            </div>
+            <!-- CS:GO -->
+            <div class="nav-section">
+                <a class="nav-btn" asp-controller="CSGO" asp-action="CSGOView"><i class="fas fa-gamepad"></i> CS:GO</a>
+            </div>
+            <!-- Premier League -->
+            <div class="nav-section">
+                <a class="nav-btn" asp-controller="PremierMatch" asp-action="Match"><i class="fas fa-futbol"></i> Premier League</a>
+            </div>
+            <!-- NFL -->
+            <div class="nav-section">
+                <a class="nav-btn" asp-controller="NFL" asp-action="Index"><i class="fas fa-football-ball"></i> NFL</a>
+            </div>
+            <!-- F1 -->
+            <div class="nav-section">
+                <a class="nav-btn" asp-controller="F1" asp-action="Index"><i class="fas fa-car"></i> Formula 1</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

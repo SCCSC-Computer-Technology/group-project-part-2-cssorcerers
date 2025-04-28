@@ -1,0 +1,225 @@
+﻿@using IQSport.Models.AuthModels
+@model List<User>
+
+@{
+    ViewData["Title"] = "Premium User Panel";
+}
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true">
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #ddd;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Premium Tab Navigation */
+        .tab-container {
+            display: flex;
+            justify-content: start;
+            background: #1E1E1E;
+            padding: 10px 20px;
+            border-bottom: 2px solid #444;
+        }
+
+        .tab-link {
+            padding: 12px 18px;
+            color: #bbb;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+            .tab-link:hover, .tab-link.active {
+                color: #fff;
+                border-bottom: 3px solid #ffcc00;
+            }
+
+        /* Premium Content Section */
+        .content-container {
+            padding: 30px;
+            background: #1A1A1A;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        /* Table Styling */
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+            .table thead {
+                background: #ffcc00;
+                color: #222;
+                font-size: 14px;
+            }
+
+            .table th, .table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #444;
+            }
+
+            .table tbody tr:hover {
+                background: #222;
+            }
+
+        /* Buttons */
+        .action-buttons a {
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .edit-btn {
+            background: #28a745;
+            color: white;
+        }
+
+        .delete-btn {
+            background: #dc3545;
+            color: white;
+        }
+
+        .edit-btn:hover {
+            background: #218838;
+        }
+
+        .delete-btn:hover {
+            background: #c82333;
+        }
+
+        /* Hide inactive tabs */
+        .tab-content {
+            display: none;
+        }
+
+            .tab-content.active {
+                display: block;
+            }
+    </style>
+</head>
+
+<!-- Custom Tab Navigation -->
+<div class="tab-container">
+    <div class="tab-link active" onclick="openTab('all-users')">All Users</div>
+    <div class="tab-link" onclick="openTab('admins')">Admins</div>
+    <div class="tab-link" onclick="openTab('players')">Players</div>
+</div>
+
+<!-- Tab Content -->
+<div id="all-users" class="tab-content active">
+    <div class="content-container">
+        <h3>All Users</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.User_Id</td>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td>@user.Role</td>
+                        <td class="action-buttons">
+                            <a href="@Url.Action("Edit", "Auth", new { id = user.User_Id })" class="edit-btn"><i class="fas fa-pen"></i> Edit</a>
+                            <a href="@Url.Action("Delete", "Auth", new { id = user.User_Id })" class="delete-btn"><i class="fas fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="admins" class="tab-content">
+    <div class="content-container">
+        <h3>Admin Users</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Where(u => u.Role == "Admin"))
+                {
+                    <tr>
+                        <td>@user.User_Id</td>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td class="action-buttons">
+                            <a href="@Url.Action("Edit", "Auth", new { id = user.User_Id })" class="edit-btn"><i class="fas fa-pen"></i> Edit</a>
+                            <a href="@Url.Action("Delete", "Auth", new { id = user.User_Id })" class="delete-btn"><i class="fas fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="players" class="tab-content">
+    <div class="content-container">
+        <h3>Player Accounts</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Where(u => u.Role == "Player"))
+                {
+                    <tr>
+                        <td>@user.User_Id</td>
+                        <td>@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td class="action-buttons">
+                            <a href="@Url.Action("Edit", "Auth", new { id = user.User_Id })" class="edit-btn"><i class="fas fa-pen"></i> Edit</a>
+                            <a href="@Url.Action("Delete", "Auth", new { id = user.User_Id })" class="delete-btn"><i class="fas fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function openTab(tabId) {
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+
+        document.querySelectorAll('.tab-link').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        event.currentTarget.classList.add('active');
+    }
+</script>

@@ -1,0 +1,197 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = IQSport
+build_property.RootNamespace = IQSport
+build_property.ProjectDir = C:\StatStream\IQSportAndAPI\IQSport\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\StatStream\IQSportAndAPI\IQSport
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Auth/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Auth/LoginView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpblZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Auth/RegisterView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3RlclZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Auth/ResetPwdRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFB3ZFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Auth/ViewUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxWaWV3VXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/CSGO/CSGOView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1NHT1xDU0dPVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/AllConstructors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQWxsQ29uc3RydWN0b3JzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/AllCurrentConstructors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQWxsQ3VycmVudENvbnN0cnVjdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/AllDrivers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQWxsRHJpdmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/AllRaces.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQWxsUmFjZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/Constructor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQ29uc3RydWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/CurrentConstructors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcQ3VycmVudENvbnN0cnVjdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/Drivers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcRHJpdmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/F1/Races.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRjFcUmFjZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Home/Guidance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHdWlkYW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NBA/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkJBXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NBA/Player.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkJBXFBsYXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NBA/Players.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkJBXFBsYXllcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NBA/Team.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkJBXFRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NBA/Teams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkJBXFRlYW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NFL/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkZMXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NFL/Player.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkZMXFBsYXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NFL/Players.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkZMXFBsYXllcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NFL/Team.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkZMXFRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/NFL/Teams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkZMXFRlYW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/PremierMatch/Match.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbWllck1hdGNoXE1hdGNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Profile/ProfileView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Quiz/CSGOQuiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxDU0dPUXVpei5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Quiz/F1Quiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxGMVF1aXouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Quiz/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Quiz/NBAQuiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxOQkFRdWl6LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Quiz/NFLQuiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxORkxRdWl6LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Quiz/PremierLeagueQuiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVpelxQcmVtaWVyTGVhZ3VlUXVpei5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = X1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/StatStream/IQSportAndAPI/IQSport/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fwzn4l7ba1

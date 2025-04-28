@@ -1,0 +1,40 @@
+﻿@using IQSport.Models.AuthModels
+@model List<SecurityQuestion>
+
+<head>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Auth css/resetpwd.css" asp-append-version="true">
+</head>
+
+<div class="reset-password-container">
+    <div class="reset-password-card">
+        <h2 class="resetPwd-title">Reset Password</h2> <!-- Title inside the card -->
+
+        <form asp-action="ResetPasswordRequest" method="post">
+            <div class="form-group">
+                <label for="Username" class="form-label">Username</label>
+                <input type="text" id="Username" name="Username" class="form-input" required placeholder="Enter your username">
+            </div>
+
+            <div class="form-group">
+                <label for="SecurityQuestion" class="form-label">Select Security Question</label>
+                <select id="SecurityQuestion" name="SecurityQuestion" class="form-input" required>
+                    @foreach (var question in Model)
+                    {
+                        <option value="@question.QuestionId">@question.Question</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Answer" class="form-label">Answer</label>
+                <input type="text" id="Answer" name="Answer" class="form-input" required placeholder="Enter the answer to your security question">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Reset Password</button>
+            </div>
+        </form>
+    </div>
+</div>
+

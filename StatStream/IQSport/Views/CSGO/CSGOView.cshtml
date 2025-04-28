@@ -1,0 +1,112 @@
+﻿@using IQSport.Models.SportsModels.CSGO.ViewModels
+@model PlayerFilterViewModel
+@{
+    ViewData["Title"] = "CS:GO Players";
+    var pagination = ViewBag.Pagination as IQSport.ViewModels.Premier.PaginationViewModel;
+    var players = ViewBag.Players as List<SportsData.Models.CSGOPlayer>;
+    IEnumerable<string> teamNames;
+}
+
+<head>
+    <title>CS:GO Players</title>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Sports css/csgo.css" asp-append-version="true">
+</head>
+<body>
+    <div class="container">
+        <h2>CS:GO Players</h2>
+
+        <!-- Filter Form -->
+        <form method="get" asp-action="CSGOView" class="filter-form">
+            <div>
+                <label for="SearchTerm">Player Search:</label>
+                <input id="SearchTerm" asp-for="SearchTerm" placeholder="Enter player name" />
+            </div>
+            <div>
+                <label for="MinRating">Min Rating:</label>
+                <input id="MinRating" asp-for="MinRating" type="number" step="0.01" placeholder="e.g., 1.00" />
+            </div>
+            <div>
+                <label for="MinMaps">Min Maps:</label>
+                <input id="MinMaps" asp-for="MinMaps" type="number" placeholder="e.g., 50" />
+            </div>
+            <div>
+                <label for="SortBy">Sort By:</label>
+                <select id="SortBy" asp-for="SortBy">
+                    <option value="Name">Name</option>
+                    <option value="Rating">Rating</option>
+                    <option value="Kd">K/D</option>
+                    <option value="Maps">Maps</option>
+                </select>
+            </div>
+            <div class="checkbox-group">
+                <label for="SortDescending">Descending:</label>
+                <input id="SortDescending" asp-for="SortDescending" type="checkbox" />
+            </div>
+            <div>
+                <label for="PageSize">Page Size:</label>
+                <input id="PageSize" asp-for="PageSize" type="number" min="1" value="@Model.PageSize" />
+            </div>
+            <input type="hidden" asp-for="CurrentPage" value="@Model.CurrentPage" />
+            <button type="submit">Apply Filters</button>
+        </form>
+
+        <!-- Sorting Links -->
+        <div class="sort-links">
+            <a asp-action="CSGOView" asp-route-SortBy="Name" asp-route-SortDescending="@(!Model.SortDescending)" asp-route-CurrentPage="@Model.CurrentPage" asp-route-PageSize="@Model.PageSize" asp-route-SearchTerm="@Model.SearchTerm" asp-route-MinRating="@Model.MinRating" asp-route-MinMaps="@Model.MinMaps">Name @(Model.SortBy == "Name" && !Model.SortDescending ? "↑" : Model.SortBy == "Name" ? "↓" : "")</a>
+            <a asp-action="CSGOView" asp-route-SortBy="Rating" asp-route-SortDescending="@(!Model.SortDescending)" asp-route-CurrentPage="@Model.CurrentPage" asp-route-PageSize="@Model.PageSize" asp-route-SearchTerm="@Model.SearchTerm" asp-route-MinRating="@Model.MinRating" asp-route-MinMaps="@Model.MinMaps">Rating @(Model.SortBy == "Rating" && !Model.SortDescending ? "↑" : Model.SortBy == "Rating" ? "↓" : "")</a>
+            <a asp-action="CSGOView" asp-route-SortBy="Kd" asp-route-SortDescending="@(!Model.SortDescending)" asp-route-CurrentPage="@Model.CurrentPage" asp-route-PageSize="@Model.PageSize" asp-route-SearchTerm="@Model.SearchTerm" asp-route-MinRating="@Model.MinRating" asp-route-MinMaps="@Model.MinMaps">K/D @(Model.SortBy == "Kd" && !Model.SortDescending ? "↑" : Model.SortBy == "Kd" ? "↓" : "")</a>
+            <a asp-action="CSGOView" asp-route-SortBy="Maps" asp-route-SortDescending="@(!Model.SortDescending)" asp-route-CurrentPage="@Model.CurrentPage" asp-route-PageSize="@Model.PageSize" asp-route-SearchTerm="@Model.SearchTerm" asp-route-MinRating="@Model.MinRating" asp-route-MinMaps="@Model.MinMaps">Maps @(Model.SortBy == "Maps" && !Model.SortDescending ? "↑" : Model.SortBy == "Maps" ? "↓" : "")</a>
+        </div>
+
+        <!-- Players Table -->
+        <div class="table-container">
+            <table class="players-table">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>TEAMS</th>
+                        <th>MAPS</th>
+                        <th>ROUNDS</th>
+                        <th>K/D DIFF</th>
+                        <th>K/D</th>
+                        <th>RATING</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (players != null)
+                    {
+                        @foreach (var player in players)
+                        {
+                            <tr>
+                                <td data-label="Name">@player.PlayerName</td>
+                                <td data-label="Teams">@string.Join(", ", player.PlayerTeams.Select(x => x.Team?.TeamName).Where(x => !string.IsNullOrEmpty(x)))</td>
+                                <td data-label="Maps" class="stat">@player.PlayerStat?.TotalMaps</td>
+                                <td data-label="Rounds" class="stat">@player.PlayerStat?.TotalRounds</td>
+                                <td data-label="K/D Diff" class="stat">@player.PlayerStat?.KdDiff</td>
+                                <td data-label="K/D" class="stat">@player.PlayerStat?.Kd</td>
+                                <td data-label="Rating" class="stat">@player.PlayerStat?.Rating</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        @if (pagination != null)
+        {
+            <div class="pagination">
+                <span>Page @pagination.CurrentPage of @pagination.TotalPages</span>
+                @if (pagination.CurrentPage > 1)
+                {
+                    <a asp-action="CSGOView" asp-route-CurrentPage="@(pagination.CurrentPage - 1)" asp-route-PageSize="@pagination.PageSize" asp-route-SearchTerm="@Model.SearchTerm" asp-route-SortBy="@Model.SortBy" asp-route-SortDescending="@Model.SortDescending" asp-route-MinRating="@Model.MinRating" asp-route-MinMaps="@Model.MinMaps">Previous</a>
+                }
+                @if (pagination.CurrentPage < pagination.TotalPages)
+                {
+                    <a asp-action="CSGOView" asp-route-CurrentPage="@(pagination.CurrentPage + 1)" asp-route-PageSize="@pagination.PageSize" asp-route-SearchTerm="@Model.SearchTerm" asp-route-SortBy="@Model.SortBy" asp-route-SortDescending="@Model.SortDescending" asp-route-MinRating="@Model.MinRating" asp-route-MinMaps="@Model.MinMaps">Next</a>
+                }
+            </div>
+        }
+    </div>
+</body>

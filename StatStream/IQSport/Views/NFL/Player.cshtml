@@ -1,0 +1,100 @@
+﻿@using SportsData.Models
+@model NFLPlayer
+@{
+    ViewData["title"] = $"{Model.Name ?? "Unknown Player"}'s Stats";
+}
+
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/nfl.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        @if (Model != null)
+        {
+            <h2>@(Model.Name ?? "Unknown")'s Career Stats</h2>
+            @if (Model.IsActive.HasValue && Model.IsActive.Value)
+            {
+                <h3>Team: @(Model.Team?.Name ?? "Unknown")</h3>
+            }
+            else
+            {
+                <h3>Retired</h3>
+            }
+            <hr />
+
+            @if (Model.FumbleStats == null && Model.KickStats == null && Model.PassStats == null &&
+           Model.ReceiveStats == null && Model.RushStats == null && Model.SackStats == null)
+            {
+                <h3>No Stats to Display</h3>
+            }
+            else
+            {
+                @if (Model.PassStats != null)
+                {
+                    <div class="stats-section">
+                        <h3>Passing Stats</h3>
+                        <h5>Passing Yards: <span class="stat">@Model.PassStats.PassingYards</span></h5>
+                        <h5>Longest Pass: <span class="stat">@Model.PassStats.LongestPass</span></h5>
+                        <h5>Pass Attempts: <span class="stat">@Model.PassStats.PassAttempts</span></h5>
+                        <h5>Touchdown Passes: <span class="stat">@Model.PassStats.TouchdownPasses</span></h5>
+                        <h5>Interceptions: <span class="stat">@Model.PassStats.Interceptions</span></h5>
+                    </div>
+                }
+
+                @if (Model.SackStats != null)
+                {
+                    <div class="stats-section">
+                        <h3>Sack Stats</h3>
+                        <h5>Sacks: <span class="stat">@Model.SackStats.Sacks</span></h5>
+                        <h5>Yards Lost to Sacks: <span class="stat">@Model.SackStats.YardsLostToSacks</span></h5>
+                    </div>
+                }
+
+                @if (Model.RushStats != null)
+                {
+                    <div class="stats-section">
+                        <h3>Rushing Stats</h3>
+                        <h5>Rushing Yards: <span class="stat">@Model.RushStats.RushYards</span></h5>
+                        <h5>Rush Attempts: <span class="stat">@Model.RushStats.RushAttempts</span></h5>
+                        <h5>Rushing Firstdowns: <span class="stat">@Model.RushStats.RushFirstdowns</span></h5>
+                        <h5>Rushing Touchdowns: <span class="stat">@Model.RushStats.RushTouchdowns</span></h5>
+                    </div>
+                }
+
+                @if (Model.ReceiveStats != null)
+                {
+                    <div class="stats-section">
+                        <h3>Receiving Stats</h3>
+                        <h5>Receiving Yards: <span class="stat">@Model.ReceiveStats.ReceivingYards</span></h5>
+                        <h5>Receiving Touchdowns: <span class="stat">@Model.ReceiveStats.ReceivingTouchdowns</span></h5>
+                        <h5>Receptions: <span class="stat">@Model.ReceiveStats.Receptions</span></h5>
+                    </div>
+                }
+
+                @if (Model.FumbleStats != null)
+                {
+                    <div class="stats-section">
+                        <h3>Fumble Stats</h3>
+                        <h5>Fumbles: <span class="stat">@Model.FumbleStats.Fumbles</span></h5>
+                    </div>
+                }
+
+                @if (Model.KickStats != null)
+                {
+                    <div class="stats-section">
+                        <h3>Kicking Stats</h3>
+                        <h5>Field Goal Attempts: <span class="stat">@Model.KickStats.FieldGoalAttempts</span></h5>
+                        <h5>Field Goals Made: <span class="stat">@Model.KickStats.FieldGoalsMade</span></h5>
+                        <h5>Extra Point Attempts: <span class="stat">@Model.KickStats.ExtraPointAttempts</span></h5>
+                        <h5>Extra Points Made: <span class="stat">@Model.KickStats.ExtraPointsMade</span></h5>
+                    </div>
+                }
+            }
+        }
+    </div>
+</body>
+</html>

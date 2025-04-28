@@ -1,0 +1,82 @@
+﻿@using IQSport.Models.AuthModels
+    @model User
+
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Auth css/profile.css" asp-append-version="true">
+</head>
+
+<div class="profile-container">
+    <div class="profile-card">
+        <h2 class="profile-title">👤 User Profile</h2>
+
+        <form asp-action="UpdateProfile" method="post" class="profile-form">
+            <div class="form-group">
+                <label for="User_Id" class="form-label">🆔 User ID:</label>
+                <input type="text" asp-for="User_Id" class="form-input" readonly />
+            </div>
+
+            <div class="form-group">
+                <label for="UserName" class="form-label">🤵 Username:</label>
+                <input type="text" asp-for="UserName" class="form-input" readonly />
+            </div>
+
+            <div class="form-group">
+                <label for="Email" class="form-label">✉️ Email:</label>
+                <input type="email" asp-for="Email" class="form-input" readonly />
+            </div>
+
+            <div class="form-group">
+                <label for="Role" class="form-label">⚒️ Role:</label>
+                <input type="text" asp-for="Role" class="form-input" readonly />
+            </div>
+
+            <div class="form-group">
+                <label for="CreateAt" class="form-label">📅 Created At:</label>
+                <input type="text" asp-for="CreateAt" class="form-input" readonly />
+            </div>
+
+            <div class="form-group">
+                <label for="SecurityQuestionId" class="form-label">❓Security Question:</label>
+                <select asp-for="SecurityQuestionId" class="form-control" required>
+                    <option value="">Select a Security Question</option>
+                    @if (ViewBag.SecurityQuestions != null && (ViewBag.SecurityQuestions as SelectList).Any())
+                    {
+                        foreach (var question in ViewBag.SecurityQuestions as SelectList)
+                        {
+                            <option value="@question.Value">@question.Text</option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="SecurityAnswer" class="form-label">🗨️ Security Answer:</label>
+                <input type="text" asp-for="SecurityAnswer" class="form-input" required />
+            </div>
+
+            <button type="submit" class="btn-submit" id="saveButton">Save Changes</button>
+        </form>
+
+        <button class="btn-danger" id="deleteButton">Delete Account</button>
+
+    </div>
+</div>
+
+<script>
+    document.getElementById('saveButton').addEventListener('click', function(event) {
+        if (!confirm('Are you sure you want to save these changes?')) {
+            event.preventDefault();
+        }
+    });
+
+    document.getElementById('deleteButton').addEventListener('click', function() {
+        if (confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
+            window.location.href = '@Url.Action("DeleteAccount", "Profile")';
+        }
+    });
+</script>

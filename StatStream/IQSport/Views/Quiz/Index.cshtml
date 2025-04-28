@@ -1,0 +1,108 @@
+﻿@model IQSport.Models.QuizModels.F1QuizViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/common.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #0e0e0e, #1a1a1a);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #e6e6e6;
+            min-height: 100vh;
+        }
+
+        .text-center {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        h1.display-4 {
+            font-size: 3.2em;
+            font-weight: 700;
+            color: #B0B0B0;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 3px 8px rgba(176, 176, 176, 0.3);
+        }
+
+        h2 {
+            font-size: 1.3em;
+            color: #b3b3b3;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        .quiz-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+            .quiz-buttons a {
+                display: block;
+                width: 100%;
+                max-width: 360px;
+                background: rgba(176, 176, 176, 0.1);
+                color: #B0B0B0;
+                border: 1px solid #B0B0B0;
+                padding: 16px 24px;
+                border-radius: 10px;
+                font-size: 1.1em;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(2px);
+            }
+
+                .quiz-buttons a:hover {
+                    background: #B0B0B0;
+                    color: #1a1a1a;
+                    transform: translateY(-4px);
+                    box-shadow: 0 8px 25px rgba(176, 176, 176, 0.4);
+                    cursor: pointer;
+                }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.95);
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Select a Quiz</h1>
+        <h2>Choose a sport to test your knowledge</h2>
+    </div>
+
+    <div class="quiz-buttons">
+        <a asp-action="F1Quiz">F1</a>
+        <a asp-action="NFLQuiz">NFL</a>
+        <a asp-action="NBAQuiz">NBA</a>
+        <a asp-action="CSGOQuiz">CS:GO</a>
+        <a asp-action="PremierLeagueQuiz">Premier League</a>
+    </div>
+
+    <footer>
+        © 2025 IQSport Quiz
+    </footer>
+</body>
+</html>

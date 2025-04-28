@@ -1,0 +1,203 @@
+﻿@using SportsData.Models
+@using IQSport.ViewModels.NFL
+@model NFLTeamsStatsViewModel
+@{
+    ViewData["title"] = "NFL Team Stats";
+}
+
+<html>
+<head>
+    <title>@ViewData["title"]</title>
+    <link rel="stylesheet" href="~/css/Sports css/nfl.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Common css/common.css" asp-append-version="true">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>NFL Team Stats</h2>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="page-control">
+                <p>Page</p>
+                <div>
+                    <input type="text" min="1" max="@Model.MaxPage" id="pageInput" value="@Model.CurrentPage" />
+                    <span>/ @Model.MaxPage</span>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <p>Season</p>
+                <select id="seasonSelect" onchange="LoadSeason()">
+                    <option value="All Seasons">All Seasons</option>
+                    @for (int i = 2024; i >= 1970; i--)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <table class="players-table">
+                <thead>
+                    <tr class="sort-links">
+                        <th>Team</th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "ssn_asc" ? "ssn_desc" : "ssn_asc")">
+                                Season
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "rush_td_asc" ? "rush_td_desc" : "rush_td_asc")">
+                                Rushing Touchdowns
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "rec_td_asc" ? "rec_td_desc" : "rec_td_asc")">
+                                Receiving Touchdowns
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "td_asc" ? "td_desc" : "td_asc")">
+                                Total Touchdowns
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "xpt_asc" ? "xpt_desc" : "xpt_asc")">
+                                Extra Points
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "2pt_asc" ? "2pt_desc" : "2pt_asc")">
+                                Two Points
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "fg_asc" ? "fg_desc" : "fg_asc")">
+                                Field Goals
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "fga_asc" ? "fga_desc" : "fga_asc")">
+                                Field Goal Attempts
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "ryd_asc" ? "ryd_desc" : "ryd_asc")">
+                                Rushing Yards
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "pyd_asc" ? "pyd_desc" : "pyd_asc")">
+                                Passing Yards
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "int_asc" ? "int_desc" : "int_asc")">
+                                Interceptions
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "win_asc" ? "win_desc" : "win_asc")">
+                                Wins
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "loss_asc" ? "loss_desc" : "loss_asc")">
+                                Losses
+                            </a>
+                        </th>
+                        <th>
+                            <a asp-controller="nfl" asp-action="teams"
+                               asp-route-page="@Model.CurrentPage" asp-route-season="@Model.Season" asp-route-sort="@(Model.SortOrder == "tie_asc" ? "tie_desc" : "tie_asc")">
+                                Ties
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                @if (Model != null)
+                {
+                    <tbody>
+                        @foreach (NFLTeamSeasonInfo stat in Model.TeamsStats)
+                        {
+                            <tr onclick="Redirect('/nfl/team?id=@(stat.ID)&season=@stat.TeamStat?.Season')">
+                                <td data-label="Team">@stat.Name</td>
+                                <td data-label="Season">@stat.TeamStat?.Season</td>
+                                <td data-label="Rushing Touchdowns" class="stat">@stat.TeamStat?.RushingTouchdowns</td>
+                                <td data-label="Receiving Touchdowns" class="stat">@stat.TeamStat?.ReceivingTouchdowns</td>
+                                <td data-label="Total Touchdowns" class="stat">@stat.TeamStat?.TotalTouchdowns</td>
+                                <td data-label="Extra Points" class="stat">@stat.TeamStat?.ExtraPointsMade</td>
+                                <td data-label="Two Points" class="stat">@stat.TeamStat?.TwoPoints</td>
+                                <td data-label="Field Goals" class="stat">@stat.TeamStat?.FieldGoalsMade</td>
+                                <td data-label="Field Goal Attempts" class="stat">@stat.TeamStat?.FieldGoalAttempts</td>
+                                <td data-label="Rushing Yards" class="stat">@stat.TeamStat?.RushYards</td>
+                                <td data-label="Passing Yards" class="stat">@stat.TeamStat?.PassingYards</td>
+                                <td data-label="Interceptions" class="stat">@stat.TeamStat?.Interceptions</td>
+                                <td data-label="Wins" class="stat">@stat.TeamStat?.Wins</td>
+                                <td data-label="Losses" class="stat">@stat.TeamStat?.Losses</td>
+                                <td data-label="Ties" class="stat">@stat.TeamStat?.Ties</td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a asp-controller="nfl" asp-action="teams"
+               asp-route-page="1" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button"><<</a>
+            <a asp-controller="nfl" asp-action="teams"
+               asp-route-page="@(Model.CurrentPage > 1 ? Model.CurrentPage-1 : 1)" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button"><</a>
+            <a asp-controller="nfl" asp-action="teams"
+               asp-route-page="@(Model.CurrentPage < Model.MaxPage ? Model.CurrentPage+1 : Model.MaxPage)" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">></a>
+            <a asp-controller="nfl" asp-action="teams"
+               asp-route-page="@Model.MaxPage" asp-route-season="@Model.Season" asp-route-sort="@Model.SortOrder" role="button">>></a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = SetSeasonSelection();
+
+        function SetSeasonSelection() {
+            document.getElementById('seasonSelect').value = "@(Model.Season != -1 ? @Model.Season : "All Seasons")";
+        }
+
+        function LoadSeason() {
+            let season = document.getElementById("seasonSelect").value;
+            window.location.href = `/nfl/teams?season=${season}`;
+        }
+
+        document.getElementById('pageInput').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                let page = Number(document.getElementById('pageInput').value);
+                if (!isNaN(page)) {
+                    window.location.href = `/nfl/teams?page=${page}&sort=@(string.IsNullOrEmpty(Model.SortOrder) ? "default" : Model.SortOrder)&season=${@Model.Season}`;
+                } else {
+                    alert("Page number must be numeric");
+                    document.getElementById('pageInput').value = @Model.CurrentPage;
+                }
+            }
+        });
+
+        function Redirect(link) {
+            window.open(link, "_blank");
+        }
+    </script>
+</body>
+</html>
