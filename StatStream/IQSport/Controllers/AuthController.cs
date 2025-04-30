@@ -24,6 +24,8 @@ namespace IQSport.Controllers
             _context = context;
         }
 
+        // Display the registration page
+        // Retrieve security questions from the database to populate a dropdown
         public IActionResult Register()
         {
             var securityQuestions = _context.SecurityQuestions.ToList();
@@ -48,14 +50,19 @@ namespace IQSport.Controllers
             return View("RegisterView");
         }
 
+        // Dislay the login page
         public IActionResult Login() => View("LoginView");
 
+        // Display the Index page (-> Login Page)
         public IActionResult Index()
         {
             Console.WriteLine($"User.Identity.IsAuthenticated: {User.Identity.IsAuthenticated}");
             if (User.Identity.IsAuthenticated)
             {
+                // Debugging
                 Console.WriteLine($"User.Identity.Name: {User.Identity.Name}");
+                // End
+                
                 if (User.Claims != null)
                 {
                     foreach (var claim in User.Claims)
@@ -65,17 +72,24 @@ namespace IQSport.Controllers
                 }
             }
 
+            // If the user is not authenticated, then re-direct to Login Action
             if (!User.Identity.IsAuthenticated)
             {
                 return RedirectToAction("Login", "Auth");
             }
+
+            // And if user is authenticated, return the default page.
             return View();
         }
 
+        // Handles User registration process
         [HttpPost]
         public async Task<IActionResult> Register(User model, int securityQuestionId, string securityAnswer)
         {
+            // Debuggin:
             Console.WriteLine("Register action started.");
+            // End
+            
             ModelState.Remove("UserSecurityAnswers");
 
             if (!ModelState.IsValid)
@@ -83,22 +97,28 @@ namespace IQSport.Controllers
                 Console.WriteLine("ModelState is invalid.");
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
                 {
+                    // This logs all model state errors - debugging
                     Console.WriteLine($"Error: {error.ErrorMessage}");
                 }
+
+                // If the model is invalid, then return register page
                 return View("RegisterView", model);
             }
 
+            // Checks is a user with the provided email alreasy exists in the DB
             if (await _context.Users.AnyAsync(u => u.Email == model.Email))
             {
                 ViewBag.Error = "Email already registered.";
                 return View("RegisterView", model);
             }
 
+            // Hash the user password
             model.Password = HashPassword(model.Password);
             _context.Users.Add(model);
 
             try
             {
+                // Then save the changes
                 await _context.SaveChangesAsync();
             }
             catch (Exception ex)
@@ -114,6 +134,7 @@ namespace IQSport.Controllers
                 return View("RegisterView", model);
             }
 
+            // Creates a new UserSecurityAnswer object to store user's securty questions
             var userSecurityAnswer = new UserSecurityAnswer
             {
                 UserId = model.User_Id,
@@ -138,6 +159,7 @@ namespace IQSport.Controllers
             return RedirectToAction("Login");
         }
 
+        // Handles Login Process
         [HttpPost]
         public async Task<IActionResult> Login(string userName, string password)
         {
@@ -155,9 +177,10 @@ namespace IQSport.Controllers
                 return View("LoginView");
             }
 
+            // List of claims for the authenticated user.
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier, user.User_Id.ToString()), // Add this line
+                new Claim(ClaimTypes.NameIdentifier, user.User_Id.ToString()),
                 new Claim(ClaimTypes.Name, user.UserName),
                 new Claim(ClaimTypes.Role, user.Role ?? "User"),
             };
@@ -165,17 +188,21 @@ namespace IQSport.Controllers
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
 
+            // Sign in the user using cookie-based auth
             await HttpContext.SignInAsync("AuthCookie", principal);
 
+            // Redirect the authenticated user to the Home/Index action
             return RedirectToAction("Index", "Home");
         }
 
+        // Displays the Pasword Request Page
         public IActionResult ResetPwdRequest()
         {
             var securityQuestions = _context.SecurityQuestions.ToList();
             return View(securityQuestions);
         }
 
+        // Handles the password reset process by verifying the user's securoty questions
         [HttpPost]
         public async Task<IActionResult> ResetPassword(string userName, int questionId, string answer)
         {
@@ -210,6 +237,7 @@ namespace IQSport.Controllers
             }
         }
 
+        // Handle the user logout process
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
@@ -217,6 +245,7 @@ namespace IQSport.Controllers
             return RedirectToAction("Login");
         }
 
+        // Display Access Denied page for anauthenticated users
         public IActionResult AccessDenied()
         {
             return View();
@@ -235,7 +264,7 @@ namespace IQSport.Controllers
                 // Check if Role is NULL
                 if (user.Role == null)
                 {
-                    user.Role = "Admin"; // Assign default role
+                    user.Role = "Admin"; // Assigned the default role
                 }
             }
 
@@ -243,6 +272,7 @@ namespace IQSport.Controllers
         }
 
 
+        // Handles the provided password using SHA256 algorithm
         private string HashPassword(string password)
         {
             using var sha256 = SHA256.Create();
