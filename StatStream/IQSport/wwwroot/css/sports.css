@@ -110,7 +110,7 @@ footer {
     border-top: 1px solid #333;
 }
 
-/* Responsive Table (Optional Mobile Optimization) */
+/* Responsive Table */
 @media (max-width: 768px) {
     .controls-container {
         flex-direction: column;
