@@ -26,7 +26,7 @@ namespace IQSport.Controllers
             }
 
             var securityQuestions = new SelectList(_context.SecurityQuestions, "QuestionId", "Question");
-            ViewBag.SecurityQuestions = securityQuestions; // Ensure this line is present!
+            ViewBag.SecurityQuestions = securityQuestions; 
 
             Console.WriteLine("Returning ProfileView.");
             return View("ProfileView", user);
@@ -44,14 +44,14 @@ namespace IQSport.Controllers
                     existingUser.SecurityQuestionId = updateUser.SecurityQuestionId;
                     existingUser.SecurityAnswer = updateUser.SecurityAnswer;
 
-                    _context.Entry(existingUser).State = Microsoft.EntityFrameworkCore.EntityState.Modified; // Explicitly mark as modified
+                    _context.Entry(existingUser).State = Microsoft.EntityFrameworkCore.EntityState.Modified; 
                     await _context.SaveChangesAsync();
 
                     return RedirectToAction("Profile", "Profile");
                 }
                 else
                 {
-                    // Handle the case where the user wasn't found (shouldn't happen in this scenario)
+                    // Handle the case where the user wasn't found
                     return NotFound();
                 }
             }
@@ -67,10 +67,10 @@ namespace IQSport.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (string.IsNullOrEmpty(userId))
             {
-                return RedirectToAction("Index", "Home"); // Or some error page
+                return RedirectToAction("Index", "Home"); 
             }
 
-            var userToDelete = await _context.Users.FindAsync(int.Parse(userId)); // Assuming User_Id is an int
+            var userToDelete = await _context.Users.FindAsync(int.Parse(userId)); 
 
             if (userToDelete != null)
             {
@@ -80,11 +80,13 @@ namespace IQSport.Controllers
                 // Sign the user out using Cookie Authentication
                 await HttpContext.SignOutAsync();
 
-                return RedirectToAction("Index", "Home"); // Redirect to the home page after deletion
+                // Redirect to the home page after deletion
+                return RedirectToAction("Index", "Home");     
             }
             else
             {
-                return NotFound(); // User not found (shouldn't happen if they are logged in)
+                // User not found
+                return NotFound(); 
             }
         }
     }
