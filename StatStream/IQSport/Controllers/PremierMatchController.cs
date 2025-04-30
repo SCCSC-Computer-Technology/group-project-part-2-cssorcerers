@@ -79,7 +79,7 @@ namespace IQSport.Controllers
             }
             catch (Exception ex)
             {
-                // Log exception (implement your logging)
+                // Log exception
                 return StatusCode(500, "An error occurred while processing your request.");
             }
         }
