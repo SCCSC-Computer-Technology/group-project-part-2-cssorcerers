@@ -3,7 +3,7 @@
 
 Short Documentation:
 
-``` csharp
+```
 APPLY THIS ONLY IF IT HAPPENS:
 
   - If the InfoAPI gets missing or didn't upload correctly.
@@ -16,7 +16,7 @@ APPLY THIS ONLY IF IT HAPPENS:
    
 - And there is no need to run each API and Web-App separately, all the 3 Command Prompts will appear automatically.
 ```
-``` csharp
+```
 - If there is still an issue then try re-adding the connection strings.
 ```
 
