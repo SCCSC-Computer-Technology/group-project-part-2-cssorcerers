@@ -3,8 +3,11 @@
 
 Short Documentation:
 
+```
+APPLY THIS ONLY IF IT HAPPENS:
+
   - If the InfoAPI gets missing or didn't upload correctly.
-      - First delete that InfoAPI folder.
+      - First delete that empty InfoAPI folder.
       - Then, simply just right-click on the solution explorer text and "Add" existing projects, and
         navigate to the extracted folder you did and navigate to the InfoAPI folder and add the "InfoAPI.csproj" and
         navigate back to the solution explorer text, right-click and click "Properties" and select "Multiple Startup
@@ -12,5 +15,9 @@ Short Documentation:
     - Once applied head to Project Dependencies and check the InfoAPI. Apply and Ok.
    
 - And there is no need to run each API and Web-App separately, all the 3 Command Prompts will appear automatically.
+```
+```
+- If there is still an issue then try re-adding the connection strings.
+```
 
-And there should be no issues.
+- And there should be no further issues.
