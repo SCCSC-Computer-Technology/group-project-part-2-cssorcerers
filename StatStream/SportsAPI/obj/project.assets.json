@@ -3258,11 +3258,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\StatStream\\IQSportAndAPI\\SportsAPI\\SportsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsAPI\\SportsAPI.csproj",
       "projectName": "SportsAPI",
-      "projectPath": "C:\\StatStream\\IQSportAndAPI\\SportsAPI\\SportsAPI.csproj",
+      "projectPath": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsAPI\\SportsAPI.csproj",
       "packagesPath": "C:\\Users\\Adich\\.nuget\\packages\\",
-      "outputPath": "C:\\StatStream\\IQSportAndAPI\\SportsAPI\\obj\\",
+      "outputPath": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3284,8 +3284,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\StatStream\\IQSportAndAPI\\SportsData\\SportsData.csproj": {
-              "projectPath": "C:\\StatStream\\IQSportAndAPI\\SportsData\\SportsData.csproj"
+            "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\SportsData.csproj": {
+              "projectPath": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\SportsData.csproj"
             }
           }
         }

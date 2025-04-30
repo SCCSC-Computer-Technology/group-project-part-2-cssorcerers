@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CFMii6Izeqg=",
+  "dgSpecHash": "DsjhPIM4rXw=",
   "success": true,
-  "projectFilePath": "C:\\StatStream\\IQSportAndAPI\\SportsData\\SportsData.csproj",
+  "projectFilePath": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\SportsData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adich\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.3\\microsoft.entityframeworkcore.9.0.3.nupkg.sha512",
     "C:\\Users\\Adich\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.3\\microsoft.entityframeworkcore.abstractions.9.0.3.nupkg.sha512",

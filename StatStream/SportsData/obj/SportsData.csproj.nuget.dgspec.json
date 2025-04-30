@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\StatStream\\IQSportAndAPI\\SportsData\\SportsData.csproj": {}
+    "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\SportsData.csproj": {}
   },
   "projects": {
-    "C:\\StatStream\\IQSportAndAPI\\SportsData\\SportsData.csproj": {
+    "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\SportsData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\StatStream\\IQSportAndAPI\\SportsData\\SportsData.csproj",
+        "projectUniqueName": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\SportsData.csproj",
         "projectName": "SportsData",
-        "projectPath": "C:\\StatStream\\IQSportAndAPI\\SportsData\\SportsData.csproj",
+        "projectPath": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\SportsData.csproj",
         "packagesPath": "C:\\Users\\Adich\\.nuget\\packages\\",
-        "outputPath": "C:\\StatStream\\IQSportAndAPI\\SportsData\\obj\\",
+        "outputPath": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

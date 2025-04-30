@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "hct9SGnalRTzfvR3Q8q7XnpPIQKBf2Ghw+WKNS1gr2g=",
+  "Hash": "M9RzLRYFhXtUGnXeNig+etWzAQO6lI6OztIfNe2cS8w=",
   "Source": "IQSport",
   "BasePath": "_content/IQSport",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\SportsAPI\\SportsAPI.csproj",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\SportsAPI\\SportsAPI.csproj",
       "Version": 2,
       "Source": "SportsAPI",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "IQSport\\wwwroot",
       "Source": "IQSport",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css",
       "SourceId": "IQSport",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "IQSport#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -47,13 +47,13 @@
       "Integrity": "i8ZTYFj8C0daQOJF5AqhahBODY3ZOV69bmYCydM4ZC4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css",
       "SourceId": "IQSport",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "IQSport#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -68,13 +68,13 @@
       "Integrity": "i8ZTYFj8C0daQOJF5AqhahBODY3ZOV69bmYCydM4ZC4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\login.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\login.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Auth css/login#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -92,10 +92,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Auth css\\login.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\profile.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\profile.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Auth css/profile#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -113,10 +113,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Auth css\\profile.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\register.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\register.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Auth css/register#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -134,10 +134,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Auth css\\register.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\resetpwd.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\resetpwd.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Auth css/resetpwd#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -155,10 +155,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Auth css\\resetpwd.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\common.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\common.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Common css/common#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -176,10 +176,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Common css\\common.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\main.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\main.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Common css/main#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -197,10 +197,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Common css\\main.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\site.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\site.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Common css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -218,10 +218,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Common css\\site.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\landingPage.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\landingPage.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/landingPage#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -239,10 +239,10 @@
       "OriginalItemSpec": "wwwroot\\css\\landingPage.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\penalty.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\penalty.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/penalty#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -260,10 +260,10 @@
       "OriginalItemSpec": "wwwroot\\css\\penalty.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\premier.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\premier.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/premier#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -281,10 +281,10 @@
       "OriginalItemSpec": "wwwroot\\css\\premier.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\csgo.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\csgo.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Sports css/csgo#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sports css\\csgo.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\f1.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\f1.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Sports css/f1#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sports css\\f1.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nba.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nba.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Sports css/nba#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -344,10 +344,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sports css\\nba.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nbaPStats.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nbaPStats.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Sports css/nbaPStats#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -365,10 +365,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sports css\\nbaPStats.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nbaT.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nbaT.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Sports css/nbaT#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -386,10 +386,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sports css\\nbaT.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nfl.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nfl.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Sports css/nfl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -407,10 +407,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sports css\\nfl.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\Premier.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\Premier.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/Sports css/Premier#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -428,10 +428,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sports css\\Premier.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\sports.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\sports.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "css/sports#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -449,10 +449,10 @@
       "OriginalItemSpec": "wwwroot\\css\\sports.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\favicon.ico",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -470,10 +470,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\CSGO.jpg",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\CSGO.jpg",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "images/CSGO#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -491,10 +491,10 @@
       "OriginalItemSpec": "wwwroot\\images\\CSGO.jpg"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\F1Verst.jpg",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\F1Verst.jpg",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "images/F1Verst#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -512,10 +512,10 @@
       "OriginalItemSpec": "wwwroot\\images\\F1Verst.jpg"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\guidance.jpg",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\guidance.jpg",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "images/guidance#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -533,10 +533,10 @@
       "OriginalItemSpec": "wwwroot\\images\\guidance.jpg"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\NBA.jpg",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\NBA.jpg",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "images/NBA#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -554,10 +554,10 @@
       "OriginalItemSpec": "wwwroot\\images\\NBA.jpg"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\NFL.jpg",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\NFL.jpg",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "images/NFL#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -575,10 +575,10 @@
       "OriginalItemSpec": "wwwroot\\images\\NFL.jpg"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\RacingPoster.jpg",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\RacingPoster.jpg",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "images/RacingPoster#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -596,10 +596,10 @@
       "OriginalItemSpec": "wwwroot\\images\\RacingPoster.jpg"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\soccer.jpg",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\soccer.jpg",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "images/soccer#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -617,10 +617,10 @@
       "OriginalItemSpec": "wwwroot\\images\\soccer.jpg"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\filters.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\filters.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "js/filters#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -638,10 +638,10 @@
       "OriginalItemSpec": "wwwroot\\js\\filters.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\gameplay.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\gameplay.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "js/gameplay#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -659,10 +659,10 @@
       "OriginalItemSpec": "wwwroot\\js\\gameplay.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\site.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -722,10 +722,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -743,10 +743,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -764,10 +764,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -785,10 +785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -806,10 +806,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -827,10 +827,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -848,10 +848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -869,10 +869,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -890,10 +890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -911,10 +911,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -932,10 +932,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -953,10 +953,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -974,10 +974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -995,10 +995,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1016,10 +1016,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1058,10 +1058,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1079,10 +1079,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1121,10 +1121,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1142,10 +1142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1163,10 +1163,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1184,10 +1184,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1205,10 +1205,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1226,10 +1226,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1247,10 +1247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1268,10 +1268,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1289,10 +1289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1310,10 +1310,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1331,10 +1331,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1352,10 +1352,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1373,10 +1373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1415,10 +1415,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1436,10 +1436,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1457,10 +1457,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1478,10 +1478,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1520,10 +1520,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1541,10 +1541,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1562,10 +1562,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1583,10 +1583,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1604,10 +1604,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1625,10 +1625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1646,10 +1646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1667,10 +1667,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1688,10 +1688,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1709,10 +1709,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1730,10 +1730,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1772,10 +1772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1793,10 +1793,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1814,10 +1814,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1835,10 +1835,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1856,10 +1856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "IQSport",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\",
       "BasePath": "_content/IQSport",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1880,7 +1880,7 @@
   "Endpoints": [
     {
       "Route": "css/Auth css/login.491pjbo118.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\login.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1925,7 +1925,7 @@
     },
     {
       "Route": "css/Auth css/login.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\login.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1962,7 +1962,7 @@
     },
     {
       "Route": "css/Auth css/profile.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\profile.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\profile.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1999,7 +1999,7 @@
     },
     {
       "Route": "css/Auth css/profile.go7t5vq3v8.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\profile.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\profile.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2044,7 +2044,7 @@
     },
     {
       "Route": "css/Auth css/register.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\register.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2081,7 +2081,7 @@
     },
     {
       "Route": "css/Auth css/register.demuokqgww.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\register.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2126,7 +2126,7 @@
     },
     {
       "Route": "css/Auth css/resetpwd.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\resetpwd.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\resetpwd.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2163,7 +2163,7 @@
     },
     {
       "Route": "css/Auth css/resetpwd.uo21pssuu7.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Auth css\\resetpwd.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Auth css\\resetpwd.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2208,7 +2208,7 @@
     },
     {
       "Route": "css/Common css/common.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\common.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\common.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2245,7 +2245,7 @@
     },
     {
       "Route": "css/Common css/common.q0o1i0twwy.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\common.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\common.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2290,7 +2290,7 @@
     },
     {
       "Route": "css/Common css/main.66pqjrwz41.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\main.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\main.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2335,7 +2335,7 @@
     },
     {
       "Route": "css/Common css/main.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\main.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\main.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2372,7 +2372,7 @@
     },
     {
       "Route": "css/Common css/site.3sauainiga.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\site.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2417,7 +2417,7 @@
     },
     {
       "Route": "css/Common css/site.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Common css\\site.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Common css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2454,7 +2454,7 @@
     },
     {
       "Route": "css/landingPage.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\landingPage.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\landingPage.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2491,7 +2491,7 @@
     },
     {
       "Route": "css/landingPage.rrqbwyufra.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\landingPage.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\landingPage.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2536,7 +2536,7 @@
     },
     {
       "Route": "css/penalty.ab8kyo3utt.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\penalty.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\penalty.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2581,7 +2581,7 @@
     },
     {
       "Route": "css/penalty.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\penalty.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\penalty.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2618,7 +2618,7 @@
     },
     {
       "Route": "css/premier.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\premier.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\premier.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2655,7 +2655,7 @@
     },
     {
       "Route": "css/premier.ix8mrtyy4k.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\premier.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\premier.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2700,7 +2700,7 @@
     },
     {
       "Route": "css/Sports css/csgo.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\csgo.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\csgo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2737,7 +2737,7 @@
     },
     {
       "Route": "css/Sports css/csgo.pgto8ggcjp.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\csgo.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\csgo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2782,7 +2782,7 @@
     },
     {
       "Route": "css/Sports css/f1.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\f1.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\f1.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2819,7 +2819,7 @@
     },
     {
       "Route": "css/Sports css/f1.nuauacyg0v.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\f1.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\f1.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2864,7 +2864,7 @@
     },
     {
       "Route": "css/Sports css/nba.7gvd64ljol.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nba.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nba.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2909,7 +2909,7 @@
     },
     {
       "Route": "css/Sports css/nba.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nba.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nba.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2946,7 +2946,7 @@
     },
     {
       "Route": "css/Sports css/nbaPStats.8jo0e7b831.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nbaPStats.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nbaPStats.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2991,7 +2991,7 @@
     },
     {
       "Route": "css/Sports css/nbaPStats.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nbaPStats.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nbaPStats.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3028,7 +3028,7 @@
     },
     {
       "Route": "css/Sports css/nbaT.0272fimu7q.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nbaT.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nbaT.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3073,7 +3073,7 @@
     },
     {
       "Route": "css/Sports css/nbaT.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nbaT.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nbaT.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3110,7 +3110,7 @@
     },
     {
       "Route": "css/Sports css/nfl.0f2u3zfl8w.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nfl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nfl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3155,7 +3155,7 @@
     },
     {
       "Route": "css/Sports css/nfl.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\nfl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\nfl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3192,7 +3192,7 @@
     },
     {
       "Route": "css/Sports css/Premier.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\Premier.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\Premier.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3229,7 +3229,7 @@
     },
     {
       "Route": "css/Sports css/Premier.o3kgbbm20b.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\Sports css\\Premier.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\Sports css\\Premier.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3274,7 +3274,7 @@
     },
     {
       "Route": "css/sports.9ty9y39jit.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\sports.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\sports.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3319,7 +3319,7 @@
     },
     {
       "Route": "css/sports.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\css\\sports.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\css\\sports.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3356,7 +3356,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3401,7 +3401,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3438,7 +3438,7 @@
     },
     {
       "Route": "images/CSGO.7wok4j1jr6.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\CSGO.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\CSGO.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3483,7 +3483,7 @@
     },
     {
       "Route": "images/CSGO.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\CSGO.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\CSGO.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3520,7 +3520,7 @@
     },
     {
       "Route": "images/F1Verst.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\F1Verst.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\F1Verst.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3557,7 +3557,7 @@
     },
     {
       "Route": "images/F1Verst.napuv9xg12.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\F1Verst.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\F1Verst.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3602,7 +3602,7 @@
     },
     {
       "Route": "images/guidance.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\guidance.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\guidance.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3639,7 +3639,7 @@
     },
     {
       "Route": "images/guidance.qfum5qva0t.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\guidance.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\guidance.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3684,7 +3684,7 @@
     },
     {
       "Route": "images/NBA.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\NBA.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\NBA.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3721,7 +3721,7 @@
     },
     {
       "Route": "images/NBA.tfku26auqu.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\NBA.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\NBA.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3766,7 +3766,7 @@
     },
     {
       "Route": "images/NFL.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\NFL.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\NFL.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3803,7 +3803,7 @@
     },
     {
       "Route": "images/NFL.oqqhjf5y8i.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\NFL.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\NFL.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3848,7 +3848,7 @@
     },
     {
       "Route": "images/RacingPoster.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\RacingPoster.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\RacingPoster.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3885,7 +3885,7 @@
     },
     {
       "Route": "images/RacingPoster.qbia55nnmw.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\RacingPoster.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\RacingPoster.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3930,7 +3930,7 @@
     },
     {
       "Route": "images/soccer.ffzb57o6ws.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\soccer.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\soccer.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3975,7 +3975,7 @@
     },
     {
       "Route": "images/soccer.jpg",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\images\\soccer.jpg",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\images\\soccer.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4012,7 +4012,7 @@
     },
     {
       "Route": "IQSport.bundle.scp.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4049,7 +4049,7 @@
     },
     {
       "Route": "IQSport.npjrimwrua.bundle.scp.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IQSport.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4094,7 +4094,7 @@
     },
     {
       "Route": "IQSport.npjrimwrua.styles.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4139,7 +4139,7 @@
     },
     {
       "Route": "IQSport.styles.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IQSport.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4176,7 +4176,7 @@
     },
     {
       "Route": "js/filters.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\filters.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\filters.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4213,7 +4213,7 @@
     },
     {
       "Route": "js/filters.llkymhbbbt.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\filters.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\filters.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4258,7 +4258,7 @@
     },
     {
       "Route": "js/gameplay.665qyyuff4.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\gameplay.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\gameplay.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4303,7 +4303,7 @@
     },
     {
       "Route": "js/gameplay.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\gameplay.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\gameplay.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4340,7 +4340,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4377,7 +4377,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4422,7 +4422,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4459,7 +4459,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4504,7 +4504,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4541,7 +4541,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4586,7 +4586,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4623,7 +4623,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4668,7 +4668,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4705,7 +4705,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4750,7 +4750,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4787,7 +4787,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4832,7 +4832,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4869,7 +4869,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4914,7 +4914,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4951,7 +4951,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4996,7 +4996,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5033,7 +5033,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5078,7 +5078,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5123,7 +5123,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5160,7 +5160,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5197,7 +5197,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5242,7 +5242,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5279,7 +5279,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5324,7 +5324,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5361,7 +5361,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5406,7 +5406,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5443,7 +5443,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5488,7 +5488,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5525,7 +5525,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5562,7 +5562,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5599,7 +5599,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5644,7 +5644,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5689,7 +5689,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5734,7 +5734,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5779,7 +5779,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5816,7 +5816,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5861,7 +5861,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5898,7 +5898,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5935,7 +5935,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5972,7 +5972,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6017,7 +6017,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6062,7 +6062,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6107,7 +6107,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6144,7 +6144,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6189,7 +6189,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6226,7 +6226,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6263,7 +6263,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6300,7 +6300,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6345,7 +6345,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6390,7 +6390,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6427,7 +6427,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6472,7 +6472,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6509,7 +6509,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6554,7 +6554,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6591,7 +6591,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6628,7 +6628,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6673,7 +6673,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6718,7 +6718,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6755,7 +6755,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6800,7 +6800,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6837,7 +6837,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6874,7 +6874,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6919,7 +6919,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6956,7 +6956,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7001,7 +7001,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7046,7 +7046,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7083,7 +7083,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7128,7 +7128,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7165,7 +7165,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7210,7 +7210,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7255,7 +7255,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7292,7 +7292,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7337,7 +7337,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7374,7 +7374,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7411,7 +7411,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7456,7 +7456,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7493,7 +7493,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7538,7 +7538,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7575,7 +7575,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7612,7 +7612,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7657,7 +7657,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7702,7 +7702,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7739,7 +7739,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7784,7 +7784,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7821,7 +7821,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7858,7 +7858,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7895,7 +7895,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7940,7 +7940,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7985,7 +7985,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8030,7 +8030,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8067,7 +8067,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8112,7 +8112,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8157,7 +8157,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8194,7 +8194,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8239,7 +8239,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8284,7 +8284,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8321,7 +8321,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8358,7 +8358,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8403,7 +8403,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8440,7 +8440,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8485,7 +8485,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8522,7 +8522,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8567,7 +8567,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8604,7 +8604,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8641,7 +8641,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8686,7 +8686,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8723,7 +8723,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8768,7 +8768,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8805,7 +8805,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8850,7 +8850,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8895,7 +8895,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8932,7 +8932,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8977,7 +8977,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9014,7 +9014,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9059,7 +9059,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\StatStream\\IQSportAndAPI\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Adich\\Documents\\GitHub\\group-project-part-2-cssorcerers\\StatStream\\IQSport\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {

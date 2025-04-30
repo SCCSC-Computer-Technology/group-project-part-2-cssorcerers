@@ -11,7 +11,7 @@
         "Action": "Start"
       },
       {
-        "Path": "..\\..\\..\\InfoAPI\\InfoAPI.csproj",
+        "Path": "..\\..\\..\\..\\..\\..\\..\\InfoAPI\\InfoAPI.csproj",
         "Action": "Start"
       }
     ]
